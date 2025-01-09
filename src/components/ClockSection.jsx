@@ -1,14 +1,14 @@
 import clockFourGirls from "../assets/clock-four-girls.png";
 import fourGirls from "../assets/four-girls.png";
 
-// import clockThreeGirls from "../assets/clock-three-girls.png";
-// import threeGirls from "../assets/three-girls.png";
+import clockThreeGirls from "../assets/clock-three-girls.png";
+import threeGirls from "../assets/three-girls.png";
 
-// import clockTwoGirls from "../assets/clock-two-girls.png";
-// import twoGirls from "../assets/two-girls.png";
+import clockTwoGirls from "../assets/clock-two-girls.png";
+import twoGirls from "../assets/two-girls.png";
 
-// import clockOneGirl from "../assets/clock-one-girl.png";
-// import oneGirl from "../assets/one-girl.png";
+import clockOneGirl from "../assets/clock-one-girl.png";
+import oneGirl from "../assets/one-girl.png";
 
 const ClockSection = () => {
   return (
@@ -25,12 +25,64 @@ const ClockSection = () => {
           <img
             src={clockFourGirls}
             alt="Relógio representando a passagem do tempo"
-            className="frame20 w-[300px] h-auto object-contain"
+            className="frame21 w-[300px] h-auto object-contain"
           />
           <img
             src={fourGirls}
             alt="Quatro figuras femininas representando vítimas"
-            className="frame20 w-[1200px] h-auto object-contain"
+            className="frame21 w-[1200px] h-auto object-contain"
+          />
+        </div>
+
+        <div className="absolute top-0 flex justify-center space-x-4 pt-10">
+          <img
+            src={clockThreeGirls}
+            alt="Relógio representando a passagem do tempo"
+            className="frame22 w-[300px] h-auto object-contain"
+          />
+          <img
+            src={threeGirls}
+            alt="Três figuras femininas representando vítimas"
+            className="frame22 w-[1200px] h-auto object-contain"
+          />
+        </div>
+
+        <div className="absolute top-0 flex justify-center space-x-4 pt-10">
+          <img
+            src={clockTwoGirls}
+            alt="Relógio representando a passagem do tempo"
+            className="frame23 w-[300px] h-auto object-contain"
+          />
+          <img
+            src={twoGirls}
+            alt="Três figuras femininas representando vítimas"
+            className="frame23 w-[1200px] h-auto object-contain"
+          />
+        </div>
+
+        <div className="absolute top-0 flex justify-center space-x-4 pt-10">
+          <img
+            src={clockOneGirl}
+            alt="Relógio representando a passagem do tempo"
+            className="frame24 w-[300px] h-auto object-contain"
+          />
+          <img
+            src={oneGirl}
+            alt="Três figuras femininas representando vítimas"
+            className="frame24 w-[1200px] h-auto object-contain"
+          />
+        </div>
+
+        <div className="absolute top-0 flex justify-center space-x-4 pt-10">
+          <img
+            src={clockFourGirls}
+            alt="Relógio representando a passagem do tempo"
+            className="frame25 w-[300px] h-auto object-contain"
+          />
+          <img
+            src={oneGirl}
+            alt="Três figuras femininas representando vítimas"
+            className="frame24 opacity-0 w-[1200px] h-auto object-contain"
           />
         </div>
       </div>
