@@ -1,5 +1,5 @@
-import './App.css';
-import ScrollytellingSection from './components/ScrollytellingSection';
+import "./App.css";
+import ScrollytellingSection from "./components/ScrollytellingSection";
 
 function App() {
   return (

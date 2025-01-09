@@ -7,13 +7,16 @@ import img3 from "../assets/img3.png";
 import mute from "../assets/mute.svg";
 import replay from "../assets/replay.svg";
 import Cover from "./Cover";
+import Intro from "./Intro";
+import Cases from "./Cases";
+import ClockSection from "./ClockSection";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const ScrollytellingSection = () => {
   useEffect(() => {
     gsap.set(
-      ".frame2, .frame3, .frame4, .frame5, .frame6,.frame7,.frame8,.frame9, .frame10, .frame11",
+      ".frame2, .frame3, .frame4, .frame5, .frame6,.frame7,.frame8,.frame9, .frame10, .frame11, .frame12, .frame13, .frame14,.frame15, .frame16,.frame17,.frame18,.frame19,.frame20, .frame21, .frame22, .frame23, .frame24",
       { opacity: 0 }
     );
 
@@ -95,6 +98,7 @@ const ScrollytellingSection = () => {
         gsap.to(".frame8", { opacity: 1, duration: 0.5 });
       },
     });
+
     ScrollTrigger.create({
       trigger: ".frame10-trigger",
       start: "top center",
@@ -111,6 +115,122 @@ const ScrollytellingSection = () => {
       onLeaveBack: () => {
         gsap.to(".frame10", { opacity: 1, duration: 0.5 });
       },
+    });
+
+    ScrollTrigger.create({
+      trigger: ".frame12-trigger",
+      start: "top center",
+      onEnter: () => gsap.to(".frame12", { opacity: 1, duration: 0.5 }),
+      onLeaveBack: () => gsap.to(".frame12", { opacity: 0, duration: 0.5 }),
+    });
+
+    ScrollTrigger.create({
+      trigger: ".frame13-trigger",
+      start: "top center",
+      onEnter: () => {
+        gsap.to(".frame13", { opacity: 1, duration: 0.5 });
+        gsap.to(".frame12", { opacity: 0, duration: 0.5 });
+      },
+      onLeaveBack: () => {
+        gsap.to(".frame13", { opacity: 0, duration: 0.5 });
+        gsap.to(".frame12", { opacity: 1, duration: 0.5 });
+      },
+    });
+    ScrollTrigger.create({
+      trigger: ".frame14-trigger",
+      start: "top center",
+      onEnter: () => gsap.to(".frame14", { opacity: 1, duration: 0.5 }),
+      onLeaveBack: () => gsap.to(".frame14", { opacity: 0, duration: 0.5 }),
+    });
+    ScrollTrigger.create({
+      trigger: ".frame15-trigger",
+      start: "top center",
+      onEnter: () => gsap.to(".frame15", { opacity: 1, duration: 0.5 }),
+      onLeaveBack: () => gsap.to(".frame15", { opacity: 0, duration: 0.5 }),
+    });
+    ScrollTrigger.create({
+      trigger: ".frame16-trigger",
+      start: "top center",
+      onEnter: () => gsap.to(".frame16", { opacity: 1, duration: 0.5 }),
+      onLeaveBack: () => gsap.to(".frame16", { opacity: 0, duration: 0.5 }),
+    });
+    ScrollTrigger.create({
+      trigger: ".frame17-trigger",
+      start: "top center",
+      onEnter: () => gsap.to(".frame17", { opacity: 1, duration: 0.5 }),
+      onLeaveBack: () => gsap.to(".frame17", { opacity: 0, duration: 0.5 }),
+    });
+    ScrollTrigger.create({
+      trigger: ".frame18-trigger",
+      start: "top center",
+      onEnter: () => gsap.to(".frame18", { opacity: 1, duration: 0.5 }),
+      onLeaveBack: () => gsap.to(".frame18", { opacity: 0, duration: 0.5 }),
+    });
+    ScrollTrigger.create({
+      trigger: ".frame19-trigger",
+      start: "top center",
+      onEnter: () => gsap.to(".frame19", { opacity: 1, duration: 0.5 }),
+      onLeaveBack: () => gsap.to(".frame19", { opacity: 0, duration: 0.5 }),
+    });
+
+    ScrollTrigger.create({
+      trigger: ".frame19-trigger",
+      start: "top center",
+      onEnter: () => {
+        gsap.to(
+          [
+            ".frame13",
+            ".frame14",
+            ".frame15",
+            ".frame16",
+            ".frame17",
+            ".frame18",
+            ".frame19",
+          ],
+          { opacity: 0, duration: 0.5 }
+        );
+      },
+      onLeaveBack: () => {
+        gsap.to(".frame13", { opacity: 1, duration: 0.5 });
+        gsap.to(".frame14", { opacity: 1, duration: 0.5 });
+        gsap.to(".frame15", { opacity: 1, duration: 0.5 });
+        gsap.to(".frame16", { opacity: 1, duration: 0.5 });
+        gsap.to(".frame17", { opacity: 1, duration: 0.5 });
+        gsap.to(".frame18", { opacity: 1, duration: 0.5 });
+        gsap.to(".frame19", { opacity: 1, duration: 0.5 });
+      },
+    });
+
+    ScrollTrigger.create({
+      trigger: ".frame20-trigger",
+      start: "top center",
+      onEnter: () => gsap.to(".frame20", { opacity: 1, duration: 0.5 }),
+      onLeaveBack: () => gsap.to(".frame20", { opacity: 0, duration: 0.5 }),
+    });
+
+    ScrollTrigger.create({
+      trigger: ".frame21-trigger",
+      start: "top center",
+      onEnter: () => gsap.to(".frame21", { opacity: 1, duration: 0.5 }),
+      onLeaveBack: () => gsap.to(".frame21", { opacity: 0, duration: 0.5 }),
+    });
+    ScrollTrigger.create({
+      trigger: ".frame22-trigger",
+      start: "top center",
+      onEnter: () => gsap.to(".frame22", { opacity: 1, duration: 0.5 }),
+      onLeaveBack: () => gsap.to(".frame22", { opacity: 0, duration: 0.5 }),
+    });
+    ScrollTrigger.create({
+      trigger: ".frame23-trigger",
+      start: "top center",
+      onEnter: () => gsap.to(".frame23", { opacity: 1, duration: 0.5 }),
+      onLeaveBack: () => gsap.to(".frame23", { opacity: 0, duration: 0.5 }),
+    });
+    ScrollTrigger.create({
+      trigger: ".frame24-trigger",
+      start: "top center",
+      onEnter: () => gsap.to(".frame24", { opacity: 1, duration: 0.5 }),
+      onLeaveBack: () => gsap.to(".frame24", { opacity: 0, duration: 0.5 }),
     });
   }, []);
 
@@ -131,6 +251,25 @@ const ScrollytellingSection = () => {
       {/* Cover */}
       <div className="h-screen frame10-trigger"></div>
       <div className="h-screen frame11-trigger"></div>
+
+      {/* Intro */}
+      <div className="h-screen frame12-trigger"></div>
+
+      {/* Cases */}
+      <div className="h-screen frame13-trigger"></div>
+      <div className="h-screen frame14-trigger"></div>
+      <div className="h-screen frame15-trigger"></div>
+      <div className="h-screen frame16-trigger"></div>
+      <div className="h-screen frame17-trigger"></div>
+      <div className="h-screen frame18-trigger"></div>
+      <div className="h-screen frame19-trigger"></div>
+
+      {/* ClockSection */}
+      <div className="h-screen frame20-trigger"></div>
+      <div className="h-screen frame21-trigger"></div>
+      <div className="h-screen frame22-trigger"></div>
+      <div className="h-screen frame23-trigger"></div>
+      <div className="h-screen frame24-trigger"></div>
 
       <div className="h-screen fixed w-full flex flex-col items-center">
         <div className="flex items-center justify-center fixed top-28 w-full">
@@ -290,6 +429,15 @@ const ScrollytellingSection = () => {
 
       {/* Cover */}
       <Cover />
+
+      {/* Intro */}
+      <Intro />
+
+      {/* Cases */}
+      <Cases />
+
+      {/* ClockSection */}
+      <ClockSection />
     </div>
   );
 };

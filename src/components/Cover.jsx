@@ -14,7 +14,7 @@ const Cover = () => {
           Escritório de Dados da Prefeitura <br></br>da Cidade do Rio de Janeiro
         </p>
         <div>
-          <img src={logo} alt="Logo" className="w-32 h-auto" />
+          <img src={logo} alt="Logo" className="w-40 h-auto" />
         </div>
       </div>
     </div>
