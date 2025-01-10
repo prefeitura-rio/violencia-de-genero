@@ -5,6 +5,7 @@ import girlsShadow from "../assets/girls-shadow.png";
 import marionette from "../assets/marionette.png";
 import mute from "../assets/mute.svg";
 import replay from "../assets/replay.svg";
+import rightIcon from "../assets/right-icon.svg";
 
 const CasesTwo = () => {
   return (
@@ -65,21 +66,11 @@ const CasesTwo = () => {
       <div className="fixed frame31 top-36 right-36 max-w-[600px] text-left mx-4">
         <div className="flex items-center">
           <div className="border-2 border-white w-6 h-6 flex items-center justify-center mr-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4 text-white"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                className="frame32"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M5 13l4 4L19 7"
-              />
-            </svg>
+            <img
+              src={rightIcon}
+              alt="Right Icon"
+              className="scale-150 frame32"
+            />
           </div>
           <p className="text-white text-lg">
             Seu parceiro(a) já expressou ciúmes obsessivos;
@@ -87,21 +78,11 @@ const CasesTwo = () => {
         </div>
         <div className="flex items-center">
           <div className="border-2 border-white w-6 h-6 flex items-center justify-center mr-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4 text-white"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                className="frame32"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M5 13l4 4L19 7"
-              />
-            </svg>
+            <img
+              src={rightIcon}
+              alt="Right Icon"
+              className="scale-150 frame32"
+            />
           </div>
           <p className="text-white text-lg">
             Você sente medo de que ele se aborreça;
@@ -109,21 +90,11 @@ const CasesTwo = () => {
         </div>
         <div className="flex items-center">
           <div className="border-2 border-white w-6 h-6 flex items-center justify-center mr-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4 text-white"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                className="frame32"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M5 13l4 4L19 7"
-              />
-            </svg>
+            <img
+              src={rightIcon}
+              alt="Right Icon"
+              className="scale-150 frame32"
+            />
           </div>
           <p className="text-white text-lg">
             Não consegue falar sobre a relação com outras pessoas.
@@ -169,41 +140,21 @@ const CasesTwo = () => {
       <div className="fixed frame34 top-36 left-36 max-w-[600px] text-left mx-4">
         <div className="flex items-center">
           <div className="border-2 border-white w-6 h-6 flex items-center justify-center mr-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4 text-white"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                className="frame35"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M5 13l4 4L19 7"
-              />
-            </svg>
+            <img
+              src={rightIcon}
+              alt="Right Icon"
+              className="scale-150 frame35"
+            />
           </div>
           <p className="text-white text-lg">Ele te ridiculariza;</p>
         </div>
         <div className="flex items-center">
           <div className="border-2 border-white w-6 h-6 flex items-center justify-center mr-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4 text-white"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                className="frame35"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M5 13l4 4L19 7"
-              />
-            </svg>
+            <img
+              src={rightIcon}
+              alt="Right Icon"
+              className="scale-150 frame35"
+            />
           </div>
           <p className="text-white text-lg">
             Controla o que você faz ou quem vê;
@@ -211,21 +162,11 @@ const CasesTwo = () => {
         </div>
         <div className="flex items-center">
           <div className="border-2 border-white w-6 h-6 flex items-center justify-center mr-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4 text-white"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                className="frame35"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M5 13l4 4L19 7"
-              />
-            </svg>
+            <img
+              src={rightIcon}
+              alt="Right Icon"
+              className="scale-150 frame35"
+            />
           </div>
           <p className="text-white text-lg">
             Te intimida, amedronta ou chantageia.
@@ -256,21 +197,11 @@ const CasesTwo = () => {
       <div className="fixed frame37 top-36 right-36 max-w-[600px] text-left mx-4">
         <div className="flex items-center">
           <div className="border-2 border-white w-6 h-6 flex items-center justify-center mr-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4 text-white"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                className="frame38"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M5 13l4 4L19 7"
-              />
-            </svg>
+            <img
+              src={rightIcon}
+              alt="Right Icon"
+              className="scale-150 frame38"
+            />
           </div>
           <p className="text-white text-lg">
             Destrói ou esconde seus documentos;
@@ -278,21 +209,11 @@ const CasesTwo = () => {
         </div>
         <div className="flex items-center">
           <div className="border-2 border-white w-6 h-6 flex items-center justify-center mr-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4 text-white"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                className="frame38"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M5 13l4 4L19 7"
-              />
-            </svg>
+            <img
+              src={rightIcon}
+              alt="Right Icon"
+              className="scale-150 frame38"
+            />
           </div>
           <p className="text-white text-lg">
             Impede de sair ou ver outras pessoas;
@@ -300,21 +221,11 @@ const CasesTwo = () => {
         </div>
         <div className="flex items-center">
           <div className="border-2 border-white w-6 h-6 flex items-center justify-center mr-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4 text-white"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                className="frame38"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M5 13l4 4L19 7"
-              />
-            </svg>
+            <img
+              src={rightIcon}
+              alt="Right Icon"
+              className="scale-150 frame38"
+            />
           </div>
           <p className="text-white text-lg">Te ameaça ou persegue.</p>
         </div>
