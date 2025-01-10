@@ -11,13 +11,14 @@ import Intro from "./Intro";
 import Cases from "./Cases";
 import ClockSection from "./ClockSection";
 import CasesTwo from "./CasesTwo";
+import MapSection from "./MapSection";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const ScrollytellingSection = () => {
   useEffect(() => {
     gsap.set(
-      ".frame2, .frame3, .frame4, .frame5, .frame6,.frame7,.frame8,.frame9, .frame10, .frame11, .frame12, .frame13, .frame14,.frame15, .frame16,.frame17,.frame18,.frame19,.frame20, .frame21, .frame22, .frame23, .frame24, .frame25, .frame26, .frame27, .frame28, .frame29, .frame30, .frame31, .frame32, .frame33 ",
+      ".frame2, .frame3, .frame4, .frame5, .frame6,.frame7,.frame8,.frame9, .frame10, .frame11, .frame12, .frame13, .frame14,.frame15, .frame16,.frame17,.frame18,.frame19,.frame20, .frame21, .frame22, .frame23, .frame24, .frame25, .frame26, .frame27, .frame28, .frame29, .frame30, .frame31, .frame32, .frame33, .frame34, .frame35, .frame36, .frame37, .frame38, .frame39, .frame40, .frame41, .frame42, .frame43, .frame44, .frame45, .frame46, .frame47, .frame48, .frameCMC, .frameCEAM, .frameNEAM, .frameNEAP, .frameAS, .frameSMC",
       { opacity: 0 }
     );
 
@@ -364,6 +365,211 @@ const ScrollytellingSection = () => {
         });
       },
     });
+
+    ScrollTrigger.create({
+      trigger: ".frame34-trigger",
+      start: "top center",
+      onEnter: () => {
+        gsap.to(".frame34", { opacity: 1, duration: 0.5 });
+      },
+      onLeaveBack: () => {
+        gsap.to(".frame34", { opacity: 0, duration: 0.5 });
+      },
+    });
+    ScrollTrigger.create({
+      trigger: ".frame35-trigger",
+      start: "top center",
+      onEnter: () => {
+        gsap.to(".frame35", { opacity: 1, duration: 0.5 });
+      },
+      onLeaveBack: () => {
+        gsap.to(".frame35", { opacity: 0, duration: 0.5 });
+      },
+    });
+
+    ScrollTrigger.create({
+      trigger: ".frame36-trigger",
+      start: "top center",
+      onEnter: () => {
+        gsap.to([".frame34", ".frame35", ".frame36"], {
+          opacity: 0,
+          duration: 0.5,
+        });
+      },
+      onLeaveBack: () => {
+        gsap.to([".frame34", ".frame35", ".frame36"], {
+          opacity: 1,
+          duration: 0.5,
+        });
+      },
+    });
+
+    ScrollTrigger.create({
+      trigger: ".frame37-trigger",
+      start: "top center",
+      onEnter: () => {
+        gsap.to(".frame37", { opacity: 1, duration: 0.5 });
+      },
+      onLeaveBack: () => {
+        gsap.to(".frame37", { opacity: 0, duration: 0.5 });
+      },
+    });
+    ScrollTrigger.create({
+      trigger: ".frame38-trigger",
+      start: "top center",
+      onEnter: () => {
+        gsap.to(".frame38", { opacity: 1, duration: 0.5 });
+      },
+      onLeaveBack: () => {
+        gsap.to(".frame38", { opacity: 0, duration: 0.5 });
+      },
+    });
+    ScrollTrigger.create({
+      trigger: ".frame39-trigger",
+      start: "top center",
+      onEnter: () => {
+        gsap.to([".frame37", ".frame38", ".frame39"], {
+          opacity: 0,
+          duration: 0.5,
+        });
+      },
+      onLeaveBack: () => {
+        gsap.to([".frame37", ".frame38", ".frame39"], {
+          opacity: 1,
+          duration: 0.5,
+        });
+      },
+    });
+    ScrollTrigger.create({
+      trigger: ".frame40-trigger",
+      start: "top center",
+      onEnter: () => {
+        gsap.to(".frame40", { opacity: 1, duration: 0.5 });
+      },
+      onLeaveBack: () => {
+        gsap.to(".frame40", { opacity: 0, duration: 0.5 });
+      },
+    });
+    ScrollTrigger.create({
+      trigger: ".frame41-trigger",
+      start: "top center",
+      onEnter: () => {
+        gsap.to(".frame41", { opacity: 1, duration: 0.5 });
+      },
+      onLeaveBack: () => {
+        gsap.to(".frame41", { opacity: 0, duration: 0.5 });
+      },
+    });
+    ScrollTrigger.create({
+      trigger: ".frame42-trigger",
+      start: "top center",
+      onEnter: () => {
+        gsap.to(".frame42", { opacity: 1, duration: 0.5 });
+        gsap.to(".frameCMC", { opacity: 1, duration: 0.5 });
+        gsap.to(".frame41", { opacity: 0, duration: 0.5 });
+        gsap.to(".frame40", { opacity: 0, duration: 0.5 });
+      },
+      onLeaveBack: () => {
+        gsap.to(".frame42", { opacity: 0, duration: 0.5 });
+        gsap.to(".frameCMC", { opacity: 0, duration: 0.5 });
+        gsap.to(".frame41", { opacity: 1, duration: 0.5 });
+        gsap.to(".frame40", { opacity: 1, duration: 0.5 });
+      },
+    });
+    ScrollTrigger.create({
+      trigger: ".frame43-trigger",
+      start: "top center",
+      onEnter: () => {
+        gsap.to(".frame43", { opacity: 1, duration: 0.5 });
+        gsap.to(".frameCEAM", { opacity: 1, duration: 0.5 });
+        gsap.to(".frame42", { opacity: 0, duration: 0.5 });
+      },
+      onLeaveBack: () => {
+        gsap.to(".frame43", { opacity: 0, duration: 0.5 });
+        gsap.to(".frameCEAM", { opacity: 0, duration: 0.5 });
+        gsap.to(".frame42", { opacity: 1, duration: 0.5 });
+      },
+    });
+    ScrollTrigger.create({
+      trigger: ".frame44-trigger",
+      start: "top center",
+      onEnter: () => {
+        gsap.to(".frame44", { opacity: 1, duration: 0.5 });
+        gsap.to(".frameNEAM", { opacity: 1, duration: 0.5 });
+        gsap.to(".frame43", { opacity: 0, duration: 0.5 });
+      },
+      onLeaveBack: () => {
+        gsap.to(".frame44", { opacity: 0, duration: 0.5 });
+        gsap.to(".frameNEAM", { opacity: 0, duration: 0.5 });
+        gsap.to(".frame43", { opacity: 1, duration: 0.5 });
+      },
+    });
+    ScrollTrigger.create({
+      trigger: ".frame45-trigger",
+      start: "top center",
+      onEnter: () => {
+        gsap.to(".frame45", { opacity: 1, duration: 0.5 });
+        gsap.to(".frameNEAP", { opacity: 1, duration: 0.5 });
+        gsap.to(".frame44", { opacity: 0, duration: 0.5 });
+      },
+      onLeaveBack: () => {
+        gsap.to(".frame45", { opacity: 0, duration: 0.5 });
+        gsap.to(".frameNEAP", { opacity: 0, duration: 0.5 });
+        gsap.to(".frame44", { opacity: 1, duration: 0.5 });
+      },
+    });
+    ScrollTrigger.create({
+      trigger: ".frame46-trigger",
+      start: "top center",
+      onEnter: () => {
+        gsap.to(".frame46", { opacity: 1, duration: 0.5 });
+        gsap.to(".frameAS", { opacity: 1, duration: 0.5 });
+        gsap.to(".frame45", { opacity: 0, duration: 0.5 });
+      },
+      onLeaveBack: () => {
+        gsap.to(".frame46", { opacity: 0, duration: 0.5 });
+        gsap.to(".frameAS", { opacity: 0, duration: 0.5 });
+        gsap.to(".frame45", { opacity: 1, duration: 0.5 });
+      },
+    });
+    ScrollTrigger.create({
+      trigger: ".frame47-trigger",
+      start: "top center",
+      onEnter: () => {
+        gsap.to(".frame47", { opacity: 1, duration: 0.5 });
+        gsap.to(".frameSMC", { opacity: 1, duration: 0.5 });
+        gsap.to(".frame45", { opacity: 0, duration: 0.5 });
+      },
+      onLeaveBack: () => {
+        gsap.to(".frame47", { opacity: 0, duration: 0.5 });
+        gsap.to(".frameSMC", { opacity: 0, duration: 0.5 });
+        gsap.to(".frame45", { opacity: 1, duration: 0.5 });
+      },
+    });
+    ScrollTrigger.create({
+      trigger: ".frame48-trigger",
+      start: "top center",
+      onEnter: () => {
+        gsap.to(".frame48", { opacity: 1, duration: 0.5 });
+        gsap.to(
+          ".frame42,.frame43,.frame44,.frame45,.frame46,.frame47, .frameCMC, .frameCEAM ,.frameNEAM ,.frameNEAP ,.frameAS ,.frameSMC",
+          {
+            opacity: 0,
+            duration: 0.5,
+          }
+        );
+      },
+      onLeaveBack: () => {
+        gsap.to(".frame48", { opacity: 0, duration: 0.5 });
+        gsap.to(
+          ".frame42,.frame43,.frame44,.frame45,.frame46,.frame47, .frameCMC, .frameCEAM ,.frameNEAM ,.frameNEAP ,.frameAS ,.frameSMC",
+          {
+            opacity: 1,
+            duration: 0.5,
+          }
+        );
+      },
+    });
   }, []);
 
   return (
@@ -409,6 +615,22 @@ const ScrollytellingSection = () => {
       <div className="h-screen frame31-trigger"></div>
       <div className="h-screen frame32-trigger"></div>
       <div className="h-screen frame33-trigger"></div> {/* clean */}
+      <div className="h-screen frame34-trigger"></div>
+      <div className="h-screen frame35-trigger"></div>
+      <div className="h-screen frame36-trigger"></div>
+      <div className="h-screen frame37-trigger"></div>
+      <div className="h-screen frame38-trigger"></div>
+      <div className="h-screen frame39-trigger"></div>
+      {/* MapSection */}
+      <div className="h-screen frame40-trigger"></div>
+      <div className="h-screen frame41-trigger"></div>
+      <div className="h-screen frame42-trigger"></div>
+      <div className="h-screen frame43-trigger"></div>
+      <div className="h-screen frame44-trigger"></div>
+      <div className="h-screen frame45-trigger"></div>
+      <div className="h-screen frame46-trigger"></div>
+      <div className="h-screen frame47-trigger"></div>
+      <div className="h-screen frame48-trigger"></div>
       <div className="h-screen fixed w-full flex flex-col items-center">
         <div className="flex items-center justify-center fixed top-28 w-full">
           <div className="frame1 border-2 border-white w-6 h-6 flex items-center justify-center mr-2">
@@ -567,6 +789,8 @@ const ScrollytellingSection = () => {
       <ClockSection />
       {/* CasesTwo */}
       <CasesTwo />
+      {/* MapSection */}
+      <MapSection />
     </div>
   );
 };
