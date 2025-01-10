@@ -12,81 +12,96 @@ import oneGirl from "../assets/one-girl.png";
 
 const ClockSection = () => {
   return (
-    <div className="fixed h-screen w-full flex flex-col items-center justify-center bg-black text-white text-center px-4">
-      {/* Text Section */}
-      <div className="fixed top-[15%] max-w-[600px] text-left mx-4">
-        <h1 className="frame20 text-md mb-4">
-          A Violência contra mulheres aumentou em todos os títulos criminais no
-          Brasil em 2023. No Brasil,{" "}
-          <strong>4 mulheres foram assassinadas por dia</strong>, na média do
-          ano, pelo fato de serem mulheres.
-        </h1>
-        <div className="absolute top-0 flex justify-center space-x-4 pt-10">
-          <img
-            src={clockFourGirls}
-            alt="Relógio representando a passagem do tempo"
-            className="frame21 w-[300px] h-auto object-contain"
-          />
-          <img
-            src={fourGirls}
-            alt="Quatro figuras femininas representando vítimas"
-            className="frame21 w-[1200px] h-auto object-contain"
-          />
-        </div>
-
-        <div className="absolute top-0 flex justify-center space-x-4 pt-10">
-          <img
-            src={clockThreeGirls}
-            alt="Relógio representando a passagem do tempo"
-            className="frame22 w-[300px] h-auto object-contain"
-          />
-          <img
-            src={threeGirls}
-            alt="Três figuras femininas representando vítimas"
-            className="frame22 w-[1200px] h-auto object-contain"
-          />
-        </div>
-
-        <div className="absolute top-0 flex justify-center space-x-4 pt-10">
-          <img
-            src={clockTwoGirls}
-            alt="Relógio representando a passagem do tempo"
-            className="frame23 w-[300px] h-auto object-contain"
-          />
-          <img
-            src={twoGirls}
-            alt="Três figuras femininas representando vítimas"
-            className="frame23 w-[1200px] h-auto object-contain"
-          />
-        </div>
-
-        <div className="absolute top-0 flex justify-center space-x-4 pt-10">
-          <img
-            src={clockOneGirl}
-            alt="Relógio representando a passagem do tempo"
-            className="frame24 w-[300px] h-auto object-contain"
-          />
-          <img
-            src={oneGirl}
-            alt="Três figuras femininas representando vítimas"
-            className="frame24 w-[1200px] h-auto object-contain"
-          />
-        </div>
-
-        <div className="absolute top-0 flex justify-center space-x-4 pt-10">
-          <img
-            src={clockFourGirls}
-            alt="Relógio representando a passagem do tempo"
-            className="frame25 w-[300px] h-auto object-contain"
-          />
-          <img
-            src={oneGirl}
-            alt="Três figuras femininas representando vítimas"
-            className="frame24 opacity-0 w-[1200px] h-auto object-contain"
-          />
+    <>
+      <div className="fixed h-screen w-full flex flex-col items-center justify-center bg-black text-white text-center px-4">
+        {/* Text Section */}
+        <div className="fixed top-[10%] max-w-[600px] text-left mx-4">
+          <h1 className="frame20 text-md mb-4">
+            A Violência contra mulheres aumentou em todos os títulos criminais
+            no Brasil em 2023. No Brasil,{" "}
+            <strong>4 mulheres foram assassinadas por dia</strong>, na média do
+            ano, pelo fato de serem mulheres.
+          </h1>
         </div>
       </div>
-    </div>
+      <div className="fixed bottom-0 h-screen flex-col sm:flex-row w-full flex items-center justify-center ">
+        <img
+          src={clockFourGirls}
+          alt="Relógio representando a passagem do tempo"
+          className="frame21 pt-20 w-[200px] sm:w-[300px] h-auto"
+        />
+        <img
+          src={fourGirls}
+          alt="Quatro figuras femininas representando vítimas"
+          className="frame21 w-[50%] h-auto"
+        />
+      </div>
+
+      <div className="fixed bottom-0 h-screen flex-col sm:flex-row w-full flex items-center justify-center">
+        <img
+          src={clockFourGirls}
+          alt="Relógio representando a passagem do tempo"
+          className="frame21 pt-20 w-[200px] sm:w-[300px] h-auto"
+        />
+        <img
+          src={fourGirls}
+          alt="Quatro figuras femininas representando vítimas"
+          className="frame21 w-[50%] h-auto"
+        />
+      </div>
+
+      <div className="fixed bottom-0 h-screen flex-col sm:flex-row w-full flex items-center justify-center">
+        <img
+          src={clockThreeGirls}
+          alt="Relógio representando a passagem do tempo"
+          className="frame22 pt-20 w-[200px] sm:w-[300px] h-auto"
+        />
+        <img
+          src={threeGirls}
+          alt="Três figuras femininas representando vítimas"
+          className="frame22 w-[50%] h-auto"
+        />
+      </div>
+
+      <div className="fixed bottom-0 h-screen flex-col sm:flex-row w-full flex items-center justify-center">
+        <img
+          src={clockTwoGirls}
+          alt="Relógio representando a passagem do tempo"
+          className="frame23 pt-20 w-[200px] sm:w-[300px] h-auto"
+        />
+        <img
+          src={twoGirls}
+          alt="Três figuras femininas representando vítimas"
+          className="frame23 w-[50%] h-auto"
+        />
+      </div>
+
+      <div className="fixed bottom-0 h-screen flex-col sm:flex-row w-full flex items-center justify-center">
+        <img
+          src={clockOneGirl}
+          alt="Relógio representando a passagem do tempo"
+          className="frame24 pt-20 w-[200px] sm:w-[300px] h-auto"
+        />
+        <img
+          src={oneGirl}
+          alt="Três figuras femininas representando vítimas"
+          className="frame24 w-[50%] h-auto"
+        />
+      </div>
+
+      <div className="fixed bottom-0 h-screen flex-col sm:flex-row w-full flex items-center justify-center">
+        <img
+          src={clockFourGirls}
+          alt="Relógio representando a passagem do tempo"
+          className="frame25 pt-20 w-[200px] sm:w-[300px] h-auto"
+        />
+        <img
+          src={oneGirl}
+          alt="Três figuras femininas representando vítimas"
+          className="frame24 opacity-0 w-[50%] h-auto"
+        />
+      </div>
+    </>
   );
 };
 

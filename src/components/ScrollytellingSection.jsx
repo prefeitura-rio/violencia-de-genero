@@ -643,12 +643,12 @@ const ScrollytellingSection = () => {
               className="scale-150 frame2"
             />
           </div>
-          <p className="frame1 text-white text-lg">
+          <p className="frame1 text-white text-md xl:text-xl">
             Ele tinha problemas com álcool?
           </p>
         </div>
         <div className="frame2 flex items-center justify-center fixed top-52 w-full text-xl">
-          <p className="text-white">
+          <p className="text-white text-xl xl:text-xl mx-10">
             “Ele era um, quando bebia era outro. Se transformava em outra
             pessoa.”
           </p>
@@ -657,9 +657,9 @@ const ScrollytellingSection = () => {
       <img
         src={img1}
         alt="Fixed Bottom Left"
-        className="frame2 fixed bottom-0 left-0 w-auto h-[50vh] sm:h-[70vh] lg:h-[85vh]"
+        className="frame2 fixed bottom-0 left-0 w-auto h-[60vh] sm:h-[70vh] lg:h-[85vh]"
       />
-      <div className="frame2 fixed sm:bottom-8 sm:right-8 bottom-4 right-4 flex gap-4">
+      <div className="frame2 fixed sm:bottom-8 sm:right-8 bottom-10 right-8 flex gap-4">
         <button
           className="w-7 h-7 bg-transparent border-none cursor-pointer"
           onClick={() => alert("Button 1 clicked")}
@@ -675,7 +675,7 @@ const ScrollytellingSection = () => {
       </div>
       {/* Section2 */}
       <div className="h-screen fixed w-full flex flex-col items-center md:items-start md:pl-32">
-        <div className="flex items-center justify-center fixed top-52 w-full md:w-auto">
+        <div className="flex items-center justify-center fixed top-48 w-full md:w-auto">
           <div className="frame4 border-2 border-white w-6 h-6 flex items-center justify-center mr-2">
             <img
               src={rightIcon}
@@ -683,12 +683,12 @@ const ScrollytellingSection = () => {
               className="scale-150 frame5"
             />
           </div>
-          <p className="frame4 text-white text-lg">
+          <p className="frame4 text-white text-xl xl:text-xl">
             Ele te xingava ou constrangia?
           </p>
         </div>
         <div className="frame5 flex items-center justify-center fixed top-72 w-full md:w-auto text-xl">
-          <p className="text-white">
+          <p className="text-white text-xl xl:text-xl mx-10 sm:mx-0">
             “Chamava de puta, de vagabunda. Na frente dos outros.”
           </p>
         </div>
@@ -696,9 +696,9 @@ const ScrollytellingSection = () => {
       <img
         src={img2}
         alt="Fixed Bottom Left"
-        className="frame5 fixed bottom-0 right-0 w-auto h-[50vh] sm:h-[70vh] lg:h-[85vh]"
+        className="frame5 fixed bottom-0 right-0 w-auto h-[50vh] sm:h-[70vh] 3xl:h-auto"
       />
-      <div className="frame5 fixed sm:bottom-28 sm:left-32 bottom-4 left-4 flex gap-4">
+      <div className="frame5 fixed sm:bottom-28 pl-8 bottom-28 md:pl-32  flex gap-4">
         <button
           className="w-7 h-7 bg-transparent border-none cursor-pointer"
           onClick={() => alert("Button 1 clicked")}
@@ -722,12 +722,12 @@ const ScrollytellingSection = () => {
               className="scale-150 frame8"
             />
           </div>
-          <p className="frame7 text-white text-lg">
+          <p className="frame7 text-white text-xl xl:text-xl">
             Ele já te ameaçou ou agrediu?
           </p>
         </div>
         <div className="frame8 flex items-center justify-center fixed top-72 w-full md:w-auto text-xl">
-          <p className="text-white">
+          <p className="text-white text-xl xl:text-xl mx-10 sm:mx-8">
             “Ele me tacou álcool e quis tocar fogo. Falou que eu só poderia sair
             dali morta.”
           </p>
@@ -736,9 +736,9 @@ const ScrollytellingSection = () => {
       <img
         src={img3}
         alt="Fixed Bottom Left"
-        className="frame8 fixed bottom-0 left-0 w-auto h-[50vh] sm:h-[70vh] lg:h-[85vh]"
+        className="frame8 fixed -bottom-10 -left-10 w-auto h-[60vh] sm:h-[70vh] lg:h-[85vh] 2xl:h-[90%] 3xl:h-auto"
       />
-      <div className="frame8 fixed sm:bottom-28 sm:right-32 bottom-4 right-4 flex gap-4">
+      <div className="frame8 fixed sm:bottom-8 sm:right-8 bottom-10 right-8 flex gap-4">
         <button
           className="w-7 h-7 bg-transparent border-none cursor-pointer"
           onClick={() => alert("Button 1 clicked")}

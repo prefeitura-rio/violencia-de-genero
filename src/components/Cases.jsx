@@ -18,27 +18,28 @@ const Cases = () => {
             mais extrema
           </span>
         </h1>
-        <img
-          className="frame14 z-10 absolute top-32 -left-28"
-          src={manchete_img1}
-        ></img>
-        <img
-          className="frame15 z-20 absolute top-48 left-48"
-          src={manchete_img2}
-        ></img>
-        <img
-          className="frame16 z-30 absolute top-60 left-0"
-          src={manchete_img3}
-        ></img>
-        <img
-          className="frame17 z-40 absolute top-64 -left-24"
-          src={manchete_img4}
-        ></img>
-        <img
-          className="frame18 z-50 absolute top-72 left-28"
-          src={manchete_img5}
-        ></img>
       </div>
+
+      <img
+        className="frame14 z-10 fixed top-[40%] left-[10%] w-[80%] md:left-[30%] md:top-[40%]  max-w-[600px] "
+        src={manchete_img1}
+      ></img>
+      <img
+        className="frame15 z-20 fixed top-[46%] left-[5%] w-[80%] md:left-[20%] md:top-[52%] max-w-[600px]"
+        src={manchete_img2}
+      ></img>
+      <img
+        className="frame16 z-30 fixed top-[52%] left-[15%] w-[80%] md:left-[40%] md:top-[55%]  max-w-[600px]"
+        src={manchete_img3}
+      ></img>
+      <img
+        className="frame17 z-40 fixed top-[60%] left-[5%] w-[88%] md:left-[25%] md:top-[69%]  max-w-[600px]"
+        src={manchete_img4}
+      ></img>
+      <img
+        className="frame18 z-50 fixed top-[67%] left-[5%] w-[88%] md:left-[30%] md:top-[65%]  max-w-[700px]"
+        src={manchete_img5}
+      ></img>
     </div>
   );
 };
