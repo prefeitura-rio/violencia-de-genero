@@ -643,7 +643,7 @@ const ScrollytellingSection = () => {
               className="scale-150 frame2"
             />
           </div>
-          <p className="frame1 text-white text-md xl:text-xl">
+          <p className="frame1 text-white text-xl xl:text-xl">
             Ele tinha problemas com álcool?
           </p>
         </div>
@@ -727,7 +727,7 @@ const ScrollytellingSection = () => {
           </p>
         </div>
         <div className="frame8 flex items-center justify-center fixed top-72 w-full md:w-auto text-xl">
-          <p className="text-white text-xl xl:text-xl mx-10 sm:mx-8">
+          <p className="text-white text-xl xl:text-xl mx-10 sm:mx-0">
             “Ele me tacou álcool e quis tocar fogo. Falou que eu só poderia sair
             dali morta.”
           </p>

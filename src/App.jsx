@@ -3,7 +3,7 @@ import ScrollytellingSection from "./components/ScrollytellingSection";
 
 function App() {
   return (
-    <div className="bg-black min-h-screen">
+    <div className="bg-black min-h-screen font-cormorant ">
       <ScrollytellingSection />
     </div>
   );

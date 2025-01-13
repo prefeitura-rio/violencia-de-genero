@@ -16,20 +16,22 @@ import SMC from "../assets/SMC.svg";
 const MapSection = () => {
   return (
     <>
-      <div className="fixed top-20 text-white left-20 max-w-[600px] text-left mx-4">
-        <h1 className="frame40 text-md z-20">
+      <div className="fixed top-20 text-white left-4 sm:left-20 max-w-[600px] text-left mx-4 z-20">
+        <h1 className="frame40 text-md">
           Desde 2021, a Secretaria Especial de Políticas e Promoção da Mulher
           (SPM-Rio) expandiu de 3 para 25 os equipamentos de atendimento,
           promoção e enfrentamento à violência contra a mulher. Conheça alguns
           deles:
         </h1>
+      </div>
+      <div className="frame41 fixed inset-0 flex items-center justify-center z-10">
         <img
           src={map1}
           alt="Relógio representando a passagem do tempo"
-          className="frame41 fixed bottom-0 right-0 w-full h-auto -z-10"
+          className="fixed w-auto h-auto  object-contain"
         />
       </div>
-      <div className="fixed top-20 text-white left-20 max-w-[600px] text-left mx-4">
+      <div className="fixed top-20 text-white left-4 sm:left-20 max-w-[600px] text-left mx-4 z-20">
         {/* map2 */}
 
         <h1 className="frame42 text-md mb-4 z-20">
@@ -41,14 +43,16 @@ const MapSection = () => {
           coletivas, com objetivo de ampliar a inclusão da mulher na vida social
           e em atividades culturais.
         </h1>
+      </div>
+      <div className="frame42 fixed inset-0 flex items-center justify-center z-10">
         <img
           src={map2}
           alt="Relógio representando a passagem do tempo"
-          className="frame42 fixed bottom-0 right-0 w-full h-auto -z-10"
+          className="fixed w-auto h-auto  object-contain"
         />
       </div>
 
-      <div className="fixed top-20 text-white left-20 max-w-[600px] text-left mx-4">
+      <div className="fixed top-20 text-white left-4 sm:left-20 max-w-[600px] text-left mx-4 z-20">
         {/* map3 */}
 
         <h1 className="frame43 text-md mb-4 z-20">
@@ -59,14 +63,16 @@ const MapSection = () => {
           palestras, cursos e oficinas em parceria com outras instituições, com
           programação disponível no site.
         </h1>
+      </div>
+      <div className="frame43 fixed inset-0 flex items-center justify-center z-10">
         <img
           src={map3}
           alt="Relógio representando a passagem do tempo"
-          className="frame43 fixed bottom-0 right-0 w-full h-auto -z-10"
+          className="fixed w-auto h-auto  object-contain"
         />
       </div>
 
-      <div className="fixed top-20 text-white left-20 max-w-[600px] text-left mx-4">
+      <div className="fixed top-20 text-white left-4 sm:left-20 max-w-[600px] text-left mx-4 z-20">
         {/* map4 */}
 
         <h1 className="frame44 text-md mb-4 z-20">
@@ -77,14 +83,16 @@ const MapSection = () => {
           reflexão, palestras, cursos e oficinas em parceria com outras
           instituições, com programação disponível no site.
         </h1>
+      </div>
+      <div className="frame44 fixed inset-0 flex items-center justify-center z-10">
         <img
           src={map4}
           alt="Relógio representando a passagem do tempo"
-          className="frame44 fixed bottom-0 right-0 w-full h-auto -z-10"
+          className="fixed w-auto h-auto  object-contain"
         />
       </div>
 
-      <div className="fixed top-20 text-white left-20 max-w-[600px] text-left mx-4">
+      <div className="fixed top-20 text-white left-4 sm:left-20 max-w-[600px] text-left mx-4 z-20">
         {/* map5 */}
 
         <h1 className="frame45 text-md mb-4 z-20">
@@ -93,14 +101,16 @@ const MapSection = () => {
           necessário para que possa ter suas condições psicológicas e emocionais
           restabelecidas.
         </h1>
+      </div>
+      <div className="frame45 fixed inset-0 flex items-center justify-center z-10">
         <img
           src={map5}
           alt="Relógio representando a passagem do tempo"
-          className="frame45 fixed bottom-0 right-0 w-full h-auto -z-10"
+          className="fixed w-auto h-auto  object-contain"
         />
       </div>
 
-      <div className="fixed top-20 text-white left-20 max-w-[600px] text-left mx-4">
+      <div className="fixed top-20 text-white left-4 sm:left-20 max-w-[600px] text-left mx-4 z-20">
         {/* map6 */}
 
         <h1 className="frame46 text-md mb-4 z-20">
@@ -108,13 +118,15 @@ const MapSection = () => {
           com seus filhos para o abrigo, em local não divulgado. Dessa forma,
           agressores não conseguem localizá-las.
         </h1>
+      </div>
+      <div className="frame46 fixed inset-0 flex items-center justify-center z-10">
         <img
           src={map6}
           alt="Relógio representando a passagem do tempo"
-          className="frame46 fixed bottom-0 right-0 w-full h-auto -z-10"
+          className="fixed w-auto h-auto  object-contain"
         />
       </div>
-      <div className="fixed top-20 text-white left-20 max-w-[600px] text-left mx-4">
+      <div className="fixed top-20 text-white left-4 sm:left-20 max-w-[600px] text-left mx-4 z-20">
         {/* map7 */}
 
         <h1 className="frame47 text-md mb-4 z-20">
@@ -122,13 +134,15 @@ const MapSection = () => {
           espaços, a Secretaria mantém 11 Salas Mulher Cidadã e 24 Espaços
           Apoiadores através de parcerias com outras instituições.
         </h1>
+      </div>
+      <div className="frame47 fixed inset-0 flex items-center justify-center z-10">
         <img
           src={map7}
           alt="Relógio representando a passagem do tempo"
-          className="frame47 fixed bottom-0 right-0 w-full h-auto -z-10"
+          className="fixed w-auto h-auto  object-contain"
         />
       </div>
-      <div className="fixed top-20 text-white left-20 max-w-[600px] text-left mx-4">
+      <div className="fixed top-20 text-white left-4 sm:left-20 max-w-[600px] text-left mx-4 z-20">
         {/* map8 */}
 
         <h1 className="frame48 text-md mb-4 z-20">
@@ -143,15 +157,16 @@ const MapSection = () => {
           expressivo de atendimentos revela a importância e a demanda constante
           por esses serviços.
         </h1>
+      </div>
+      <div className="frame48 fixed inset-0 flex items-center justify-center z-10">
         <img
           src={map8}
           alt="Relógio representando a passagem do tempo"
-          className="frame48 fixed bottom-0 right-0 w-full h-auto -z-10"
+          className="fixed w-auto h-auto  object-contain"
         />
       </div>
-
       {/* Seis linhas de imagem + texto */}
-      <div className="flex flex-col fixed bottom-10 left-20 space-y-2 text-white">
+      <div className="flex flex-col fixed bottom-10 left-4 sm:left-20 space-y-2 mx-4 text-white z-30">
         <div className="frameCMC flex items-center">
           <img
             src={CMC}
