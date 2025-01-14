@@ -16,10 +16,13 @@ const CasesTwo = ({ startAnimation }) => {
         <h1 className="text-xl xl:text-lg mb-4">
           Embora o feminicídio muitas vezes ocupe as manchetes, a maioria dos
           casos de violência de gênero permanece oculta, longe dos olhos do
-          público. São agressões diárias que se escondem nas paredes de casas,
-          nas relações silenciosamente abusivas e nas ameaças veladas, formando
-          um ciclo invisível que raramente vira notícia. Por trás de cada dado
-          registrado, existem inúmeros casos nunca denunciados.
+          público. São <span className="text-[#EECBAD]">agressões diárias</span>{" "}
+          que se escondem nas paredes de casas, nas relações silenciosamente
+          abusivas e nas ameaças veladas, formando um ciclo invisível que
+          raramente vira notícia. Por trás de cada dado registrado,{" "}
+          <span className="text-[#EECBAD]">
+            existem inúmeros casos nunca denunciados.
+          </span>
         </h1>
       </div>
       <div className="fixed md:right-32 frame27 top-[52%] sm:top-[40%] max-w-[500px]  mx-0">
@@ -73,9 +76,12 @@ const CasesTwo = ({ startAnimation }) => {
         <h1 className="text-xl xl:text-lg mb-4">
           A violência de gênero geralmente é associada à agressões físicas ou
           sexuais, mas se apresenta em várias formas, desde comportamentos sutis
-          até ameaças de morte. As violências mais comuns são classificadas como
-          psicológicas, morais e patrimoniais, cada uma deixando profundas
-          marcas nas vítimas.
+          até ameaças de morte. As violências mais comuns são classificadas como{" "}
+          {""}
+          <span className="text-[#EECBAD]">
+            psicológicas, morais e patrimoniais
+          </span>
+          , cada uma deixando profundas marcas nas vítimas.
         </h1>
         <img
           src={womamMan}

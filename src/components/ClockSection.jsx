@@ -18,9 +18,12 @@ const ClockSection = () => {
         <div className="fixed top-14 max-w-[600px] text-left mx-4">
           <h1 className="frame20 text-xl xl:text-lg mb-4">
             A Violência contra mulheres aumentou em todos os títulos criminais
-            no Brasil em 2023. No Brasil,{" "}
-            <strong>4 mulheres foram assassinadas por dia</strong>, na média do
-            ano, pelo fato de serem mulheres.
+            no Brasil em 2023.{" "}
+            <span className="text-[#EECBAD]">
+              {" "}
+              No Brasil, <strong>4 mulheres foram assassinadas por dia</strong>
+            </span>
+            , na média do ano, pelo fato de serem mulheres.
           </h1>
         </div>
       </div>

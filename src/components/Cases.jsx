@@ -11,11 +11,14 @@ const Cases = () => {
         <h1 className="text-xl xl:text-lg mb-2">
           {/* Full text for desktop */}
           <span className="frame13">
-            Feminicídio é o assassinato de mulheres motivado por questões de
-            gênero, geralmente ligado ao ódio ou desprezo pela condição
-            feminina. É uma presença comum nas manchetes dos jornais cariocas,
-            expondo casos de uma violência que atinge as mulheres em sua forma
-            mais extrema
+            Feminicídio{" "}
+            <span className="text-[#EECBAD]">
+              {" "}
+              é o assassinato de mulheres motivado por questões de gênero
+            </span>
+            , geralmente ligado ao ódio ou desprezo pela condição feminina. É
+            uma presença comum nas manchetes dos jornais cariocas, expondo casos
+            de uma violência que atinge as mulheres em sua forma mais extrema
           </span>
         </h1>
       </div>
