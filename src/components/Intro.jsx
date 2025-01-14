@@ -2,9 +2,9 @@ const Intro = () => {
   return (
     <div className="frame12 fixed h-screen w-full flex flex-col items-center justify-center bg-black text-center text-white px-4">
       <div className="mb-6 fixed top-1/2 -translate-y-1/2 items-center flex flex-col max-w-[600px] text-left mx-4">
-        <h1 className="text-md mb-2">
+        <h1 className="text-sm sm:text-lg mb-2">
           {/* Full text for desktop */}
-          <span className="hidden sm:block">
+          <span className="">
             “Legítima defesa da honra” já foi uma tese recorrente nos tribunais
             brasileiros para absolver homens que agrediram ou mataram mulheres.
             Em sua essência, sustentava a ideia de que a violência podia ser
@@ -35,23 +35,6 @@ const Intro = () => {
             <br></br>
             No site mulher.rio, cariocas podem entender se suas realidades
             requerem atendimento especializado.
-          </span>
-
-          {/* Shortened text for mobile */}
-          <span className="block sm:hidden">
-            “Legítima defesa da honra” já foi uma tese usada para absolver
-            homens que agrediram ou mataram mulheres. Em 2023, o STF declarou
-            essa tese inconstitucional. Ainda assim, a violência de gênero
-            continua alarmante no Rio de Janeiro, com 1.467 feminicídios em
-            2024.
-            <br></br>
-            <br></br>
-            Esta visualização de dados busca mapear a violência de gênero,
-            revelando estatísticas e ações da Secretaria da Mulher e da
-            Prefeitura para combater os crimes e apoiar as vítimas.
-            <br></br>
-            <br></br>
-            Acesse o site mulher.rio para mais informações e atendimento.
           </span>
         </h1>
       </div>

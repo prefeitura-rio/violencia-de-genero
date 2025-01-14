@@ -16,8 +16,8 @@ import SMC from "../assets/SMC.svg";
 const MapSection = () => {
   return (
     <>
-      <div className="fixed top-20 text-white left-4 sm:left-20 max-w-[600px] text-left mx-4 z-20">
-        <h1 className="frame40 text-md">
+      <div className="fixed top-10 sm:top-20 text-white left-0 sm:left-20 max-w-[600px] text-left mx-4 z-20">
+        <h1 className="frame40 text-xl xl:text-lg mb-4">
           Desde 2021, a Secretaria Especial de Políticas e Promoção da Mulher
           (SPM-Rio) expandiu de 3 para 25 os equipamentos de atendimento,
           promoção e enfrentamento à violência contra a mulher. Conheça alguns
@@ -31,10 +31,10 @@ const MapSection = () => {
           className="fixed w-auto h-auto  object-contain"
         />
       </div>
-      <div className="fixed top-20 text-white left-4 sm:left-20 max-w-[600px] text-left mx-4 z-20">
+      <div className="fixed top-10 sm:top-20 text-white left-0 sm:left-20 max-w-[600px] text-left mx-4 z-20">
         {/* map2 */}
 
-        <h1 className="frame42 text-md mb-4 z-20">
+        <h1 className="frame42 text-xl xl:text-lg mb-4 z-20">
           Casas da Mulher Carioca As Casas da Mulher Carioca são espaços de
           acolhimento e capacitação nos quais são oferecidos serviços de
           atendimento psicossocial, orientação jurídica, orientação pedagógica,
@@ -44,7 +44,7 @@ const MapSection = () => {
           e em atividades culturais.
         </h1>
       </div>
-      <div className="frame42 fixed inset-0 flex items-center justify-center z-10">
+      <div className="frame42 fixed inset-0 translate-y-28 sm:translate-y-0 flex items-center justify-center z-10">
         <img
           src={map2}
           alt="Relógio representando a passagem do tempo"
@@ -52,10 +52,10 @@ const MapSection = () => {
         />
       </div>
 
-      <div className="fixed top-20 text-white left-4 sm:left-20 max-w-[600px] text-left mx-4 z-20">
+      <div className="fixed top-10 sm:top-20 text-white left-0 sm:left-20 max-w-[600px] text-left mx-4 z-20">
         {/* map3 */}
 
-        <h1 className="frame43 text-md mb-4 z-20">
+        <h1 className="frame43 text-xl xl:text-lg mb-4 z-20">
           Centros Especializados de Atendimento à Mulher Os CEAMs oferecem
           suporte social, psicológico e jurídico para mulheres de 18 a 60 anos
           em situação de violência de gênero, ajudando-as a superar traumas e
@@ -64,7 +64,7 @@ const MapSection = () => {
           programação disponível no site.
         </h1>
       </div>
-      <div className="frame43 fixed inset-0 flex items-center justify-center z-10">
+      <div className="frame43 fixed inset-0 translate-y-24 sm:translate-y-0 flex items-center justify-center z-10">
         <img
           src={map3}
           alt="Relógio representando a passagem do tempo"
@@ -72,10 +72,10 @@ const MapSection = () => {
         />
       </div>
 
-      <div className="fixed top-20 text-white left-4 sm:left-20 max-w-[600px] text-left mx-4 z-20">
+      <div className="fixed top-10 sm:top-20 text-white left-0 sm:left-20 max-w-[600px] text-left mx-4 z-20">
         {/* map4 */}
 
-        <h1 className="frame44 text-md mb-4 z-20">
+        <h1 className="frame44 text-xl xl:text-lg mb-4 z-20">
           Núcleos Especializados de Atendimento à Mulher (NEAMs) Os CEAMs
           oferecem suporte social, psicológico e jurídico para mulheres de 18 a
           60 anos em situação de violência de gênero, ajudando-as a superar
@@ -84,7 +84,7 @@ const MapSection = () => {
           instituições, com programação disponível no site.
         </h1>
       </div>
-      <div className="frame44 fixed inset-0 flex items-center justify-center z-10">
+      <div className="frame44 fixed inset-0 translate-y-24 sm:translate-y-0 flex items-center justify-center z-10">
         <img
           src={map4}
           alt="Relógio representando a passagem do tempo"
@@ -92,10 +92,10 @@ const MapSection = () => {
         />
       </div>
 
-      <div className="fixed top-20 text-white left-4 sm:left-20 max-w-[600px] text-left mx-4 z-20">
+      <div className="fixed top-10 sm:top-20 text-white left-0 sm:left-20 max-w-[600px] text-left mx-4 z-20">
         {/* map5 */}
 
-        <h1 className="frame45 text-md mb-4 z-20">
+        <h1 className="frame45 text-xl xl:text-lg mb-4 z-20">
           Núcleos Especializados de Atendimento Psicoterapêutico (NEAPs) Onde a
           mulher pode receber acompanhamento clínico, que dure o tempo
           necessário para que possa ter suas condições psicológicas e emocionais
@@ -110,10 +110,10 @@ const MapSection = () => {
         />
       </div>
 
-      <div className="fixed top-20 text-white left-4 sm:left-20 max-w-[600px] text-left mx-4 z-20">
+      <div className="fixed top-10 sm:top-20 text-white left-0 sm:left-20 max-w-[600px] text-left mx-4 z-20">
         {/* map6 */}
 
-        <h1 className="frame46 text-md mb-4 z-20">
+        <h1 className="frame46 text-xl xl:text-lg mb-4 z-20">
           Abrigo Sigiloso Mulheres em risco iminente de morte são encaminhadas
           com seus filhos para o abrigo, em local não divulgado. Dessa forma,
           agressores não conseguem localizá-las.
@@ -126,10 +126,10 @@ const MapSection = () => {
           className="fixed w-auto h-auto  object-contain"
         />
       </div>
-      <div className="fixed top-20 text-white left-4 sm:left-20 max-w-[600px] text-left mx-4 z-20">
+      <div className="fixed top-10 sm:top-20 text-white left-0 sm:left-20 max-w-[600px] text-left mx-4 z-20">
         {/* map7 */}
 
-        <h1 className="frame47 text-md mb-4 z-20">
+        <h1 className="frame47 text-xl xl:text-lg mb-4 z-20">
           Salas Mulher Cidadã, Programa Mulheres do Rio e Parceiros Além desses
           espaços, a Secretaria mantém 11 Salas Mulher Cidadã e 24 Espaços
           Apoiadores através de parcerias com outras instituições.
@@ -142,10 +142,10 @@ const MapSection = () => {
           className="fixed w-auto h-auto  object-contain"
         />
       </div>
-      <div className="fixed top-20 text-white left-4 sm:left-20 max-w-[600px] text-left mx-4 z-20">
+      <div className="fixed top-10 sm:top-20 text-white left-0 sm:left-20 max-w-[600px] text-left mx-4 z-20">
         {/* map8 */}
 
-        <h1 className="frame48 text-md mb-4 z-20">
+        <h1 className="frame48 text-xl xl:text-lg mb-4 z-20">
           Desde 2021, mais de 850 mil mulheres foram impactadas pelos
           equipamentos de promoção da mulher e mais de 200 mil foram capacitadas
           para o mercado de trabalho nas Casas da Mulher Carioca. Entre 2022 e
@@ -166,8 +166,8 @@ const MapSection = () => {
         />
       </div>
       {/* Seis linhas de imagem + texto */}
-      <div className="flex flex-col fixed bottom-10 left-4 sm:left-20 space-y-2 mx-4 text-white z-30">
-        <div className="frameCMC flex items-center">
+      <div className="flex flex-wrap max-w-[400px] fixed bottom-0 sm:bottom-2 left-0 sm:left-20 mx-4 text-white z-30">
+        <div className="frameCMC flex items-center mr-2 mb-2">
           <img
             src={CMC}
             alt="Relógio representando a passagem do tempo"
@@ -176,7 +176,7 @@ const MapSection = () => {
           <span className="text-sm ml-2 pb-2">Casas da Mulher Carioca</span>
         </div>
 
-        <div className="frameCEAM flex items-center">
+        <div className="frameCEAM flex items-center mr-2 mb-2">
           <img
             src={CEAM}
             alt="Relógio representando a passagem do tempo"
@@ -185,7 +185,7 @@ const MapSection = () => {
           <span className="text-sm ml-2 pb-2">CEAM</span>
         </div>
 
-        <div className="frameNEAM flex items-center">
+        <div className="frameNEAM flex items-center mr-2 mb-2">
           <img
             src={NEAM}
             alt="Relógio representando a passagem do tempo"
@@ -194,7 +194,7 @@ const MapSection = () => {
           <span className="text-sm ml-2 pb-2">NEAM</span>
         </div>
 
-        <div className="frameNEAP flex items-center">
+        <div className="frameNEAP flex items-center mr-2 mb-2">
           <img
             src={NEAP}
             alt="Relógio representando a passagem do tempo"
@@ -203,7 +203,7 @@ const MapSection = () => {
           <span className="text-sm ml-2 pb-2">NEAP</span>
         </div>
 
-        <div className="frameAS flex items-center">
+        <div className="frameAS flex items-center mr-2 mb-2">
           <img
             src={AS}
             alt="Relógio representando a passagem do tempo"
@@ -212,7 +212,7 @@ const MapSection = () => {
           <span className="text-sm ml-2 pb-2">Abrigo Sigiloso</span>
         </div>
 
-        <div className="frameSMC flex items-center">
+        <div className="frameSMC flex items-center mr-2 mb-2">
           <img
             src={SMC}
             alt="Relógio representando a passagem do tempo"

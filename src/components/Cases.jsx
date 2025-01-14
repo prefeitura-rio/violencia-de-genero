@@ -7,8 +7,8 @@ import manchete_img5 from "../assets/manchete_img5.png";
 const Cases = () => {
   return (
     <div className="fixed h-screen w-full flex flex-col items-center justify-center bg-black text-center text-white px-4">
-      <div className="mb-6 fixed top-1/4 -translate-y-1/2 items-center flex flex-col max-w-[600px] text-left mx-4">
-        <h1 className="text-md mb-2">
+      <div className="mb-6 fixed top-40 -translate-y-1/2 items-center flex flex-col max-w-[600px] text-left mx-4">
+        <h1 className="text-xl xl:text-lg mb-2">
           {/* Full text for desktop */}
           <span className="frame13">
             Feminicídio é o assassinato de mulheres motivado por questões de
