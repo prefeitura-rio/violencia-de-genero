@@ -41,6 +41,8 @@ const ScrollytellingSection = () => {
         setStartAnimation("frame2");
       },
       onLeaveBack: () => gsap.to(".frame2", { opacity: 0, duration: 0.5 }),
+      onLeave: () => setStartAnimation(""),
+      onEnterBack: () => setStartAnimation("frame2"),
     });
 
     ScrollTrigger.create({
@@ -71,6 +73,8 @@ const ScrollytellingSection = () => {
         setStartAnimation("frame5");
       },
       onLeaveBack: () => gsap.to(".frame5", { opacity: 0, duration: 0.5 }),
+      onLeave: () => setStartAnimation(""),
+      onEnterBack: () => setStartAnimation("frame5"),
     });
 
     ScrollTrigger.create({
@@ -100,6 +104,8 @@ const ScrollytellingSection = () => {
         setStartAnimation("frame8");
       },
       onLeaveBack: () => gsap.to(".frame8", { opacity: 0, duration: 0.5 }),
+      onLeave: () => setStartAnimation(""),
+      onEnterBack: () => setStartAnimation("frame8"),
     });
 
     ScrollTrigger.create({
@@ -305,6 +311,8 @@ const ScrollytellingSection = () => {
         setStartAnimation("frame27");
       },
       onLeaveBack: () => gsap.to(".frame27", { opacity: 0, duration: 0.5 }),
+      onLeave: () => setStartAnimation(""),
+      onEnterBack: () => setStartAnimation("frame27"),
     });
 
     ScrollTrigger.create({
@@ -364,6 +372,8 @@ const ScrollytellingSection = () => {
       onLeaveBack: () => {
         gsap.to(".frame32", { opacity: 0, duration: 0.5 });
       },
+      onLeave: () => setStartAnimation(""),
+      onEnterBack: () => setStartAnimation("frame32"),
     });
 
     ScrollTrigger.create({
@@ -403,6 +413,8 @@ const ScrollytellingSection = () => {
       onLeaveBack: () => {
         gsap.to(".frame35", { opacity: 0, duration: 0.5 });
       },
+      onLeave: () => setStartAnimation(""),
+      onEnterBack: () => setStartAnimation("frame35"),
     });
 
     ScrollTrigger.create({
@@ -442,6 +454,8 @@ const ScrollytellingSection = () => {
       onLeaveBack: () => {
         gsap.to(".frame38", { opacity: 0, duration: 0.5 });
       },
+      onLeave: () => setStartAnimation(""),
+      onEnterBack: () => setStartAnimation("frame38"),
     });
     ScrollTrigger.create({
       trigger: ".frame39-trigger",
@@ -681,16 +695,18 @@ const ScrollytellingSection = () => {
         alt="Fixed Bottom Left"
         className="frame2 fixed bottom-0 left-0 w-auto h-[60vh] sm:h-[70vh] lg:h-[85vh]"
       />
-      <div className="frame2 fixed sm:bottom-8 md:right-8 bottom-10 right-4 flex gap-4">
+      <div className="frame2 z-50 fixed sm:bottom-16 md:right-8 bottom-96 right-4 flex gap-4">
         <button
           className="w-9 h-9 bg-transparent border-none cursor-pointer"
           onClick={() => alert("Button 1 clicked")}
+          disabled={startAnimation !== "frame2"}
         >
           <img src={replay} alt="Button 1" className="w-full h-full" />
         </button>
         <button
           className="w-10 h-10 bg-transparent border-none cursor-pointer"
-          onClick={() => alert("Button 2 clicked")}
+          onClick={() => alert("Button 1.1 clicked")}
+          disabled={startAnimation !== "frame2"}
         >
           <img src={mute} alt="Button 2" className="w-full h-full" />
         </button>
@@ -725,16 +741,18 @@ const ScrollytellingSection = () => {
         alt="Fixed Bottom Left"
         className="frame5 fixed bottom-0 right-0  w-[100vw] max-w-[500px] sm:max-w-[600px] sm:w-[70vw] md:max-w-[800px]"
       />
-      <div className="frame5 fixed sm:bottom-28 pl-4 bottom-28 md:pl-32  flex gap-4">
+      <div className="frame5 z-50 fixed sm:bottom-28 pl-4 bottom-28 md:pl-32  flex gap-4">
         <button
           className="w-9 h-9 bg-transparent border-none cursor-pointer"
-          onClick={() => alert("Button 1 clicked")}
+          onClick={() => alert("Button 2a  clicked")}
+          disabled={startAnimation !== "frame5"}
         >
-          <img src={replay} alt="Button 1" className="w-full h-full" />
+          <img src={replay} alt="Button 2b" className="w-full h-full" />
         </button>
         <button
           className="w-10 h-10 bg-transparent border-none cursor-pointer"
           onClick={() => alert("Button 2 clicked")}
+          disabled={startAnimation !== "frame5"}
         >
           <img src={mute} alt="Button 2" className="w-full h-full" />
         </button>
@@ -769,16 +787,18 @@ const ScrollytellingSection = () => {
         alt="Fixed Bottom Left"
         className="frame8 fixed -bottom-10 -left-10 w-[100vw] max-w-[500px] sm:max-w-[600px] sm:w-[70vw] md:max-w-[800px]"
       />
-      <div className="frame8 fixed sm:bottom-28 right-4 md:right-32 bottom-28 flex gap-4">
+      <div className="frame8 fixed z-50 sm:bottom-28 right-4 md:right-32 bottom-28 flex gap-4">
         <button
           className="w-9 h-9 bg-transparent border-none cursor-pointer"
-          onClick={() => alert("Button 1 clicked")}
+          onClick={() => alert("Button 3a clicked")}
+          disabled={startAnimation !== "frame8"}
         >
-          <img src={replay} alt="Button 1" className="w-full h-full" />
+          <img src={replay} alt="Button 3b" className="w-full h-full" />
         </button>
         <button
           className="w-10 h-10 bg-transparent border-none cursor-pointer"
           onClick={() => alert("Button 2 clicked")}
+          disabled={startAnimation !== "frame8"}
         >
           <img src={mute} alt="Button 2" className="w-full h-full" />
         </button>

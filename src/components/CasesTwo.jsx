@@ -7,8 +7,13 @@ import mute from "../assets/mute.svg";
 import replay from "../assets/replay.svg";
 import rightIcon from "../assets/right-icon.svg";
 import TypingEffect from "./TypingEffect";
+import { useEffect } from "react";
 
 const CasesTwo = ({ startAnimation }) => {
+  useEffect(() => {
+    console.log("startAnimation", startAnimation);
+  }, [startAnimation]);
+
   return (
     <div className="fixed h-screen w-full flex flex-col items-center justify-center bg-black text-white text-center px-4">
       {/* Text Section */}
@@ -57,18 +62,20 @@ const CasesTwo = ({ startAnimation }) => {
         alt="Relógio representando a passagem do tempo"
         className="frame27 fixed bottom-0 -left-10 sm:left-0 w-[300px] sm:w-[70vw] max-w-[800px]"
       />
-      <div className="frame27 fixed sm:bottom-8 md:right-32 bottom-10 right-4 flex gap-4">
+      <div className="frame27 z-60 fixed sm:bottom-8 md:right-32 bottom-10 right-4 flex gap-4">
         <button
           className="w-9 h-9 bg-transparent border-none cursor-pointer"
-          onClick={() => alert("Button 1 clicked")}
+          onClick={() => alert("Button na1a clicked")}
+          disabled={startAnimation !== "frame27"}
         >
-          <img src={replay} alt="Button 1" className="w-full h-full" />
+          <img src={replay} alt="Button 4a" className="w-full h-full" />
         </button>
         <button
           className="w-10 h-10 bg-transparent border-none cursor-pointer"
           onClick={() => alert("Button 2 clicked")}
+          disabled={startAnimation !== "frame27"}
         >
-          <img src={mute} alt="Button 2" className="w-full h-full" />
+          <img src={mute} alt="Button 4b" className="w-full h-full" />
         </button>
       </div>
 
@@ -127,23 +134,25 @@ const CasesTwo = ({ startAnimation }) => {
             Não consegue falar sobre a relação com outras pessoas.
           </p>
         </div>
-        <p className="frame32 text-3xl xl:text-4xl pt-20 sm:pt-28 flex flex-col sm:flex-row items-center">
+        <p className="frame32 z-50 text-3xl xl:text-4xl pt-20 sm:pt-28 flex flex-col sm:flex-row items-center">
           <TypingEffect
             text={`“Ele era ciumento. Tinha posse de mim”.`}
             speed={80}
             showBlink={false}
             startAnimation={startAnimation === "frame32"}
           />
-          <div className="flex mt-6 sm:mt-0">
+          <div className="flex z-60 mt-6 sm:mt-0">
             <button
-              className="w-9 h-9 bg-transparent border-none cursor-pointer ml-10"
-              onClick={() => alert("Button 1 clicked")}
+              className="w-9 h-9 z-60 bg-transparent border-none cursor-pointer ml-10"
+              onClick={() => alert("Button 5a clicked")}
+              disabled={startAnimation !== "frame32"}
             >
               <img src={replay} alt="Button 1" className="w-full h-full" />
             </button>
             <button
               className="w-10 h-10 bg-transparent border-none cursor-pointer ml-2"
-              onClick={() => alert("Button 2 clicked")}
+              onClick={() => alert("Button 5b clicked")}
+              disabled={startAnimation !== "frame32"}
             >
               <img src={mute} alt="Button 2" className="w-full h-full" />
             </button>
@@ -217,16 +226,18 @@ const CasesTwo = ({ startAnimation }) => {
             showBlink={false}
             startAnimation={startAnimation === "frame35"}
           />
-          <div className="flex mt-8">
+          <div className="flex z-50 mt-8">
             <button
               className="w-9 h-9 bg-transparent border-none cursor-pointer mr-2"
-              onClick={() => alert("Button 1 clicked")}
+              onClick={() => alert("Button 6a clicked")}
+              disabled={startAnimation !== "frame35"}
             >
-              <img src={replay} alt="Button 1" className="w-full h-full" />
+              <img src={replay} alt="Button 6b" className="w-full h-full" />
             </button>
             <button
               className="w-10 h-10 bg-transparent border-none cursor-pointer"
               onClick={() => alert("Button 2 clicked")}
+              disabled={startAnimation !== "frame"}
             >
               <img src={mute} alt="Button 2" className="w-full h-full" />
             </button>
@@ -284,16 +295,18 @@ const CasesTwo = ({ startAnimation }) => {
             startAnimation={startAnimation === "frame38"}
           />
         </p>
-        <div className="flex frame38 justify-end w-full mt-8">
+        <div className="flex z-50 frame38 justify-end w-full mt-8">
           <button
             className="w-9 h-9 bg-transparent border-none cursor-pointer mr-2"
-            onClick={() => alert("Button 1 clicked")}
+            onClick={() => alert("Button 7a clicked")}
+            disabled={startAnimation !== "frame38"}
           >
             <img src={replay} alt="Button 1" className="w-full h-full" />
           </button>
           <button
             className="w-10 h-10 bg-transparent border-none cursor-pointer"
-            onClick={() => alert("Button 2 clicked")}
+            onClick={() => alert("Button 7b clicked")}
+            disabled={startAnimation !== "frame38"}
           >
             <img src={mute} alt="Button 2" className="w-full h-full" />
           </button>
