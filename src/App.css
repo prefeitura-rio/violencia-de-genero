@@ -14,11 +14,20 @@
   animation: blink 1s step-start infinite;
 }
 
+.typing-container {
+  display: inline;
+}
+
+.typing-container span {
+  display: inline;
+}
 .fade-in {
   opacity: 0;
-  transition: opacity 1s ease-in;
+  transition: opacity 0.5s ease-in;
+  pointer-events: none; /* Optional, to prevent interaction during fade-in */
 }
 
 .fade-in.show {
   opacity: 1;
+  pointer-events: auto; /* Enable interaction when visible */
 }

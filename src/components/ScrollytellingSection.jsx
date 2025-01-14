@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import img1 from "../assets/img1.png";
@@ -13,10 +13,13 @@ import Cases from "./Cases";
 import ClockSection from "./ClockSection";
 import CasesTwo from "./CasesTwo";
 import MapSection from "./MapSection";
+import TypingEffect from "./TypingEffect";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const ScrollytellingSection = () => {
+  const [startAnimation, setStartAnimation] = useState(false);
+
   useEffect(() => {
     gsap.set(
       ".frame2, .frame3, .frame4, .frame5, .frame6,.frame7,.frame8,.frame9, .frame10, .frame11, .frame12, .frame13, .frame14,.frame15, .frame16,.frame17,.frame18,.frame19,.frame20, .frame21, .frame22, .frame23, .frame24, .frame25, .frame26, .frame27, .frame28, .frame29, .frame30, .frame31, .frame32, .frame33, .frame34, .frame35, .frame36, .frame37, .frame38, .frame39, .frame40, .frame41, .frame42, .frame43, .frame44, .frame45, .frame46, .frame47, .frame48, .frameCMC, .frameCEAM, .frameNEAM, .frameNEAP, .frameAS, .frameSMC",
@@ -33,7 +36,10 @@ const ScrollytellingSection = () => {
     ScrollTrigger.create({
       trigger: ".frame2-trigger",
       start: "top center",
-      onEnter: () => gsap.to(".frame2", { opacity: 1, duration: 0.5 }),
+      onEnter: () => {
+        gsap.to(".frame2", { opacity: 1, duration: 0.5 });
+        setStartAnimation("frame2");
+      },
       onLeaveBack: () => gsap.to(".frame2", { opacity: 0, duration: 0.5 }),
     });
 
@@ -60,7 +66,10 @@ const ScrollytellingSection = () => {
     ScrollTrigger.create({
       trigger: ".frame5-trigger",
       start: "top center",
-      onEnter: () => gsap.to(".frame5", { opacity: 1, duration: 0.5 }),
+      onEnter: () => {
+        gsap.to(".frame5", { opacity: 1, duration: 0.5 });
+        setStartAnimation("frame5");
+      },
       onLeaveBack: () => gsap.to(".frame5", { opacity: 0, duration: 0.5 }),
     });
 
@@ -86,7 +95,10 @@ const ScrollytellingSection = () => {
     ScrollTrigger.create({
       trigger: ".frame8-trigger",
       start: "top center",
-      onEnter: () => gsap.to(".frame8", { opacity: 1, duration: 0.5 }),
+      onEnter: () => {
+        gsap.to(".frame8", { opacity: 1, duration: 0.5 });
+        setStartAnimation("frame8");
+      },
       onLeaveBack: () => gsap.to(".frame8", { opacity: 0, duration: 0.5 }),
     });
 
@@ -288,7 +300,10 @@ const ScrollytellingSection = () => {
     ScrollTrigger.create({
       trigger: ".frame27-trigger",
       start: "top center",
-      onEnter: () => gsap.to(".frame27", { opacity: 1, duration: 0.5 }),
+      onEnter: () => {
+        gsap.to(".frame27", { opacity: 1, duration: 0.5 });
+        setStartAnimation("frame27");
+      },
       onLeaveBack: () => gsap.to(".frame27", { opacity: 0, duration: 0.5 }),
     });
 
@@ -344,6 +359,7 @@ const ScrollytellingSection = () => {
       start: "top center",
       onEnter: () => {
         gsap.to(".frame32", { opacity: 1, duration: 0.5 });
+        setStartAnimation("frame32");
       },
       onLeaveBack: () => {
         gsap.to(".frame32", { opacity: 0, duration: 0.5 });
@@ -382,6 +398,7 @@ const ScrollytellingSection = () => {
       start: "top center",
       onEnter: () => {
         gsap.to(".frame35", { opacity: 1, duration: 0.5 });
+        setStartAnimation("frame35");
       },
       onLeaveBack: () => {
         gsap.to(".frame35", { opacity: 0, duration: 0.5 });
@@ -420,6 +437,7 @@ const ScrollytellingSection = () => {
       start: "top center",
       onEnter: () => {
         gsap.to(".frame38", { opacity: 1, duration: 0.5 });
+        setStartAnimation("frame38");
       },
       onLeaveBack: () => {
         gsap.to(".frame38", { opacity: 0, duration: 0.5 });
@@ -649,8 +667,12 @@ const ScrollytellingSection = () => {
         </div>
         <div className="frame2 flex items-center justify-center fixed top-48 w-full">
           <p className="text-white text-3xl xl:text-4xl mx-4">
-            “Ele era um, quando bebia era outro. Se transformava em outra
-            pessoa.”
+            <TypingEffect
+              text=" “Ele era um, quando bebia era outro. Se transformava em outra pessoa.”"
+              speed={80}
+              showBlink={false}
+              startAnimation={startAnimation === "frame2"}
+            />
           </p>
         </div>
       </div>
@@ -689,7 +711,12 @@ const ScrollytellingSection = () => {
         </div>
         <div className="frame5 flex items-center justify-center fixed top-60 w-full md:w-auto text-xl">
           <p className="text-white text-3xl xl:text-4xl mx-4 sm:mx-0">
-            “Chamava de puta, de vagabunda. <br></br>Na frente dos outros.”
+            <TypingEffect
+              text={`“Chamava de puta, de vagabunda. \nNa frente dos outros.”`}
+              speed={80}
+              showBlink={false}
+              startAnimation={startAnimation === "frame5"}
+            />
           </p>
         </div>
       </div>
@@ -728,8 +755,12 @@ const ScrollytellingSection = () => {
         </div>
         <div className="frame8 flex items-center justify-center fixed top-60 w-full md:w-auto text-xl">
           <p className="text-white text-3xl xl:text-4xl mx-4 sm:mx-0">
-            “Ele me tacou álcool e quis tocar fogo. <br></br>Falou que eu só
-            poderia sair dali morta.”
+            <TypingEffect
+              text={`“Ele me tacou álcool e quis tocar fogo. \nFalou que eu só poderia sair dali morta.”`}
+              speed={80}
+              showBlink={false}
+              startAnimation={startAnimation === "frame8"}
+            />
           </p>
         </div>
       </div>
@@ -761,7 +792,7 @@ const ScrollytellingSection = () => {
       {/* ClockSection */}
       <ClockSection />
       {/* CasesTwo */}
-      <CasesTwo />
+      <CasesTwo startAnimation={startAnimation} />
       {/* MapSection */}
       <MapSection />
     </div>

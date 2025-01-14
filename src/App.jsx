@@ -13,29 +13,32 @@ function App() {
       setTimeout(() => {
         setShowContent(true);
       }, 50); // Small delay to trigger the fade-in effect
-    }, 7000); // 7 seconds
+    }, 1000); // 7 seconds
 
     return () => clearTimeout(timer); // Cleanup the timer
   }, []);
 
   if (loading) {
     return (
-      <div className="bg-black text-white text-lg flex items-center justify-center h-screen">
+      <div className="bg-black font-cormorant px-6 text-white text-2xl flex items-center justify-center h-screen">
         <TypingEffect
           text="Por trás dos números, estão vidas que não podemos ignorar."
           speed={80}
+          showBlink={true}
+          startAnimation={true}
         />
       </div>
     );
   }
 
   return (
-    <div
-      className={`bg-red-400 font-cormorant fade-in ${
-        showContent ? "show" : ""
-      }`}
-    >
-      <ScrollytellingSection />
+    <div className="bg-black font-cormorant">
+      <div
+        className={`fade-in ${showContent ? "show" : ""}`}
+        style={{ minHeight: "100vh" }} // Ensure it takes full screen
+      >
+        <ScrollytellingSection />
+      </div>
     </div>
   );
 }

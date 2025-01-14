@@ -6,8 +6,9 @@ import marionette from "../assets/marionette.png";
 import mute from "../assets/mute.svg";
 import replay from "../assets/replay.svg";
 import rightIcon from "../assets/right-icon.svg";
+import TypingEffect from "./TypingEffect";
 
-const CasesTwo = () => {
+const CasesTwo = ({ startAnimation }) => {
   return (
     <div className="fixed h-screen w-full flex flex-col items-center justify-center bg-black text-white text-center px-4">
       {/* Text Section */}
@@ -23,17 +24,29 @@ const CasesTwo = () => {
       </div>
       <div className="fixed md:right-32 frame27 top-[52%] sm:top-[40%] max-w-[500px]  mx-0">
         <h1 className="sm:hidden text-2xl xl:text-3xl mx-4 sm:mx-0 text-right">
-          “Na primeira vez que ele... Me deu um tapa nas costas, eu já tinha ido
-          lá falar com elas. <br></br>
+          <TypingEffect
+            text={`“Na primeira vez que ele... Me deu um tapa nas costas, eu já tinha ido lá falar com elas.`}
+            speed={80}
+            showBlink={false}
+            startAnimation={startAnimation === "frame27"}
+          />
           <div className="ml-24 text-right">
-            Elas já tinham me dado todo apoio e tal. E aí me pediram pra fazer a
-            denúncia. Só que eu... Não tive forças”.
+            <TypingEffect
+              text={`Elas já tinham me dado todo apoio e tal. E aí me pediram pra fazer a denúncia. Só que eu... Não tive forças”.`}
+              speed={80}
+              showBlink={false}
+              startAnimation={startAnimation === "frame27"}
+              delay={7300}
+            />
           </div>
         </h1>
         <h1 className="hidden sm:block text-2xl xl:text-3xl mx-4 sm:mx-0 text-right">
-          “Na primeira vez que ele... Me deu um tapa nas costas, eu já tinha ido
-          lá falar com elas. Elas já tinham me dado todo apoio e tal. E aí me
-          pediram pra fazer a denúncia. Só que eu... Não tive forças”.
+          <TypingEffect
+            text={`“Na primeira vez que ele... Me deu um tapa nas costas, eu já tinha ido lá falar com elas. Elas já tinham me dado todo apoio e tal. E aí me pediram pra fazer a denúncia. Só que eu... Não tive forças”.`}
+            speed={80}
+            showBlink={false}
+            startAnimation={startAnimation === "frame27"}
+          />
         </h1>
       </div>
       <img
@@ -109,7 +122,12 @@ const CasesTwo = () => {
           </p>
         </div>
         <p className="frame32 text-3xl xl:text-4xl pt-20 sm:pt-28 flex flex-col sm:flex-row items-center">
-          “Ele era ciumento. Tinha posse de mim”.
+          <TypingEffect
+            text={`“Ele era ciumento. Tinha posse de mim”.`}
+            speed={80}
+            showBlink={false}
+            startAnimation={startAnimation === "frame32"}
+          />
           <div className="flex mt-6 sm:mt-0">
             <button
               className="w-9 h-9 bg-transparent border-none cursor-pointer ml-10"
@@ -187,7 +205,12 @@ const CasesTwo = () => {
           </p>
         </div>
         <p className="frame35 text-3xl xl:text-4xl pt-4 sm:pt-28 flex flex-col items-start">
-          “Ele controlava onde eu ia, <br></br>o que eu fazia, quem eu via”.
+          <TypingEffect
+            text={`“Ele controlava onde eu ia, \no que eu fazia, quem eu via”.`}
+            speed={80}
+            showBlink={false}
+            startAnimation={startAnimation === "frame35"}
+          />
           <div className="flex mt-8">
             <button
               className="w-9 h-9 bg-transparent border-none cursor-pointer mr-2"
@@ -248,8 +271,12 @@ const CasesTwo = () => {
           </p>
         </div>
         <p className="text-white max-w-[600px] sm:max-w-[400px] text-3xl xl:text-4xl pt-4 sm:pt-28 flex flex-col items-start">
-          “Teve uma vez que ele me perseguiu. Ele virou pra mim e falou: estou
-          apenas te vigiando. Seguindo os teus passos.”
+          <TypingEffect
+            text={`“Teve uma vez que ele me perseguiu. Ele virou pra mim e falou: estou apenas te vigiando. Seguindo os teus passos.”`}
+            speed={80}
+            showBlink={false}
+            startAnimation={startAnimation === "frame38"}
+          />
         </p>
         <div className="flex justify-end w-full mt-8">
           <button
