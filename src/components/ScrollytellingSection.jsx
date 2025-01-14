@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import img1 from "../assets/img1.png";
@@ -17,8 +17,60 @@ import TypingEffect from "./TypingEffect";
 
 gsap.registerPlugin(ScrollTrigger);
 
+const audioMap = {
+  frame2:
+    "https://commondatastorage.googleapis.com/codeskulptor-assets/Evillaugh.ogg",
+  frame5:
+    "https://commondatastorage.googleapis.com/codeskulptor-demos/pyman_assets/intromusic.ogg",
+  // Adicione mais mapeamentos conforme necessário
+};
+
 const ScrollytellingSection = () => {
   const [startAnimation, setStartAnimation] = useState(false);
+  const audioRef = useRef(null);
+  const [isMuted, setIsMuted] = useState(false);
+  const [currentAudio, setCurrentAudio] = useState(null);
+
+  useEffect(() => {
+    Object.keys(audioMap).forEach((trigger) => {
+      ScrollTrigger.create({
+        trigger: `.${trigger}-trigger`,
+        start: "top center",
+        onEnter: () => {
+          gsap.to(`.${trigger}`, { opacity: 1, duration: 0.5 });
+          setStartAnimation(trigger);
+          if (audioRef.current) {
+            audioRef.current.src = audioMap[trigger];
+            audioRef.current.play();
+          }
+        },
+        onLeaveBack: () =>
+          gsap.to(`.${trigger}`, { opacity: 0, duration: 0.5 }),
+        onLeave: () => {
+          setStartAnimation("");
+          if (audioRef.current) {
+            audioRef.current.pause();
+            audioRef.current.currentTime = 0;
+          }
+        },
+        onEnterBack: () => setStartAnimation(trigger),
+      });
+    });
+  }, []);
+
+  const handleReplay = () => {
+    if (audioRef.current) {
+      audioRef.current.currentTime = 0;
+      audioRef.current.play();
+    }
+  };
+
+  const handleMute = () => {
+    if (audioRef.current) {
+      audioRef.current.muted = !isMuted;
+      setIsMuted(!isMuted);
+    }
+  };
 
   useEffect(() => {
     gsap.set(
@@ -609,6 +661,7 @@ const ScrollytellingSection = () => {
 
   return (
     <div className="bg-black min-h-screen relative">
+      <audio ref={audioRef} />
       {/* Section1 */}
       <div className="h-screen frame1-trigger"></div>
       <div className="h-screen frame2-trigger"></div>
@@ -698,14 +751,14 @@ const ScrollytellingSection = () => {
       <div className="frame2 z-50 fixed sm:bottom-16 md:right-8 bottom-96 right-4 flex gap-4">
         <button
           className="w-9 h-9 bg-transparent border-none cursor-pointer"
-          onClick={() => alert("Button 1 clicked")}
+          onClick={handleReplay}
           disabled={startAnimation !== "frame2"}
         >
           <img src={replay} alt="Button 1" className="w-full h-full" />
         </button>
         <button
           className="w-10 h-10 bg-transparent border-none cursor-pointer"
-          onClick={() => alert("Button 1.1 clicked")}
+          onClick={handleMute}
           disabled={startAnimation !== "frame2"}
         >
           <img src={mute} alt="Button 2" className="w-full h-full" />
@@ -744,15 +797,15 @@ const ScrollytellingSection = () => {
       <div className="frame5 z-50 fixed sm:bottom-28 pl-4 bottom-28 md:pl-32  flex gap-4">
         <button
           className="w-9 h-9 bg-transparent border-none cursor-pointer"
-          onClick={() => alert("Button 2a  clicked")}
+          onClick={handleReplay}
           disabled={startAnimation !== "frame5"}
         >
           <img src={replay} alt="Button 2b" className="w-full h-full" />
         </button>
         <button
           className="w-10 h-10 bg-transparent border-none cursor-pointer"
-          onClick={() => alert("Button 2 clicked")}
           disabled={startAnimation !== "frame5"}
+          onClick={handleMute}
         >
           <img src={mute} alt="Button 2" className="w-full h-full" />
         </button>
