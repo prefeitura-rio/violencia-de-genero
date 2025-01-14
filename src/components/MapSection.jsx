@@ -163,10 +163,10 @@ const MapSection = () => {
             850 mil mulheres foram impactadas
           </span>{" "}
           pelos equipamentos de promoção da mulher e mais de{" "}
-          <span className="text-[#EECBAD]">200 mil foram capacitadas</span>
-          para o mercado de trabalho nas Casas da Mulher Carioca. Entre 2022 e
-          2024, os Centros e Núcleos Especializados da Secretaria da Mulher
-          realizaram mais de{" "}
+          <span className="text-[#EECBAD]">200 mil foram capacitadas</span> para
+          o mercado de trabalho nas Casas da Mulher Carioca. Entre 2022 e 2024,
+          os Centros e Núcleos Especializados da Secretaria da Mulher realizaram
+          mais de{" "}
           <span className="text-[#EECBAD]">
             17 mil atendimentos a mulheres em situação de violência de gênero.
           </span>{" "}

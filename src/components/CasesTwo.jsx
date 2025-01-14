@@ -284,7 +284,7 @@ const CasesTwo = ({ startAnimation }) => {
             startAnimation={startAnimation === "frame38"}
           />
         </p>
-        <div className="flex justify-end w-full mt-8">
+        <div className="flex frame38 justify-end w-full mt-8">
           <button
             className="w-9 h-9 bg-transparent border-none cursor-pointer mr-2"
             onClick={() => alert("Button 1 clicked")}

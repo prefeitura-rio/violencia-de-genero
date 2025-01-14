@@ -13,7 +13,7 @@ function App() {
       setTimeout(() => {
         setShowContent(true);
       }, 50); // Small delay to trigger the fade-in effect
-    }, 1000); // 7 seconds
+    }, 7000); // 7 seconds
 
     return () => clearTimeout(timer); // Cleanup the timer
   }, []);
