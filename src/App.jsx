@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import ScrollytellingSection from "./components/ScrollytellingSection";
 import TypingEffect from "./components/TypingEffect";
+import rightIcon from "./assets/right-icon.svg";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -39,26 +40,64 @@ function App() {
       "https://www.instagram.com/secretariadamulher.rio/?hl=en";
   };
 
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleCheckboxChange = () => {
+    setIsChecked(!isChecked);
+    setTimeout(() => {
+      handleAllow();
+    }, 500);
+  };
+
   if (showDialog) {
     return (
       <div className="bg-black font-cormorant px-2 text-white text-2xl flex items-center justify-center h-screen">
         <div className="text-center">
-          <p className="mb-4">
+          <p className="mb-10">
             Este conteúdo contém informações sensíveis sobre violência de
             gênero. Deseja continuar?
           </p>
-          <button
-            onClick={handleAllow}
-            className="bg-gray-600 px-4 py-2 rounded text-white mx-2"
-          >
-            Continuar
-          </button>
-          <button
+          <div className="flex flex-col items-center">
+            <div className="flex items-center mb-4">
+              {/* Hidden native checkbox */}
+              <input
+                type="checkbox"
+                id="allowCheckbox"
+                onChange={handleCheckboxChange}
+                checked={isChecked}
+                className="hidden"
+              />
+
+              {/* Custom checkbox */}
+              <div
+                onClick={handleCheckboxChange}
+                className={`border-2 border-white w-6 h-6 flex items-center justify-center mr-2 cursor-pointer bg-transparent`}
+              >
+                {isChecked && (
+                  <img
+                    src={rightIcon}
+                    alt="Right Icon"
+                    className="scale-150 frame8"
+                  />
+                )}
+              </div>
+
+              {/* Label */}
+              <label
+                htmlFor="allowCheckbox"
+                className="text-white cursor-pointer"
+                onClick={handleCheckboxChange}
+              >
+                Continuar
+              </label>
+            </div>
+          </div>
+          {/* <button
             onClick={handleDeny}
             className="bg-red-500 px-4 py-2 rounded text-white mx-2"
           >
             Sair
-          </button>
+          </button> */}
         </div>
       </div>
     );
