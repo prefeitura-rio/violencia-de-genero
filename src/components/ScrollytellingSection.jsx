@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import img1 from "../assets/img1.png";
@@ -19,6 +19,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ScrollytellingSection = () => {
   const [startAnimation, setStartAnimation] = useState(false);
+  const audioRef2 = useRef(null);
+  const audioRef5 = useRef(null);
 
   useEffect(() => {
     gsap.set(
@@ -39,9 +41,18 @@ const ScrollytellingSection = () => {
       onEnter: () => {
         gsap.to(".frame2", { opacity: 1, duration: 0.5 });
         setStartAnimation("frame2");
+        audioRef2.current.play();
       },
-      onLeaveBack: () => gsap.to(".frame2", { opacity: 0, duration: 0.5 }),
-      onLeave: () => setStartAnimation(""),
+      onLeaveBack: () => {
+        gsap.to(".frame2", { opacity: 0, duration: 0.5 });
+        audioRef2.current.pause();
+        audioRef2.current.currentTime = 0;
+      },
+      onLeave: () => {
+        setStartAnimation("");
+        audioRef2.current.pause();
+        audioRef2.current.currentTime = 0;
+      },
       onEnterBack: () => setStartAnimation("frame2"),
     });
 
@@ -71,9 +82,18 @@ const ScrollytellingSection = () => {
       onEnter: () => {
         gsap.to(".frame5", { opacity: 1, duration: 0.5 });
         setStartAnimation("frame5");
+        audioRef5.current.play();
       },
-      onLeaveBack: () => gsap.to(".frame5", { opacity: 0, duration: 0.5 }),
-      onLeave: () => setStartAnimation(""),
+      onLeaveBack: () => {
+        gsap.to(".frame5", { opacity: 0, duration: 0.5 });
+        audioRef5.current.pause();
+        audioRef5.current.currentTime = 0;
+      },
+      onLeave: () => {
+        setStartAnimation("");
+        audioRef5.current.pause();
+        audioRef5.current.currentTime = 0;
+      },
       onEnterBack: () => setStartAnimation("frame5"),
     });
 
@@ -667,6 +687,14 @@ const ScrollytellingSection = () => {
       <div className="h-screen frame47-trigger"></div>
       <div className="h-screen frame48-trigger"></div>
       <div className="h-screen fixed w-full flex flex-col items-center">
+        <audio
+          ref={audioRef2}
+          src="https://cdn.freesound.org/previews/368/368384_3298571-lq.mp3"
+        />
+        <audio
+          ref={audioRef5}
+          src="https://cdn.freesound.org/previews/368/368386_3298571-lq.mp3"
+        />
         <div className="flex items-center justify-center fixed top-28 w-full">
           <div className="frame1 border-2 border-white w-6 h-6 flex items-center justify-center mr-2">
             <img
@@ -698,14 +726,19 @@ const ScrollytellingSection = () => {
       <div className="frame2 z-50 fixed sm:bottom-16 md:right-8 bottom-96 right-4 flex gap-4">
         <button
           className="w-9 h-9 bg-transparent border-none cursor-pointer"
-          onClick={() => alert("Button 1 clicked")}
+          onClick={() => {
+            audioRef2.current.currentTime = 0;
+            audioRef2.current.play();
+          }}
           disabled={startAnimation !== "frame2"}
         >
           <img src={replay} alt="Button 1" className="w-full h-full" />
         </button>
         <button
           className="w-10 h-10 bg-transparent border-none cursor-pointer"
-          onClick={() => alert("Button 1.1 clicked")}
+          onClick={() => {
+            audioRef2.current.muted = !audioRef2.current.muted;
+          }}
           disabled={startAnimation !== "frame2"}
         >
           <img src={mute} alt="Button 2" className="w-full h-full" />
@@ -741,17 +774,22 @@ const ScrollytellingSection = () => {
         alt="Fixed Bottom Left"
         className="frame5 fixed bottom-0 right-0  w-[100vw] max-w-[500px] sm:max-w-[600px] sm:w-[70vw] md:max-w-[800px]"
       />
-      <div className="frame5 z-50 fixed sm:bottom-28 pl-4 bottom-28 md:pl-32  flex gap-4">
+      <div className="frame5 z-50 fixed sm:bottom-28 pl-4 bottom-28 md:pl-32 flex gap-4">
         <button
           className="w-9 h-9 bg-transparent border-none cursor-pointer"
-          onClick={() => alert("Button 2a  clicked")}
+          onClick={() => {
+            audioRef5.current.currentTime = 0;
+            audioRef5.current.play();
+          }}
           disabled={startAnimation !== "frame5"}
         >
           <img src={replay} alt="Button 2b" className="w-full h-full" />
         </button>
         <button
           className="w-10 h-10 bg-transparent border-none cursor-pointer"
-          onClick={() => alert("Button 2 clicked")}
+          onClick={() => {
+            audioRef5.current.muted = !audioRef5.current.muted;
+          }}
           disabled={startAnimation !== "frame5"}
         >
           <img src={mute} alt="Button 2" className="w-full h-full" />
