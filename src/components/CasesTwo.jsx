@@ -30,7 +30,10 @@ const CasesTwo = ({ startAnimation }) => {
           </span>
         </h1>
       </div>
-      <div className="fixed md:right-32 frame27 top-[52%] sm:top-[40%] max-w-[500px]  mx-0">
+      <div
+        style={{ zIndex: 900 }}
+        className="fixed md:right-32 frame27 top-[52%] sm:top-[40%] max-w-[500px]  mx-0"
+      >
         <h1 className="sm:hidden text-2xl xl:text-3xl mx-4 sm:mx-0 text-right">
           <TypingEffect
             text={`“Na primeira vez que ele... Me deu um tapa nas costas, eu já tinha ido lá falar com elas.`}
@@ -62,7 +65,7 @@ const CasesTwo = ({ startAnimation }) => {
         alt="Relógio representando a passagem do tempo"
         className="frame27 fixed bottom-0 -left-10 sm:left-0 w-[300px] sm:w-[70vw] max-w-[800px]"
       />
-      <div className="frame27 z-60 fixed sm:bottom-8 md:right-32 bottom-10 right-4 flex gap-4">
+      <div className="frame27 fixed sm:bottom-8 md:right-32 bottom-10 right-4 flex gap-4">
         <button
           className="w-9 h-9 bg-transparent border-none cursor-pointer"
           onClick={() => alert("Button na1a clicked")}
@@ -97,7 +100,10 @@ const CasesTwo = ({ startAnimation }) => {
         />
       </div>
 
-      <div className="fixed frame31 top-14 sm:top-20 sm:right-36 text-left mx-4">
+      <div
+        style={{ zIndex: 899 }}
+        className="fixed frame31 top-14 sm:top-20 sm:right-36 text-left mx-4"
+      >
         <div className="flex items-center pb-4">
           <div className="border-2 border-white w-6 h-6 flex-shrink-0 mr-2">
             <img
@@ -134,16 +140,16 @@ const CasesTwo = ({ startAnimation }) => {
             Não consegue falar sobre a relação com outras pessoas.
           </p>
         </div>
-        <p className="frame32 z-50 text-3xl xl:text-4xl pt-20 sm:pt-28 flex flex-col sm:flex-row items-center">
+        <p className="frame32 text-3xl xl:text-4xl pt-20 sm:pt-28 flex flex-col sm:flex-row items-center">
           <TypingEffect
             text={`“Ele era ciumento. Tinha posse de mim”.`}
             speed={80}
             showBlink={false}
             startAnimation={startAnimation === "frame32"}
           />
-          <div className="flex z-60 mt-6 sm:mt-0">
+          <div className="flex mt-6 sm:mt-0">
             <button
-              className="w-9 h-9 z-60 bg-transparent border-none cursor-pointer ml-10"
+              className="w-9 h-9 bg-transparent border-none cursor-pointer ml-10"
               onClick={() => alert("Button 5a clicked")}
               disabled={startAnimation !== "frame32"}
             >
@@ -182,7 +188,10 @@ const CasesTwo = ({ startAnimation }) => {
         />
       </div>
 
-      <div className="fixed frame34 top-14 sm:top-20 sm:left-36 text-left mx-4">
+      <div
+        style={{ zIndex: 898 }}
+        className="fixed frame34 top-14 sm:top-20 sm:left-36 text-left mx-4"
+      >
         <div className="flex items-center pb-4">
           <div className="border-2 border-white w-6 h-6 flex-shrink-0 mr-2">
             <img
@@ -226,7 +235,7 @@ const CasesTwo = ({ startAnimation }) => {
             showBlink={false}
             startAnimation={startAnimation === "frame35"}
           />
-          <div className="flex z-50 mt-8">
+          <div className="flex mt-8">
             <button
               className="w-9 h-9 bg-transparent border-none cursor-pointer mr-2"
               onClick={() => alert("Button 6a clicked")}
@@ -250,7 +259,10 @@ const CasesTwo = ({ startAnimation }) => {
         />
       </div>
 
-      <div className="fixed frame37 top-14 max-w-[600px] sm:top-28 sm:right-10 text-left mx-4">
+      <div
+        style={{ zIndex: 897 }}
+        className="fixed frame37 top-14 max-w-[600px] sm:top-28 sm:right-10 text-left mx-4"
+      >
         <div className="flex items-center pb-4">
           <div className="border-2 border-white w-6 h-6 flex-shrink-0 mr-2">
             <img
@@ -295,7 +307,7 @@ const CasesTwo = ({ startAnimation }) => {
             startAnimation={startAnimation === "frame38"}
           />
         </p>
-        <div className="flex z-50 frame38 justify-end w-full mt-8">
+        <div className="flex frame38 justify-end w-full mt-8">
           <button
             className="w-9 h-9 bg-transparent border-none cursor-pointer mr-2"
             onClick={() => alert("Button 7a clicked")}

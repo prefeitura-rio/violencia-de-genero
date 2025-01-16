@@ -35,10 +35,10 @@ function App() {
     startAnimation();
   };
 
-  const handleDeny = () => {
-    window.location.href =
-      "https://www.instagram.com/secretariadamulher.rio/?hl=en";
-  };
+  // const handleDeny = () => {
+  //   window.location.href =
+  //     "https://www.instagram.com/secretariadamulher.rio/?hl=en";
+  // };
 
   const [isChecked, setIsChecked] = useState(false);
 

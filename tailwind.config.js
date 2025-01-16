@@ -16,6 +16,12 @@ export default {
         '90': '90',
         '100': '100',
       },
+      fontSize: {
+        // 'sm': '1px',
+        // 'md': '16px',
+        // 'lg': '18px',
+        // 'xl': '20px',
+      },
     },
   },
   plugins: [],

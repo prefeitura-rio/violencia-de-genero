@@ -695,7 +695,7 @@ const ScrollytellingSection = () => {
           ref={audioRef5}
           src="https://cdn.freesound.org/previews/368/368386_3298571-lq.mp3"
         />
-        <div className="flex items-center justify-center fixed top-28 w-full">
+        <div className="flex items-center justify-center fixed top-28 md:top-1/2 md:-mt-48 w-full">
           <div className="frame1 border-2 border-white w-6 h-6 flex items-center justify-center mr-2">
             <img
               src={rightIcon}
@@ -707,10 +707,10 @@ const ScrollytellingSection = () => {
             Ele tinha problemas com álcool?
           </p>
         </div>
-        <div className="frame2 flex items-center justify-center fixed top-48 w-full">
+        <div className="frame2 flex items-center justify-center fixed top-56 md:inset-0 md:m-auto w-full max-w-[600px]">
           <p className="text-white text-3xl xl:text-4xl mx-4">
             <TypingEffect
-              text=" “Ele era um, quando bebia era outro. Se transformava em outra pessoa.”"
+              text={` “Ele era um, quando bebia era outro. \nSe transformava em outra pessoa.”`}
               speed={80}
               showBlink={false}
               startAnimation={startAnimation === "frame2"}
@@ -723,7 +723,7 @@ const ScrollytellingSection = () => {
         alt="Fixed Bottom Left"
         className="frame2 fixed bottom-0 left-0 w-auto h-[60vh] sm:h-[70vh] lg:h-[85vh]"
       />
-      <div className="frame2 z-50 fixed sm:bottom-16 md:right-8 bottom-96 right-4 flex gap-4">
+      <div className="frame2 z-50 fixed sm:bottom-16 md:right-8 bottom-8 right-4 flex gap-4">
         <button
           className="w-9 h-9 bg-transparent border-none cursor-pointer"
           onClick={() => {
@@ -745,29 +745,23 @@ const ScrollytellingSection = () => {
         </button>
       </div>
       {/* Section2 */}
-      <div className="h-screen fixed w-full flex flex-col items-center md:items-start md:pl-32">
-        <div className="flex items-center justify-center fixed top-28 w-full md:w-auto">
-          <div className="frame4 border-2 border-white w-6 h-6 flex items-center justify-center mr-2">
-            <img
-              src={rightIcon}
-              alt="Right Icon"
-              className="scale-150 frame5"
-            />
-          </div>
-          <p className="frame4 text-white text-2xl xl:text-3xl">
-            Ele te xingava ou constrangia?
-          </p>
+      <div className="flex items-center justify-start fixed top-28 md:top-1/2 md:-mt-48 w-full pl-4 md:pl-32">
+        <div className="frame5 border-2 border-white w-6 h-6 flex items-center justify-center mr-2">
+          <img src={rightIcon} alt="Right Icon" className="scale-150 frame5" />
         </div>
-        <div className="frame5 flex items-center justify-center fixed top-60 w-full md:w-auto text-xl">
-          <p className="text-white text-3xl xl:text-4xl mx-4 sm:mx-0">
-            <TypingEffect
-              text={`“Chamava de puta, de vagabunda. \nNa frente dos outros.”`}
-              speed={80}
-              showBlink={false}
-              startAnimation={startAnimation === "frame5"}
-            />
-          </p>
-        </div>
+        <p className="frame5 text-white text-2xl xl:text-3xl">
+          Ele te xingava ou constrangia?
+        </p>
+      </div>
+      <div className="frame5 flex items-center justify-start fixed top-56 md:inset-0 w-full max-w-[600px] pl-4 md:pl-32">
+        <p className="text-white text-3xl xl:text-4xl">
+          <TypingEffect
+            text={`“Chamava de puta, de vagabunda. \nNa frente dos outros.”`}
+            speed={80}
+            showBlink={false}
+            startAnimation={startAnimation === "frame5"}
+          />
+        </p>
       </div>
       <img
         src={img2}
@@ -796,36 +790,30 @@ const ScrollytellingSection = () => {
         </button>
       </div>
       {/* Section3 */}
-      <div className="h-screen fixed w-full flex flex-col items-center md:items-end md:pr-32">
-        <div className="flex items-center justify-center fixed top-28 w-full md:w-auto">
-          <div className="frame7 border-2 border-white w-6 h-6 flex items-center justify-center mr-2">
-            <img
-              src={rightIcon}
-              alt="Right Icon"
-              className="scale-150 frame8"
-            />
-          </div>
-          <p className="frame7 text-white text-2xl xl:text-3xl">
-            Ele já te ameaçou ou agrediu?
-          </p>
+      <div className="flex items-center justify-center sm:justify-end fixed top-28 md:top-1/2 md:-mt-48 w-full pr-4 md:pr-20 lg:pr-32">
+        <div className="frame7 border-2 border-white w-6 h-6 flex items-center justify-center mr-2">
+          <img src={rightIcon} alt="Right Icon" className="scale-150 frame8" />
         </div>
-        <div className="frame8 flex items-center justify-center fixed top-60 w-full md:w-auto text-xl">
-          <p className="text-white text-3xl xl:text-4xl mx-4 sm:mx-0">
-            <TypingEffect
-              text={`“Ele me tacou álcool e quis tocar fogo. \nFalou que eu só poderia sair dali morta.”`}
-              speed={80}
-              showBlink={false}
-              startAnimation={startAnimation === "frame8"}
-            />
-          </p>
-        </div>
+        <p className="frame7 text-white text-2xl xl:text-3xl">
+          Ele já te ameaçou ou agrediu?
+        </p>
+      </div>
+      <div className="frame8 flex items-center justify-center sm:justify-end fixed top-56 md:inset-0 w-full pr-4 md:pr-20 lg:pr-32 ">
+        <p className="text-white text-3xl xl:text-4xl mx-4 sm:mx-0 max-w-[600px]">
+          <TypingEffect
+            text={`“Ele me tacou álcool e quis tocar fogo. \nFalou que eu só poderia sair dali morta.”`}
+            speed={80}
+            showBlink={false}
+            startAnimation={startAnimation === "frame8"}
+          />
+        </p>
       </div>
       <img
         src={img3}
         alt="Fixed Bottom Left"
         className="frame8 fixed -bottom-10 -left-10 w-[100vw] max-w-[500px] sm:max-w-[600px] sm:w-[70vw] md:max-w-[800px]"
       />
-      <div className="frame8 fixed z-50 sm:bottom-28 right-4 md:right-32 bottom-28 flex gap-4">
+      <div className="frame8 fixed z-50 sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-28 flex gap-4">
         <button
           className="w-9 h-9 bg-transparent border-none cursor-pointer"
           onClick={() => alert("Button 3a clicked")}
