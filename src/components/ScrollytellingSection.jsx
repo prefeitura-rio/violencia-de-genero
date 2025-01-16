@@ -735,9 +735,9 @@ const ScrollytellingSection = () => {
       <img
         src={img1}
         alt="Fixed Bottom Left"
-        className="frame2 fixed bottom-0 left-0 w-auto h-[60vh] sm:h-[70vh] lg:h-[85vh]"
+        className="frame2 fixed bottom-0 left-0 w-auto h-[60vh] lg:h-[85vh]"
       />
-      <div className="frame2 z-50 fixed z-50 sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-28 flex gap-4">
+      <div className="frame2 z-50 fixed sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-28 flex gap-4">
         <button
           className="w-9 h-9 bg-transparent border-none cursor-pointer"
           onClick={() => {

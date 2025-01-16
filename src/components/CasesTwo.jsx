@@ -238,7 +238,7 @@ const CasesTwo = ({ startAnimation }) => {
         </button>
       </div>
 
-      <div className="flex flex-col items-center lg:items-start fixed top-16 md:top-80 md:-mt-48 w-full pl-4 lg:pl-32">
+      <div className="flex flex-col items-start lg:items-start fixed top-10 md:top-80 md:-mt-48 w-full pl-4 md:pl-20 lg:pl-32">
         <div className="flex flex-col items-start space-y-4">
           <div className="flex items-center justify-start">
             <div className="frame34 border-2 border-white w-6 h-6 flex items-center justify-center mr-4 flex-shrink-0">
@@ -278,8 +278,8 @@ const CasesTwo = ({ startAnimation }) => {
           </div>
         </div>
       </div>
-      <div className="frame35 flex items-center justify-center lg:justify-start fixed inset-0 w-full pl-4 md:pl-20 lg:pl-32 ">
-        <p className="text-white text-3xl xl:text-4xl mx-4 sm:mx-0 max-w-[600px] text-left">
+      <div className="frame35 flex items-center justify-start lg:justify-start fixed inset-0 w-full pl-4 md:pl-20 lg:pl-32 ">
+        <p className="text-white text-3xl xl:text-4xl sm:mx-0 max-w-[600px] text-left">
           <TypingEffect
             text={`“Ele controlava onde eu ia, \no que eu fazia, quem eu via”.`}
             speed={80}
@@ -291,7 +291,7 @@ const CasesTwo = ({ startAnimation }) => {
       <img
         src={marionette}
         alt="Relógio representando a passagem do tempo"
-        className="frame34 fixed -bottom-5 -right-5 w-[400px] lg:w-[70vw] max-w-[800px]"
+        className="frame34 fixed -bottom-5 -right-5 w-[400px] sm:w-[70vw] max-w-[800px]"
       />
       <div className="frame35 fixed z-50 sm:bottom-28 left-4 md:left-20 lg:left-32 bottom-28 flex gap-4">
         <button
@@ -310,7 +310,7 @@ const CasesTwo = ({ startAnimation }) => {
         </button>
       </div>
 
-      <div className="flex flex-col items-center lg:items-end fixed top-16 md:top-80 md:-mt-48 w-full pr-4 lg:pr-32">
+      <div className="flex flex-col items-center lg:items-end fixed top-10 md:top-80 md:-mt-48 w-full pr-4 lg:pr-32">
         <div className="mx-4 flex flex-col items-start space-y-4">
           <div className="flex items-center justify-start">
             <div className="frame37 border-2 border-white w-6 h-6 flex items-center justify-center mr-4 flex-shrink-0">
@@ -351,7 +351,7 @@ const CasesTwo = ({ startAnimation }) => {
         </div>
       </div>
       <div className="frame38 flex items-center justify-center sm:justify-end fixed inset-0 w-full pr-4 md:pr-20 lg:pr-32 ">
-        <p className="text-white text-3xl xl:text-4xl mx-4 sm:mx-0 max-w-[600px]">
+        <p className="text-white text-3xl xl:text-4xl mx-4 sm:mx-0 max-w-[500px] text-right">
           <TypingEffect
             text={`“Teve uma vez que ele me perseguiu. Ele virou pra mim e falou: estou apenas te vigiando. Seguindo os teus passos.”`}
             speed={80}
