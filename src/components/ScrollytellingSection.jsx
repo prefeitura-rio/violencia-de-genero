@@ -15,7 +15,7 @@ import CasesTwo from "./CasesTwo";
 import MapSection from "./MapSection";
 import TypingEffect from "./TypingEffect";
 import Intro2 from "./Intro2";
-
+import "../App.css";
 gsap.registerPlugin(ScrollTrigger);
 
 const ScrollytellingSection = () => {
@@ -724,7 +724,7 @@ const ScrollytellingSection = () => {
       <div className="h-screen frame47-trigger"></div>
       <div className="h-screen frame48-trigger"></div>
       {showMessage && (
-        <div className="text-sm bg-transparent z-50 fixed bottom-0 left-1/2 transform -translate-x-1/2 p-4 text-white bg-black bg-opacity-50">
+        <div className="text-sm bg-transparent z-50 fixed bottom-0 left-1/2 transform -translate-x-1/2 p-4 text-white bg-black bg-opacity-50 blink">
           Continue descendo
         </div>
       )}
