@@ -100,12 +100,12 @@ const CasesTwo = ({ startAnimation }) => {
         />
       </div>
 
-      <div
+      {/* <div
         style={{ zIndex: 899 }}
         className="fixed frame31 top-14 sm:top-20 sm:right-36 text-left mx-4"
       >
         <div className="flex items-center pb-4">
-          <div className="border-2 border-white w-6 h-6 flex-shrink-0 mr-2">
+          <div className="border-2 border-white w-6 h-6 flex-shrink-0 mr-4">
             <img
               src={rightIcon}
               alt="Right Icon"
@@ -117,7 +117,7 @@ const CasesTwo = ({ startAnimation }) => {
           </p>
         </div>
         <div className="flex items-center pb-4">
-          <div className="border-2 border-white w-6 h-6 flex-shrink-0 mr-2">
+          <div className="border-2 border-white w-6 h-6 flex-shrink-0 mr-4">
             <img
               src={rightIcon}
               alt="Right Icon"
@@ -129,7 +129,7 @@ const CasesTwo = ({ startAnimation }) => {
           </p>
         </div>
         <div className="flex items-center">
-          <div className="border-2 border-white w-6 h-6 flex-shrink-0 mr-2">
+          <div className="border-2 border-white w-6 h-6 flex-shrink-0 mr-4">
             <img
               src={rightIcon}
               alt="Right Icon"
@@ -163,143 +163,195 @@ const CasesTwo = ({ startAnimation }) => {
               <img src={mute} alt="Button 2" className="w-full h-full" />
             </button>
           </div>
-        </p>
-        {/* <p className="text-3xl xl:text-4xl pt-16 flex flex-col sm:flex-row items-center">
-          “Eu não tinha coragem de falar. Por medo de ser julgada.”
-          <div className="flex mt-4 sm:mt-0">
-            <button
-              className="w-9 h-9 bg-transparent border-none cursor-pointer ml-10"
-              onClick={() => alert("Button 1 clicked")}
-            >
-              <img src={replay} alt="Button 1" className="w-full h-full" />
-            </button>
-            <button
-              className="w-10 h-10 bg-transparent border-none cursor-pointer ml-2"
-              onClick={() => alert("Button 2 clicked")}
-            >
-              <img src={mute} alt="Button 2" className="w-full h-full" />
-            </button>
-          </div>
         </p> */}
-        <img
-          src={womanOnHand}
-          alt="Relógio representando a passagem do tempo"
-          className="frame31 fixed bottom-0 left-0 w-[80vw] sm:w-[60vw] max-w-[800px]"
-        />
+      {/* </div> */}
+      {/* <div className="flex items-center justify-center sm:justify-end fixed top-28 md:top-1/2 md:-mt-48 w-full pr-4 md:pr-20 lg:pr-32"> */}
+      <div className="flex flex-col items-center lg:items-end fixed top-16 md:top-80 md:-mt-48 w-full pr-4 lg:pr-32">
+        <div className="mx-4 flex flex-col items-start space-y-4">
+          <div className="flex items-center justify-start">
+            <div className="frame31 border-2 border-white w-6 h-6 flex items-center justify-center mr-4 flex-shrink-0">
+              <img
+                src={rightIcon}
+                alt="Right Icon"
+                className="scale-150 frame32"
+              />
+            </div>
+            <p className="frame31 text-white text-2xl xl:text-3xl text-left">
+              Seu parceiro(a) já expressou ciúmes obsessivos;
+            </p>
+          </div>
+          <div className="flex items-center justify-start">
+            <div className="frame31 border-2 border-white w-6 h-6 flex items-center justify-center mr-4 flex-shrink-0">
+              <img
+                src={rightIcon}
+                alt="Right Icon"
+                className="scale-150 frame32"
+              />
+            </div>
+            <p className="frame31 text-white text-2xl xl:text-3xl text-left">
+              Você sente medo de que ele se aborreça;
+            </p>
+          </div>
+          <div className="flex items-center justify-start">
+            <div className="frame31 border-2 border-white w-6 h-6 flex items-center justify-center mr-4 flex-shrink-0">
+              <img
+                src={rightIcon}
+                alt="Right Icon"
+                className="scale-150 frame32"
+              />
+            </div>
+            <p className="frame31 text-white text-2xl xl:text-3xl text-left">
+              Não consegue falar sobre a relação com outras pessoas.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="frame32 flex items-center justify-center sm:justify-end fixed inset-0 w-full pr-4 md:pr-20 lg:pr-32 ">
+        <p className="text-white text-3xl xl:text-4xl mx-4 sm:mx-0 max-w-[600px]">
+          <TypingEffect
+            text={`“Ele era ciumento. Tinha posse de mim”.`}
+            speed={80}
+            showBlink={false}
+            startAnimation={startAnimation === "frame32"}
+          />
+        </p>
+      </div>
+      <img
+        src={womanOnHand}
+        alt="Relógio representando a passagem do tempo"
+        className="frame31 fixed bottom-0 left-0 w-[80vw] sm:w-[60vw] max-w-[800px]"
+      />
+      <div className="frame32 fixed z-50 sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-28 flex gap-4">
+        <button
+          className="w-9 h-9 bg-transparent border-none cursor-pointer ml-10"
+          onClick={() => alert("Button 5a clicked")}
+          disabled={startAnimation !== "frame32"}
+        >
+          <img src={replay} alt="Button 1" className="w-full h-full" />
+        </button>
+        <button
+          className="w-10 h-10 bg-transparent border-none cursor-pointer ml-2"
+          onClick={() => alert("Button 5b clicked")}
+          disabled={startAnimation !== "frame32"}
+        >
+          <img src={mute} alt="Button 2" className="w-full h-full" />
+        </button>
       </div>
 
-      <div
-        style={{ zIndex: 898 }}
-        className="fixed frame34 top-14 sm:top-20 sm:left-36 text-left mx-4"
-      >
-        <div className="flex items-center pb-4">
-          <div className="border-2 border-white w-6 h-6 flex-shrink-0 mr-2">
-            <img
-              src={rightIcon}
-              alt="Right Icon"
-              className="frame35 w-full h-full object-contain"
-            />
+      <div className="flex flex-col items-center lg:items-start fixed top-16 md:top-80 md:-mt-48 w-full pl-4 lg:pl-32">
+        <div className="flex flex-col items-start space-y-4">
+          <div className="flex items-center justify-start">
+            <div className="frame34 border-2 border-white w-6 h-6 flex items-center justify-center mr-4 flex-shrink-0">
+              <img
+                src={rightIcon}
+                alt="Right Icon"
+                className="scale-150 frame35"
+              />
+            </div>
+            <p className="frame34 text-white text-2xl xl:text-3xl text-left">
+              Ele te ridiculariza;
+            </p>
           </div>
-          <p className="text-white text-2xl xl:text-3xl">
-            Ele te ridiculariza;
-          </p>
-        </div>
-        <div className="flex items-center pb-4">
-          <div className="border-2 border-white w-6 h-6 flex-shrink-0 mr-2">
-            <img
-              src={rightIcon}
-              alt="Right Icon"
-              className="frame35 w-full h-full object-contain"
-            />
+          <div className="flex items-center justify-start">
+            <div className="frame34 border-2 border-white w-6 h-6 flex items-center justify-center mr-4 flex-shrink-0">
+              <img
+                src={rightIcon}
+                alt="Right Icon"
+                className="scale-150 frame35"
+              />
+            </div>
+            <p className="frame34 text-white text-2xl xl:text-3xl text-left">
+              Controla o que você faz ou quem vê;
+            </p>
           </div>
-          <p className="text-white text-2xl xl:text-3xl">
-            Controla o que você faz ou quem vê;
-          </p>
-        </div>
-        <div className="flex items-center pb-4">
-          <div className="border-2 border-white w-6 h-6 flex-shrink-0 mr-2">
-            <img
-              src={rightIcon}
-              alt="Right Icon"
-              className="frame35 w-full h-full object-contain"
-            />
+          <div className="flex items-center justify-start">
+            <div className="frame34 border-2 border-white w-6 h-6 flex items-center justify-center mr-4 flex-shrink-0">
+              <img
+                src={rightIcon}
+                alt="Right Icon"
+                className="scale-150 frame35"
+              />
+            </div>
+            <p className="frame34 text-white text-2xl xl:text-3xl text-left">
+              Te intimida, amedronta ou chantageia.
+            </p>
           </div>
-          <p className="text-white text-2xl xl:text-3xl">
-            Te intimida, amedronta ou chantageia.
-          </p>
         </div>
-        <p className="frame35 text-3xl xl:text-4xl pt-4 sm:pt-28 flex flex-col items-start">
+      </div>
+      <div className="frame35 flex items-center justify-center lg:justify-start fixed inset-0 w-full pl-4 md:pl-20 lg:pl-32 ">
+        <p className="text-white text-3xl xl:text-4xl mx-4 sm:mx-0 max-w-[600px] text-left">
           <TypingEffect
             text={`“Ele controlava onde eu ia, \no que eu fazia, quem eu via”.`}
             speed={80}
             showBlink={false}
             startAnimation={startAnimation === "frame35"}
           />
-          <div className="flex mt-8">
-            <button
-              className="w-9 h-9 bg-transparent border-none cursor-pointer mr-2"
-              onClick={() => alert("Button 6a clicked")}
-              disabled={startAnimation !== "frame35"}
-            >
-              <img src={replay} alt="Button 6b" className="w-full h-full" />
-            </button>
-            <button
-              className="w-10 h-10 bg-transparent border-none cursor-pointer"
-              onClick={() => alert("Button 2 clicked")}
-              disabled={startAnimation !== "frame"}
-            >
-              <img src={mute} alt="Button 2" className="w-full h-full" />
-            </button>
-          </div>
         </p>
-        <img
-          src={marionette}
-          alt="Relógio representando a passagem do tempo"
-          className="frame34 fixed bottom-0 right-0 w-[400px] lg:w-[70vw] max-w-[800px]"
-        />
+      </div>
+      <img
+        src={marionette}
+        alt="Relógio representando a passagem do tempo"
+        className="frame34 fixed -bottom-5 -right-5 w-[400px] lg:w-[70vw] max-w-[800px]"
+      />
+      <div className="frame35 fixed z-50 sm:bottom-28 left-4 md:left-20 lg:left-32 bottom-28 flex gap-4">
+        <button
+          className="w-9 h-9 bg-transparent border-none cursor-pointer "
+          onClick={() => alert("Button 5a clicked")}
+          disabled={startAnimation !== "frame35"}
+        >
+          <img src={replay} alt="Button 1" className="w-full h-full" />
+        </button>
+        <button
+          className="w-10 h-10 bg-transparent border-none cursor-pointer "
+          onClick={() => alert("Button 5b clicked")}
+          disabled={startAnimation !== "frame35"}
+        >
+          <img src={mute} alt="Button 2" className="w-full h-full" />
+        </button>
       </div>
 
-      <div
-        style={{ zIndex: 897 }}
-        className="fixed frame37 top-14 max-w-[600px] sm:top-28 sm:right-10 text-left mx-4"
-      >
-        <div className="flex items-center pb-4">
-          <div className="border-2 border-white w-6 h-6 flex-shrink-0 mr-2">
-            <img
-              src={rightIcon}
-              alt="Right Icon"
-              className="frame38 w-full h-full object-contain"
-            />
+      <div className="flex flex-col items-center lg:items-end fixed top-16 md:top-80 md:-mt-48 w-full pr-4 lg:pr-32">
+        <div className="mx-4 flex flex-col items-start space-y-4">
+          <div className="flex items-center justify-start">
+            <div className="frame37 border-2 border-white w-6 h-6 flex items-center justify-center mr-4 flex-shrink-0">
+              <img
+                src={rightIcon}
+                alt="Right Icon"
+                className="scale-150 frame38"
+              />
+            </div>
+            <p className="frame37 text-white text-2xl xl:text-3xl text-left">
+              Destrói ou esconde seus documentos;
+            </p>
           </div>
-          <p className="text-white text-2xl xl:text-3xl">
-            Destrói ou esconde seus documentos;
-          </p>
-        </div>
-        <div className="flex items-center pb-4">
-          <div className="border-2 border-white w-6 h-6 flex-shrink-0 mr-2">
-            <img
-              src={rightIcon}
-              alt="Right Icon"
-              className="frame38 w-full h-full object-contain"
-            />
+          <div className="flex items-center justify-start">
+            <div className="frame37 border-2 border-white w-6 h-6 flex items-center justify-center mr-4 flex-shrink-0">
+              <img
+                src={rightIcon}
+                alt="Right Icon"
+                className="scale-150 frame38"
+              />
+            </div>
+            <p className="frame37 text-white text-2xl xl:text-3xl text-left">
+              Impede de sair ou ver outras pessoas;
+            </p>
           </div>
-          <p className="text-white text-2xl xl:text-3xl">
-            Impede de sair ou ver outras pessoas;
-          </p>
-        </div>
-        <div className="flex items-center pb-4">
-          <div className="border-2 border-white w-6 h-6 flex-shrink-0 mr-2">
-            <img
-              src={rightIcon}
-              alt="Right Icon"
-              className="frame38 w-full h-full object-contain"
-            />
+          <div className="flex items-center justify-start">
+            <div className="frame37 border-2 border-white w-6 h-6 flex items-center justify-center mr-4 flex-shrink-0">
+              <img
+                src={rightIcon}
+                alt="Right Icon"
+                className="scale-150 frame38"
+              />
+            </div>
+            <p className="frame37 text-white text-2xl xl:text-3xl text-left">
+              Te ameaça ou persegue.
+            </p>
           </div>
-          <p className="text-white text-2xl xl:text-3xl">
-            Te ameaça ou persegue.
-          </p>
         </div>
-        <p className="text-white max-w-[600px] sm:max-w-[400px] text-3xl xl:text-4xl pt-4 sm:pt-28 flex flex-col items-start">
+      </div>
+      <div className="frame38 flex items-center justify-center sm:justify-end fixed inset-0 w-full pr-4 md:pr-20 lg:pr-32 ">
+        <p className="text-white text-3xl xl:text-4xl mx-4 sm:mx-0 max-w-[600px]">
           <TypingEffect
             text={`“Teve uma vez que ele me perseguiu. Ele virou pra mim e falou: estou apenas te vigiando. Seguindo os teus passos.”`}
             speed={80}
@@ -307,27 +359,27 @@ const CasesTwo = ({ startAnimation }) => {
             startAnimation={startAnimation === "frame38"}
           />
         </p>
-        <div className="flex frame38 justify-end w-full mt-8">
-          <button
-            className="w-9 h-9 bg-transparent border-none cursor-pointer mr-2"
-            onClick={() => alert("Button 7a clicked")}
-            disabled={startAnimation !== "frame38"}
-          >
-            <img src={replay} alt="Button 1" className="w-full h-full" />
-          </button>
-          <button
-            className="w-10 h-10 bg-transparent border-none cursor-pointer"
-            onClick={() => alert("Button 7b clicked")}
-            disabled={startAnimation !== "frame38"}
-          >
-            <img src={mute} alt="Button 2" className="w-full h-full" />
-          </button>
-        </div>
-        <img
-          src={girlsShadow}
-          alt="Relógio representando a passagem do tempo"
-          className="frame37 fixed bottom-0 left-0 w-[250px] sm:w-[60vw] max-w-[800px]"
-        />
+      </div>
+      <img
+        src={girlsShadow}
+        alt="Relógio representando a passagem do tempo"
+        className="frame37 fixed bottom-0 left-0 w-[80vw] sm:w-[60vw] max-w-[800px]"
+      />
+      <div className="frame38 fixed z-50 sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-28 flex gap-4">
+        <button
+          className="w-9 h-9 bg-transparent border-none cursor-pointer ml-10"
+          onClick={() => alert("Button 5a clicked")}
+          disabled={startAnimation !== "frame38"}
+        >
+          <img src={replay} alt="Button 1" className="w-full h-full" />
+        </button>
+        <button
+          className="w-10 h-10 bg-transparent border-none cursor-pointer ml-2"
+          onClick={() => alert("Button 5b clicked")}
+          disabled={startAnimation !== "frame38"}
+        >
+          <img src={mute} alt="Button 2" className="w-full h-full" />
+        </button>
       </div>
     </div>
   );
