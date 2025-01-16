@@ -23,6 +23,29 @@ const ScrollytellingSection = () => {
   const audioRef2 = useRef(null);
   const audioRef5 = useRef(null);
 
+  const [lastScrollTime, setLastScrollTime] = useState(Date.now());
+  const [showMessage, setShowMessage] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setLastScrollTime(Date.now());
+      setShowMessage(false);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    const interval = setInterval(() => {
+      if (Date.now() - lastScrollTime > 3000) {
+        setShowMessage(true);
+      }
+    }, 1000);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      clearInterval(interval);
+    };
+  }, [lastScrollTime]);
+
   useEffect(() => {
     gsap.set(
       ".frame2, .frame3, .frame4, .frame5, .frame6,.frame7,.frame8,.frame9, .frame10, .frame11, .frame12, .frame12-2, .frame13, .frame14,.frame15, .frame16,.frame17,.frame18,.frame19,.frame20, .frame21, .frame22, .frame23, .frame24, .frame25, .frame26, .frame27, .frame28, .frame29, .frame30, .frame31, .frame32, .frame33, .frame34, .frame35, .frame36, .frame37, .frame38, .frame39, .frame40, .frame41, .frame42, .frame43, .frame44, .frame45, .frame46, .frame47, .frame48, .frameCMC, .frameCEAM, .frameNEAM, .frameNEAP, .frameAS, .frameSMC",
@@ -700,6 +723,11 @@ const ScrollytellingSection = () => {
       <div className="h-screen frame46-trigger"></div>
       <div className="h-screen frame47-trigger"></div>
       <div className="h-screen frame48-trigger"></div>
+      {showMessage && (
+        <div className="text-sm bg-transparent z-50 fixed bottom-0 left-1/2 transform -translate-x-1/2 p-4 text-white bg-black bg-opacity-50">
+          Continue descendo
+        </div>
+      )}
       <div className="h-screen fixed w-full flex flex-col items-center">
         <audio
           ref={audioRef2}
