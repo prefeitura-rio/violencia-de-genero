@@ -22,6 +22,9 @@ export default {
         // 'lg': '18px',
         // 'xl': '20px',
       },
+      screens: {
+        '3xl': '1920px', // Custom breakpoint for 3xl screens
+      },
     },
   },
   plugins: [],

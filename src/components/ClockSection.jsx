@@ -16,7 +16,7 @@ const ClockSection = () => {
       <div className="fixed h-screen w-full flex flex-col items-center justify-center bg-black text-white text-center px-4">
         {/* Text Section */}
         <div className="fixed top-14 max-w-[600px] text-left mx-4">
-          <h1 className="frame20 text-xl xl:text-lg mb-4">
+          <h1 className="frame20 text-xl mb-4">
             A Violência contra mulheres aumentou em todos os títulos criminais
             no Brasil em 2023.{" "}
             <span className="text-[#EECBAD]">

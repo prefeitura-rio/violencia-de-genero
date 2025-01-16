@@ -14,6 +14,7 @@ import ClockSection from "./ClockSection";
 import CasesTwo from "./CasesTwo";
 import MapSection from "./MapSection";
 import TypingEffect from "./TypingEffect";
+import Intro2 from "./Intro2";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -24,7 +25,7 @@ const ScrollytellingSection = () => {
 
   useEffect(() => {
     gsap.set(
-      ".frame2, .frame3, .frame4, .frame5, .frame6,.frame7,.frame8,.frame9, .frame10, .frame11, .frame12, .frame13, .frame14,.frame15, .frame16,.frame17,.frame18,.frame19,.frame20, .frame21, .frame22, .frame23, .frame24, .frame25, .frame26, .frame27, .frame28, .frame29, .frame30, .frame31, .frame32, .frame33, .frame34, .frame35, .frame36, .frame37, .frame38, .frame39, .frame40, .frame41, .frame42, .frame43, .frame44, .frame45, .frame46, .frame47, .frame48, .frameCMC, .frameCEAM, .frameNEAM, .frameNEAP, .frameAS, .frameSMC",
+      ".frame2, .frame3, .frame4, .frame5, .frame6,.frame7,.frame8,.frame9, .frame10, .frame11, .frame12, .frame12-2, .frame13, .frame14,.frame15, .frame16,.frame17,.frame18,.frame19,.frame20, .frame21, .frame22, .frame23, .frame24, .frame25, .frame26, .frame27, .frame28, .frame29, .frame30, .frame31, .frame32, .frame33, .frame34, .frame35, .frame36, .frame37, .frame38, .frame39, .frame40, .frame41, .frame42, .frame43, .frame44, .frame45, .frame46, .frame47, .frame48, .frameCMC, .frameCEAM, .frameNEAM, .frameNEAP, .frameAS, .frameSMC",
       { opacity: 0 }
     );
 
@@ -164,17 +165,29 @@ const ScrollytellingSection = () => {
       onEnter: () => gsap.to(".frame12", { opacity: 1, duration: 0.5 }),
       onLeaveBack: () => gsap.to(".frame12", { opacity: 0, duration: 0.5 }),
     });
+    ScrollTrigger.create({
+      trigger: ".frame12-2-trigger",
+      start: "top center",
+      onEnter: () => {
+        gsap.to(".frame12-2", { opacity: 1, duration: 0.5 });
+        gsap.to(".frame12", { opacity: 0, duration: 0.5 });
+      },
+      onLeaveBack: () => {
+        gsap.to(".frame12-2", { opacity: 0, duration: 0.5 });
+        gsap.to(".frame12", { opacity: 1, duration: 0.5 });
+      },
+    });
 
     ScrollTrigger.create({
       trigger: ".frame13-trigger",
       start: "top center",
       onEnter: () => {
         gsap.to(".frame13", { opacity: 1, duration: 0.5 });
-        gsap.to(".frame12", { opacity: 0, duration: 0.5 });
+        gsap.to(".frame12-2", { opacity: 0, duration: 0.5 });
       },
       onLeaveBack: () => {
         gsap.to(".frame13", { opacity: 0, duration: 0.5 });
-        gsap.to(".frame12", { opacity: 1, duration: 0.5 });
+        gsap.to(".frame12-2", { opacity: 1, duration: 0.5 });
       },
     });
     ScrollTrigger.create({
@@ -646,6 +659,7 @@ const ScrollytellingSection = () => {
       <div className="h-screen frame11-trigger"></div>
       {/* Intro */}
       <div className="h-screen frame12-trigger"></div>
+      <div className="h-screen block sm:hidden frame12-2-trigger"></div>
       {/* Cases */}
       <div className="h-screen frame13-trigger"></div>
       <div className="h-screen frame14-trigger"></div>
@@ -723,7 +737,7 @@ const ScrollytellingSection = () => {
         alt="Fixed Bottom Left"
         className="frame2 fixed bottom-0 left-0 w-auto h-[60vh] sm:h-[70vh] lg:h-[85vh]"
       />
-      <div className="frame2 z-50 fixed sm:bottom-16 md:right-8 bottom-8 right-4 flex gap-4">
+      <div className="frame2 z-50 fixed z-50 sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-28 flex gap-4">
         <button
           className="w-9 h-9 bg-transparent border-none cursor-pointer"
           onClick={() => {
@@ -833,6 +847,8 @@ const ScrollytellingSection = () => {
       <Cover />
       {/* Intro */}
       <Intro />
+      {/* Intro2 - Continuation for Mobile */}
+      <Intro2 />
       {/* Cases */}
       <Cases />
       {/* ClockSection */}

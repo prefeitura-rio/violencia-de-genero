@@ -17,7 +17,7 @@ const MapSection = () => {
   return (
     <>
       <div className="fixed top-10 sm:top-20 text-white left-0 sm:left-20 max-w-[600px] text-left mx-4 z-20">
-        <h1 className="frame40 text-xl xl:text-lg mb-4">
+        <h1 className="frame40 text-xl mb-4">
           Desde 2021, a{" "}
           <span className="text-[#EECBAD]">
             Secretaria Especial de Políticas e Promoção da Mulher (SPM-Rio)
@@ -36,7 +36,7 @@ const MapSection = () => {
       <div className="fixed top-10 sm:top-20 text-white left-0 sm:left-20 max-w-[600px] text-left mx-4 z-20">
         {/* map2 */}
 
-        <h1 className="frame42 text-xl xl:text-lg mb-4 z-20">
+        <h1 className="frame42 text-xl mb-4 z-20">
           <span className="text-[#EECBAD]"> Casas da Mulher Carioca</span>
           <br></br> As Casas da Mulher Carioca são espaços de acolhimento e
           capacitação nos quais são oferecidos serviços de atendimento
@@ -58,7 +58,7 @@ const MapSection = () => {
       <div className="fixed top-10 sm:top-20 text-white left-0 sm:left-20 max-w-[600px] text-left mx-4 z-20">
         {/* map3 */}
 
-        <h1 className="frame43 text-xl xl:text-lg mb-4 z-20">
+        <h1 className="frame43 text-xl mb-4 z-20">
           <span className="text-[#EECBAD]">
             Centros Especializados de Atendimento à Mulher
           </span>{" "}
@@ -80,7 +80,7 @@ const MapSection = () => {
       <div className="fixed top-10 sm:top-20 text-white left-0 sm:left-20 max-w-[600px] text-left mx-4 z-20">
         {/* map4 */}
 
-        <h1 className="frame44 text-xl xl:text-lg mb-4 z-20">
+        <h1 className="frame44 text-xl mb-4 z-20">
           <span className="text-[#EECBAD]">
             Núcleos Especializados de Atendimento à Mulher (NEAMs)
           </span>
@@ -102,7 +102,7 @@ const MapSection = () => {
       <div className="fixed top-10 sm:top-20 text-white left-0 sm:left-20 max-w-[600px] text-left mx-4 z-20">
         {/* map5 */}
 
-        <h1 className="frame45 text-xl xl:text-lg mb-4 z-20">
+        <h1 className="frame45 text-xl mb-4 z-20">
           <span className="text-[#EECBAD]">
             Núcleos Especializados de Atendimento Psicoterapêutico (NEAPs)
           </span>
@@ -122,7 +122,7 @@ const MapSection = () => {
       <div className="fixed top-10 sm:top-20 text-white left-0 sm:left-20 max-w-[600px] text-left mx-4 z-20">
         {/* map6 */}
 
-        <h1 className="frame46 text-xl xl:text-lg mb-4 z-20">
+        <h1 className="frame46 text-xl mb-4 z-20">
           <span className="text-[#EECBAD]">Abrigo Sigiloso</span>
           <br /> Mulheres em risco iminente de morte são encaminhadas com seus
           filhos para o abrigo, em local não divulgado. Dessa forma, agressores
@@ -139,7 +139,7 @@ const MapSection = () => {
       <div className="fixed top-10 sm:top-20 text-white left-0 sm:left-20 max-w-[600px] text-left mx-4 z-20">
         {/* map7 */}
 
-        <h1 className="frame47 text-xl xl:text-lg mb-4 z-20">
+        <h1 className="frame47 text-xl mb-4 z-20">
           <span className="text-[#EECBAD]">
             Salas Mulher Cidadã, Programa Mulheres do Rio e Parceiros
           </span>
@@ -157,7 +157,7 @@ const MapSection = () => {
       <div className="fixed top-10 sm:top-20 text-white left-0 sm:left-20 max-w-[600px] text-left mx-4 z-20">
         {/* map8 */}
 
-        <h1 className="frame48 text-xl xl:text-lg mb-4 z-20">
+        <h1 className="frame48 text-xl mb-4 z-20">
           Desde 2021, mais de{" "}
           <span className="text-[#EECBAD]">
             850 mil mulheres foram impactadas

@@ -18,7 +18,7 @@ const CasesTwo = ({ startAnimation }) => {
     <div className="fixed h-screen w-full flex flex-col items-center justify-center bg-black text-white text-center px-4">
       {/* Text Section */}
       <div className="fixed frame27 top-10 sm:top-20 max-w-[900px] text-left mx-4">
-        <h1 className="text-xl xl:text-lg mb-4">
+        <h1 className="text-xl mb-4">
           Embora o feminicídio muitas vezes ocupe as manchetes, a maioria dos
           casos de violência de gênero permanece oculta, longe dos olhos do
           público. São <span className="text-[#EECBAD]">agressões diárias</span>{" "}
@@ -81,9 +81,9 @@ const CasesTwo = ({ startAnimation }) => {
           <img src={mute} alt="Button 4b" className="w-full h-full" />
         </button>
       </div>
-
-      <div className="fixed frame29 top-10 sm:top-20 max-w-[900px] text-left mx-4">
-        <h1 className="text-xl xl:text-lg mb-4">
+      {/* <div className="flex items-center justify-center sm:justify-end fixed top-28 md:top-1/2 md:-mt-48 w-full pr-4 md:pr-20 lg:pr-32"> */}
+      <div className="flex items-start 3xl:justify-center px-4 lg:px-20 2xl:ml-0 justify-start text-left w-full fixed frame29 top-20 sm:top-20">
+        <h1 className="text-xl mb-4 max-w-[500px]">
           A violência de gênero geralmente é associada à agressões físicas ou
           sexuais, mas se apresenta em várias formas, desde comportamentos sutis
           até ameaças de morte. As violências mais comuns são classificadas como{" "}
@@ -147,7 +147,7 @@ const CasesTwo = ({ startAnimation }) => {
             showBlink={false}
             startAnimation={startAnimation === "frame32"}
           />
-          <div className="flex mt-6 sm:mt-0">
+          <div className="fixed z-50 sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-28 flex gap-4">
             <button
               className="w-9 h-9 bg-transparent border-none cursor-pointer ml-10"
               onClick={() => alert("Button 5a clicked")}
