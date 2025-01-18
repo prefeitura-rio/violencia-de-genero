@@ -30,10 +30,7 @@ const CasesTwo = ({ startAnimation }) => {
           </span>
         </h1>
       </div>
-      <div
-        style={{ zIndex: 900 }}
-        className="fixed md:right-32 frame27 top-[52%] sm:top-[40%] max-w-[500px]  mx-0"
-      >
+      <div className="fixed md:right-32 frame27 top-[52%] sm:top-[40%] max-w-[500px]  mx-0">
         <h1 className="sm:hidden text-2xl xl:text-3xl mx-4 sm:mx-0 text-right">
           <TypingEffect
             text={`“Na primeira vez que ele... Me deu um tapa nas costas, eu já tinha ido lá falar com elas.`}
@@ -99,72 +96,6 @@ const CasesTwo = ({ startAnimation }) => {
           className="frame29 fixed bottom-0 -right-20 w-[600px] sm:w-[900px] md:w-[1100px] max-w-[1000px]"
         />
       </div>
-
-      {/* <div
-        style={{ zIndex: 899 }}
-        className="fixed frame31 top-14 sm:top-20 sm:right-36 text-left mx-4"
-      >
-        <div className="flex items-center pb-4">
-          <div className="border-2 border-white w-6 h-6 flex-shrink-0 mr-4">
-            <img
-              src={rightIcon}
-              alt="Right Icon"
-              className="frame32 w-full h-full object-contain"
-            />
-          </div>
-          <p className=" text-white text-2xl xl:text-3xl">
-            Seu parceiro(a) já expressou ciúmes obsessivos;
-          </p>
-        </div>
-        <div className="flex items-center pb-4">
-          <div className="border-2 border-white w-6 h-6 flex-shrink-0 mr-4">
-            <img
-              src={rightIcon}
-              alt="Right Icon"
-              className="frame32 w-full h-full object-contain"
-            />
-          </div>
-          <p className=" text-white text-2xl xl:text-3xl">
-            Você sente medo de que ele se aborreça;
-          </p>
-        </div>
-        <div className="flex items-center">
-          <div className="border-2 border-white w-6 h-6 flex-shrink-0 mr-4">
-            <img
-              src={rightIcon}
-              alt="Right Icon"
-              className="frame32 w-full h-full object-contain"
-            />
-          </div>
-          <p className=" text-white text-2xl xl:text-3xl">
-            Não consegue falar sobre a relação com outras pessoas.
-          </p>
-        </div>
-        <p className="frame32 text-3xl xl:text-4xl pt-20 sm:pt-28 flex flex-col sm:flex-row items-center">
-          <TypingEffect
-            text={`“Ele era ciumento. Tinha posse de mim”.`}
-            speed={80}
-            showBlink={false}
-            startAnimation={startAnimation === "frame32"}
-          />
-          <div className="fixed z-50 sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-28 flex gap-4">
-            <button
-              className="w-9 h-9 bg-transparent border-none cursor-pointer ml-10"
-              onClick={() => alert("Button 5a clicked")}
-              disabled={startAnimation !== "frame32"}
-            >
-              <img src={replay} alt="Button 1" className="w-full h-full" />
-            </button>
-            <button
-              className="w-10 h-10 bg-transparent border-none cursor-pointer ml-2"
-              onClick={() => alert("Button 5b clicked")}
-              disabled={startAnimation !== "frame32"}
-            >
-              <img src={mute} alt="Button 2" className="w-full h-full" />
-            </button>
-          </div>
-        </p> */}
-      {/* </div> */}
       {/* <div className="flex items-center justify-center sm:justify-end fixed top-28 md:top-1/2 md:-mt-48 w-full pr-4 md:pr-20 lg:pr-32"> */}
       <div className="flex flex-col items-center lg:items-end fixed top-16 md:top-80 md:-mt-48 w-full pr-4 lg:pr-32">
         <div className="mx-4 flex flex-col items-start space-y-4">
