@@ -32,7 +32,7 @@ const ClockSection = () => {
         <img
           src="https://storage.cloud.google.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/four-girls.png"
           alt="Quatro figuras femininas representando vítimas"
-          className="frame21 w-[80%] sm:w-[50%] h-auto"
+          className="frame21 w-[80%] sm:w-[35%] h-auto"
         />
       </div>
 
@@ -45,7 +45,7 @@ const ClockSection = () => {
         <img
           src="https://storage.cloud.google.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/four-girls.png"
           alt="Quatro figuras femininas representando vítimas"
-          className="frame21 w-[80%] sm:w-[50%] h-auto"
+          className="frame21 w-[80%] sm:w-[35%] h-auto"
         />
       </div>
 
@@ -58,7 +58,7 @@ const ClockSection = () => {
         <img
           src="https://storage.cloud.google.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/three-girls.png"
           alt="Três figuras femininas representando vítimas"
-          className="frame22 w-[80%] sm:w-[50%] h-auto"
+          className="frame22 w-[80%] sm:w-[35%] h-auto"
         />
       </div>
 
@@ -71,7 +71,7 @@ const ClockSection = () => {
         <img
           src="https://storage.cloud.google.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/two-girls.png"
           alt="Três figuras femininas representando vítimas"
-          className="frame23 w-[80%] sm:w-[50%] h-auto"
+          className="frame23 w-[80%] sm:w-[35%] h-auto"
         />
       </div>
 
@@ -84,7 +84,7 @@ const ClockSection = () => {
         <img
           src="https://storage.cloud.google.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/one_girls.png"
           alt="Três figuras femininas representando vítimas"
-          className="frame24 w-[80%] sm:w-[50%] h-auto"
+          className="frame24 w-[80%] sm:w-[35%] h-auto"
         />
       </div>
 
@@ -97,7 +97,7 @@ const ClockSection = () => {
         <img
           src="https://storage.cloud.google.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/one_girls.png"
           alt="Três figuras femininas representando vítimas"
-          className="frame24 opacity-0 w-[80%] sm:w-[50%] h-auto"
+          className="frame24 opacity-0 w-[80%] sm:w-[35%] h-auto"
         />
       </div>
     </>

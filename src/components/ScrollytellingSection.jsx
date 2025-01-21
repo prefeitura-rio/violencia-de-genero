@@ -8,6 +8,7 @@ import Cases from "./Cases";
 import ClockSection from "./ClockSection";
 import CasesTwo from "./CasesTwo";
 import MapSection from "./MapSection";
+import Conclusion from "./Conclusion";
 import Intro2 from "./Intro2";
 import "../App.css";
 import AudioControl from "./AudioControl";
@@ -23,17 +24,20 @@ const ScrollytellingSection = () => {
 
   const [lastScrollTime, setLastScrollTime] = useState(Date.now());
   const [showMessage, setShowMessage] = useState(false);
+  const [triggerActivated, setTriggerActivated] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       setLastScrollTime(Date.now());
-      setShowMessage(false);
+      if (!triggerActivated) {
+        setShowMessage(false);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
 
     const interval = setInterval(() => {
-      if (Date.now() - lastScrollTime > 3000) {
+      if (Date.now() - lastScrollTime > 3000 && !triggerActivated) {
         setShowMessage(true);
       }
     }, 1000);
@@ -42,11 +46,11 @@ const ScrollytellingSection = () => {
       window.removeEventListener("scroll", handleScroll);
       clearInterval(interval);
     };
-  }, [lastScrollTime]);
+  }, [lastScrollTime, triggerActivated]);
 
   useEffect(() => {
     gsap.set(
-      "buttons, .frame2, .frame3, .frame4, .frame5, .frame6,.frame7,.frame8,.frame9, .frame10, .frame11, .frame12, .frame12-2, .frame13, .frame14,.frame15, .frame16,.frame17,.frame18,.frame19,.frame20, .frame21, .frame22, .frame23, .frame24, .frame25, .frame26, .frame27, .frame28, .frame29, .frame30, .frame31, .frame32, .frame33, .frame34, .frame35, .frame36, .frame37, .frame38, .frame39, .frame40, .frame41, .frame42, .frame43, .frame44, .frame45, .frame46, .frame47, .frame48, .frameCMC, .frameCEAM, .frameNEAM, .frameNEAP, .frameAS, .frameSMC",
+      "buttons, .frame2, .frame3, .frame4, .frame5, .frame6,.frame7,.frame8,.frame9, .frame10, .frame11, .frame12, .frame12-2, .frame13, .frame14,.frame15, .frame16,.frame17,.frame18,.frame19,.frame20, .frame21, .frame22, .frame23, .frame24, .frame25, .frame26, .frame27, .frame28, .frame29, .frame30, .frame31, .frame32, .frame33, .frame34, .frame35, .frame36, .frame37, .frame38, .frame39, .frame40, .frame41, .frame42, .frame43, .frame44, .frame45, .frame46, .frame47, .frame48, .frameCMC, .frameCEAM, .frameNEAM, .frameNEAP, .frameAS, .frameSMC,.frame1-conclusao,.frame1b-conclusao, .frame2-conclusao, .frame3-conclusao, .frame5-conclusao, .frame6-conclusao",
       { opacity: 0 }
     );
     gsap.set(".casesTwo", { display: "none" });
@@ -124,7 +128,7 @@ const ScrollytellingSection = () => {
       onEnter: () => {
         gsap.to([".frame5", ".buttons"], { opacity: 1, duration: 0.5 });
         setButtonsPosition(
-          "fixed sm:bottom-28 pl-4 bottom-28 md:pl-32 flex gap-4"
+          "fixed sm:bottom-28 pl-4 bottom-[44vh] md:pl-32 flex gap-4"
         );
         setStartAnimation("frame5");
         setAudioSource(
@@ -143,7 +147,7 @@ const ScrollytellingSection = () => {
       onEnterBack: () => {
         setStartAnimation("frame5");
         setButtonsPosition(
-          "fixed sm:bottom-28 pl-4 bottom-28 md:pl-32 flex gap-4"
+          "fixed sm:bottom-28 pl-4 bottom-[44vh] md:pl-32 flex gap-4"
         );
         setAudioSource(
           "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/chamava_de_puta.mp3"
@@ -181,7 +185,7 @@ const ScrollytellingSection = () => {
       onEnter: () => {
         gsap.to([".frame8", ".buttons"], { opacity: 1, duration: 0.5 });
         setButtonsPosition(
-          "sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-28 flex gap-4"
+          "sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-[40vh] flex gap-4"
         );
         setStartAnimation("frame8");
         setAudioSource(
@@ -200,7 +204,7 @@ const ScrollytellingSection = () => {
       onEnterBack: () => {
         setStartAnimation("frame8");
         setButtonsPosition(
-          "sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-28 flex gap-4"
+          "sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-[40vh] flex gap-4"
         );
         setAudioSource(
           "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/ele_me_tacou_alcool.mp3"
@@ -436,7 +440,7 @@ const ScrollytellingSection = () => {
       onEnter: () => {
         gsap.to([".frame28", ".buttons"], { opacity: 1, duration: 0.5 });
         setButtonsPosition(
-          "sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-28 flex gap-4"
+          "sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-8 flex gap-4"
         );
         setStartAnimation("frame28");
         setAudioSource(
@@ -455,7 +459,7 @@ const ScrollytellingSection = () => {
       onEnterBack: () => {
         setStartAnimation("frame28");
         setButtonsPosition(
-          "sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-28 flex gap-4"
+          "sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-8 flex gap-4"
         );
         setAudioSource(
           "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/na_primeira_vez_que_me_deu_um_tapa.mp3"
@@ -821,6 +825,90 @@ const ScrollytellingSection = () => {
         );
       },
     });
+    ScrollTrigger.create({
+      trigger: ".frame1-conclusao-trigger",
+      start: "top center",
+      onEnter: () => {
+        gsap.to(".frame1-conclusao", { opacity: 1, duration: 0.5 });
+        gsap.to(".frame48", { opacity: 0, duration: 0.5 });
+      },
+      onLeaveBack: () => {
+        gsap.to(".frame1-conclusao", { opacity: 0, duration: 0.5 });
+        gsap.to(".frame48", { opacity: 1, duration: 0.5 });
+      },
+    });
+    ScrollTrigger.create({
+      trigger: ".frame1b-conclusao-trigger",
+      start: "top center",
+      onEnter: () => {
+        gsap.to(".frame1b-conclusao", { opacity: 1, duration: 0.5 });
+      },
+      onLeaveBack: () => {
+        gsap.to(".frame1b-conclusao", { opacity: 0, duration: 0.5 });
+      },
+    });
+    ScrollTrigger.create({
+      trigger: ".frame2-conclusao-trigger",
+      start: "top center",
+      onEnter: () => {
+        gsap.to(".frame2-conclusao", { opacity: 1, duration: 0.5 });
+        gsap.to(".frame1-conclusao", { opacity: 0, duration: 0.5 });
+        gsap.to(".frame1b-conclusao", { opacity: 0, duration: 0.5 });
+      },
+      onLeaveBack: () => {
+        gsap.to(".frame2-conclusao", { opacity: 0, duration: 0.5 });
+        gsap.to(".frame1-conclusao", { opacity: 1, duration: 0.5 });
+        gsap.to(".frame1b-conclusao", { opacity: 1, duration: 0.5 });
+      },
+    });
+    ScrollTrigger.create({
+      trigger: ".frame3-conclusao-trigger",
+      start: "top center",
+      onEnter: () => {
+        gsap.to(".frame3-conclusao", { opacity: 1, duration: 0.5 });
+        gsap.to(".frame2-conclusao", { opacity: 0, duration: 0.5 });
+      },
+      onLeaveBack: () => {
+        gsap.to(".frame3-conclusao", { opacity: 0, duration: 0.5 });
+        gsap.to(".frame2-conclusao", { opacity: 1, duration: 0.5 });
+      },
+    });
+    ScrollTrigger.create({
+      trigger: ".frame4-conclusao-trigger",
+      start: "top center",
+      onEnter: () => {
+        gsap.to(".frame3-conclusao", { opacity: 0, duration: 0.5 });
+      },
+      onLeaveBack: () => {
+        gsap.to(".frame3-conclusao", { opacity: 1, duration: 0.5 });
+      },
+    });
+    ScrollTrigger.create({
+      trigger: ".frame5-conclusao-trigger",
+      start: "top center",
+      onEnter: () => {
+        gsap.to(".frame5-conclusao", { opacity: 1, duration: 0.5 });
+      },
+      onLeaveBack: () => {
+        gsap.to(".frame5-conclusao", { opacity: 0, duration: 0.5 });
+      },
+    });
+    ScrollTrigger.create({
+      trigger: ".frame6-conclusao-trigger",
+      start: "top center",
+      onEnter: () => {
+        gsap.to(".frame6-conclusao", { opacity: 1, duration: 0.5 });
+        gsap.to(".frame5-conclusao", { opacity: 0, duration: 0.5 });
+        setShowMessage(false);
+        setTriggerActivated(true);
+      },
+      onLeaveBack: () => {
+        gsap.to(".frame6-conclusao", { opacity: 0, duration: 0.5 });
+        gsap.to(".frame5-conclusao", { opacity: 1, duration: 0.5 });
+        setShowMessage(true);
+        setTriggerActivated(false);
+      },
+    });
   }, []);
 
   useEffect(() => {
@@ -893,6 +981,14 @@ const ScrollytellingSection = () => {
       <div className="h-screen frame46-trigger"></div>
       <div className="h-screen frame47-trigger"></div>
       <div className="h-screen frame48-trigger"></div>
+      {/* Conclusion */}
+      <div className="h-screen frame1-conclusao-trigger"></div>
+      <div className="h-screen frame1b-conclusao-trigger"></div>
+      <div className="h-screen frame2-conclusao-trigger"></div>
+      <div className="h-screen frame3-conclusao-trigger"></div>
+      <div className="h-screen frame4-conclusao-trigger"></div>
+      <div className="h-screen frame5-conclusao-trigger"></div>
+      <div className="h-screen frame6-conclusao-trigger"></div>
       {showMessage && (
         <div className="text-sm bg-transparent z-50 fixed bottom-0 left-1/2 transform -translate-x-1/2 p-1 text-white bg-black bg-opacity-50 blink">
           Continue descendo
@@ -922,6 +1018,7 @@ const ScrollytellingSection = () => {
       <CasesTwo startAnimation={startAnimation} />
       {/* MapSection */}
       <MapSection />
+      <Conclusion />
     </div>
   );
 };

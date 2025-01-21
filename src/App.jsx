@@ -51,7 +51,7 @@ function App() {
 
   if (showDialog) {
     return (
-      <div className="bg-black font-cormorant px-2 text-white text-2xl flex items-center justify-center h-screen">
+      <div className="bg-black font-cormorant px-1 text-white text-2xl flex items-center justify-center h-screen">
         <div className="text-center">
           <p className="mb-10">
             Este conteúdo contém informações sensíveis sobre violência de
