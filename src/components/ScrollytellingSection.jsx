@@ -72,7 +72,7 @@ const ScrollytellingSection = () => {
         );
         setStartAnimation("frame2");
         setAudioSource(
-          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/ele_era_um.mp3"
+          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/audios%203%20cortados%20e%20editados/ele%20era%20um%203.mp3"
         );
         setIsDisabled(false);
       },
@@ -90,7 +90,7 @@ const ScrollytellingSection = () => {
           "sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-28 flex gap-4"
         );
         setAudioSource(
-          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/ele_era_um.mp3"
+          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/audios%203%20cortados%20e%20editados/ele%20era%20um%203.mp3"
         );
         setIsDisabled(false);
       },
@@ -189,7 +189,7 @@ const ScrollytellingSection = () => {
         );
         setStartAnimation("frame8");
         setAudioSource(
-          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/ele_me_tacou_alcool.mp3"
+          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/audios%203%20cortados%20e%20editados/ele%20me%20tacou%20alcool%203.mp3"
         );
         setIsDisabled(false);
       },
@@ -207,7 +207,7 @@ const ScrollytellingSection = () => {
           "sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-[40vh] flex gap-4"
         );
         setAudioSource(
-          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/ele_me_tacou_alcool.mp3"
+          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/audios%203%20cortados%20e%20editados/ele%20me%20tacou%20alcool%203.mp3"
         );
         setIsDisabled(false);
       },
@@ -444,7 +444,7 @@ const ScrollytellingSection = () => {
         );
         setStartAnimation("frame28");
         setAudioSource(
-          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/na_primeira_vez_que_me_deu_um_tapa.mp3"
+          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/audios%203%20cortados%20e%20editados/na%20primeira%20vez%20que%20ele%20me%20deu%20um%20tapa%203.mp3"
         );
         setIsDisabled(false);
       },
@@ -462,7 +462,7 @@ const ScrollytellingSection = () => {
           "sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-8 flex gap-4"
         );
         setAudioSource(
-          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/na_primeira_vez_que_me_deu_um_tapa.mp3"
+          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/audios%203%20cortados%20e%20editados/na%20primeira%20vez%20que%20ele%20me%20deu%20um%20tapa%203.mp3"
         );
         setIsDisabled(false);
       },
@@ -532,7 +532,7 @@ const ScrollytellingSection = () => {
         );
         setStartAnimation("frame32");
         setAudioSource(
-          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/ele_era_ciumento.mp3"
+          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/audios%20carol%20cortados%20e%20editados/ele%20era%20ciumento%202.mp3"
         );
         setIsDisabled(false);
       },
@@ -550,7 +550,7 @@ const ScrollytellingSection = () => {
           "sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-28 flex gap-4"
         );
         setAudioSource(
-          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/ele_era_ciumento.mp3"
+          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/audios%20carol%20cortados%20e%20editados/ele%20era%20ciumento%202.mp3"
         );
         setIsDisabled(false);
       },
@@ -593,7 +593,7 @@ const ScrollytellingSection = () => {
         );
         setStartAnimation("frame35");
         setAudioSource(
-          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/ele_controlava_onde_eu_ia.mp3"
+          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/audios%203%20cortados%20e%20editados/ele%20controlava%20onde%20eu%20ia%203.mp3"
         );
         setIsDisabled(false);
       },
@@ -611,7 +611,7 @@ const ScrollytellingSection = () => {
           "sm:bottom-28 left-4 md:left-20 lg:left-32 bottom-28 flex gap-4"
         );
         setAudioSource(
-          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/ele_controlava_onde_eu_ia.mp3"
+          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/audios%203%20cortados%20e%20editados/ele%20controlava%20onde%20eu%20ia%203.mp3"
         );
         setIsDisabled(false);
       },
