@@ -58,20 +58,14 @@ function App() {
             gênero. Deseja continuar?
           </p>
           <div className="flex flex-col items-center">
-            <div className="flex items-center mb-4">
-              {/* Hidden native checkbox */}
-              <input
-                type="checkbox"
-                id="allowCheckbox"
-                onChange={handleCheckboxChange}
-                checked={isChecked}
-                className="hidden"
-              />
-
-              {/* Custom checkbox */}
+            {/* Botão centralizado */}
+            <div
+              className="flex items-center justify-center cursor-pointer"
+              onClick={handleCheckboxChange}
+            >
+              {/* Caixa personalizada */}
               <div
-                onClick={handleCheckboxChange}
-                className={`border-2 border-white w-6 h-6 flex items-center justify-center mr-2 cursor-pointer bg-transparent`}
+                className={`border-2 border-white w-6 h-6 flex items-center justify-center bg-transparent mr-2`}
               >
                 {isChecked && (
                   <img
@@ -81,23 +75,10 @@ function App() {
                   />
                 )}
               </div>
-
-              {/* Label */}
-              <label
-                htmlFor="allowCheckbox"
-                className="text-white cursor-pointer"
-                onClick={handleCheckboxChange}
-              >
-                Continuar
-              </label>
+              {/* Texto "Continuar" */}
+              <span className="text-white">Continuar</span>
             </div>
           </div>
-          {/* <button
-            onClick={handleDeny}
-            className="bg-red-500 px-4 py-2 rounded text-white mx-2"
-          >
-            Sair
-          </button> */}
         </div>
       </div>
     );

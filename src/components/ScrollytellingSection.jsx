@@ -10,13 +10,16 @@ import CasesTwo from "./CasesTwo";
 import MapSection from "./MapSection";
 import Intro2 from "./Intro2";
 import "../App.css";
-import { StoryLayout } from "./StoryLayout";
+import AudioControl from "./AudioControl";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const ScrollytellingSection = () => {
   const [startAnimation, setStartAnimation] = useState(false);
-  const audioRef2 = useRef(null);
-  const audioRef5 = useRef(null);
+  const audioRef = useRef(null);
+  const [audioSource, setAudioSource] = useState("");
+  const [isDisabled, setIsDisabled] = useState(true);
+  const [buttonsPosition, setButtonsPosition] = useState("");
 
   const [lastScrollTime, setLastScrollTime] = useState(Date.now());
   const [showMessage, setShowMessage] = useState(false);
@@ -43,7 +46,7 @@ const ScrollytellingSection = () => {
 
   useEffect(() => {
     gsap.set(
-      ".frame2, .frame3, .frame4, .frame5, .frame6,.frame7,.frame8,.frame9, .frame10, .frame11, .frame12, .frame12-2, .frame13, .frame14,.frame15, .frame16,.frame17,.frame18,.frame19,.frame20, .frame21, .frame22, .frame23, .frame24, .frame25, .frame26, .frame27, .frame28, .frame29, .frame30, .frame31, .frame32, .frame33, .frame34, .frame35, .frame36, .frame37, .frame38, .frame39, .frame40, .frame41, .frame42, .frame43, .frame44, .frame45, .frame46, .frame47, .frame48, .frameCMC, .frameCEAM, .frameNEAM, .frameNEAP, .frameAS, .frameSMC",
+      "buttons, .frame2, .frame3, .frame4, .frame5, .frame6,.frame7,.frame8,.frame9, .frame10, .frame11, .frame12, .frame12-2, .frame13, .frame14,.frame15, .frame16,.frame17,.frame18,.frame19,.frame20, .frame21, .frame22, .frame23, .frame24, .frame25, .frame26, .frame27, .frame28, .frame29, .frame30, .frame31, .frame32, .frame33, .frame34, .frame35, .frame36, .frame37, .frame38, .frame39, .frame40, .frame41, .frame42, .frame43, .frame44, .frame45, .frame46, .frame47, .frame48, .frameCMC, .frameCEAM, .frameNEAM, .frameNEAP, .frameAS, .frameSMC",
       { opacity: 0 }
     );
     gsap.set(".casesTwo", { display: "none" });
@@ -59,22 +62,33 @@ const ScrollytellingSection = () => {
       trigger: ".frame2-trigger",
       start: "top center",
       onEnter: () => {
-        gsap.to(".frame2", { opacity: 1, duration: 0.5 });
+        gsap.to([".frame2", ".buttons"], { opacity: 1, duration: 0.5 });
+        setButtonsPosition(
+          "sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-28 flex gap-4"
+        );
         setStartAnimation("frame2");
-        audioRef2.current.play();
+        setAudioSource(
+          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/ele_era_um.mp3"
+        );
+        setIsDisabled(false);
       },
       onLeaveBack: () => {
-        gsap.to(".frame2", { opacity: 0, duration: 0.5 });
-        audioRef2.current.pause();
-        audioRef2.current.currentTime = 0;
+        gsap.to([".frame2", ".buttons"], { opacity: 0, duration: 0.5 });
+        setIsDisabled(true);
       },
       onLeave: () => {
         setStartAnimation("");
-        audioRef2.current.pause();
-        audioRef2.current.currentTime = 0;
+        setIsDisabled(true);
       },
       onEnterBack: () => {
         setStartAnimation("frame2");
+        setButtonsPosition(
+          "sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-28 flex gap-4"
+        );
+        setAudioSource(
+          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/ele_era_um.mp3"
+        );
+        setIsDisabled(false);
       },
     });
 
@@ -82,12 +96,18 @@ const ScrollytellingSection = () => {
       trigger: ".frame3-trigger",
       start: "top center",
       onEnter: () => {
-        gsap.to([".frame1", ".frame2"], { opacity: 0, duration: 0.5 });
+        gsap.to([".frame1", ".frame2", ".buttons"], {
+          opacity: 0,
+          duration: 0.5,
+        });
         gsap.to(".frame3", { opacity: 1, duration: 0.5 });
       },
       onLeaveBack: () => {
         gsap.to(".frame3", { opacity: 0, duration: 0.5 });
-        gsap.to([".frame1", ".frame2"], { opacity: 1, duration: 0.5 });
+        gsap.to([".frame1", ".frame2", ".buttons"], {
+          opacity: 1,
+          duration: 0.5,
+        });
       },
     });
 
@@ -102,32 +122,49 @@ const ScrollytellingSection = () => {
       trigger: ".frame5-trigger",
       start: "top center",
       onEnter: () => {
-        gsap.to(".frame5", { opacity: 1, duration: 0.5 });
+        gsap.to([".frame5", ".buttons"], { opacity: 1, duration: 0.5 });
+        setButtonsPosition(
+          "fixed sm:bottom-28 pl-4 bottom-28 md:pl-32 flex gap-4"
+        );
         setStartAnimation("frame5");
-        audioRef5.current.play();
+        setAudioSource(
+          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/chamava_de_puta.mp3"
+        );
+        setIsDisabled(false);
       },
       onLeaveBack: () => {
-        gsap.to(".frame5", { opacity: 0, duration: 0.5 });
-        audioRef5.current.pause();
-        audioRef5.current.currentTime = 0;
+        gsap.to([".frame5", ".buttons"], { opacity: 0, duration: 0.5 });
+        setIsDisabled(true);
       },
       onLeave: () => {
         setStartAnimation("");
-        audioRef5.current.pause();
-        audioRef5.current.currentTime = 0;
+        setIsDisabled(true);
       },
-      onEnterBack: () => setStartAnimation("frame5"),
+      onEnterBack: () => {
+        setStartAnimation("frame5");
+        setButtonsPosition(
+          "fixed sm:bottom-28 pl-4 bottom-28 md:pl-32 flex gap-4"
+        );
+        setAudioSource(
+          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/chamava_de_puta.mp3"
+        );
+        setIsDisabled(false);
+      },
     });
 
     ScrollTrigger.create({
       trigger: ".frame6-trigger",
       start: "top center",
       onEnter: () => {
-        gsap.to([".frame4", ".frame5"], { opacity: 0, duration: 0.5 });
+        gsap.to([".frame4", ".frame5", ".buttons"], {
+          opacity: 0,
+          duration: 0.5,
+        });
       },
       onLeaveBack: () => {
         gsap.to(".frame4", { opacity: 1, duration: 0.5 });
         gsap.to(".frame5", { opacity: 1, duration: 0.5 });
+        gsap.to(".buttons", { opacity: 1, duration: 0.5 });
       },
     });
 
@@ -142,23 +179,52 @@ const ScrollytellingSection = () => {
       trigger: ".frame8-trigger",
       start: "top center",
       onEnter: () => {
-        gsap.to(".frame8", { opacity: 1, duration: 0.5 });
+        gsap.to([".frame8", ".buttons"], { opacity: 1, duration: 0.5 });
+        setButtonsPosition(
+          "sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-28 flex gap-4"
+        );
         setStartAnimation("frame8");
+        setAudioSource(
+          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/ele_me_tacou_alcool.mp3"
+        );
+        setIsDisabled(false);
       },
-      onLeaveBack: () => gsap.to(".frame8", { opacity: 0, duration: 0.5 }),
-      onLeave: () => setStartAnimation(""),
-      onEnterBack: () => setStartAnimation("frame8"),
+      onLeaveBack: () => {
+        gsap.to([".frame8", ".buttons"], { opacity: 0, duration: 0.5 });
+        setIsDisabled(true);
+      },
+      onLeave: () => {
+        setStartAnimation("");
+        setIsDisabled(true);
+      },
+      onEnterBack: () => {
+        setStartAnimation("frame8");
+        setButtonsPosition(
+          "sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-28 flex gap-4"
+        );
+        setAudioSource(
+          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/ele_me_tacou_alcool.mp3"
+        );
+        setIsDisabled(false);
+      },
     });
 
     ScrollTrigger.create({
       trigger: ".frame9-trigger",
       start: "top center",
       onEnter: () => {
-        gsap.to([".frame7", ".frame8"], { opacity: 0, duration: 0.5 });
+        gsap.to([".frame7", ".frame8", ".buttons"], {
+          opacity: 0,
+          duration: 0.5,
+        });
+        gsap.to(".frame9", { opacity: 1, duration: 0.5 });
       },
       onLeaveBack: () => {
-        gsap.to(".frame7", { opacity: 1, duration: 0.5 });
-        gsap.to(".frame8", { opacity: 1, duration: 0.5 });
+        gsap.to(".frame9", { opacity: 0, duration: 0.5 });
+        gsap.to([".frame7", ".frame8", ".buttons"], {
+          opacity: 1,
+          duration: 0.5,
+        });
       },
     });
 
@@ -360,31 +426,41 @@ const ScrollytellingSection = () => {
     ScrollTrigger.create({
       trigger: ".frame27-trigger",
       start: "top center",
-      onEnter: () => {
-        gsap.to(".frame27", { opacity: 1, duration: 0.5 });
-        setStartAnimation("frame27");
-      },
-      onLeaveBack: () => {
-        gsap.to(".frame27", { opacity: 0, duration: 0.5 });
-      },
-      onLeave: () => {
-        setStartAnimation("");
-      },
-      onEnterBack: () => {
-        setStartAnimation("frame27");
-      },
+      onEnter: () => gsap.to(".frame27", { opacity: 1, duration: 0.5 }),
+      onLeaveBack: () => gsap.to(".frame27", { opacity: 0, duration: 0.5 }),
     });
 
     ScrollTrigger.create({
       trigger: ".frame28-trigger",
       start: "top center",
       onEnter: () => {
-        gsap.to([".frame27"], { opacity: 0, duration: 0.5 });
-        gsap.to(".frame28", { opacity: 1, duration: 0.5 });
+        gsap.to([".frame28", ".buttons"], { opacity: 1, duration: 0.5 });
+        setButtonsPosition(
+          "sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-28 flex gap-4"
+        );
+        setStartAnimation("frame28");
+        setAudioSource(
+          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/na_primeira_vez_que_me_deu_um_tapa.mp3"
+        );
+        setIsDisabled(false);
       },
       onLeaveBack: () => {
-        gsap.to(".frame28", { opacity: 0, duration: 0.5 });
-        gsap.to([".frame27"], { opacity: 1, duration: 0.5 });
+        gsap.to([".frame28", ".buttons"], { opacity: 0, duration: 0.5 });
+        setIsDisabled(true);
+      },
+      onLeave: () => {
+        setStartAnimation("");
+        setIsDisabled(true);
+      },
+      onEnterBack: () => {
+        setStartAnimation("frame28");
+        setButtonsPosition(
+          "sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-28 flex gap-4"
+        );
+        setAudioSource(
+          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/na_primeira_vez_que_me_deu_um_tapa.mp3"
+        );
+        setIsDisabled(false);
       },
     });
 
@@ -392,10 +468,18 @@ const ScrollytellingSection = () => {
       trigger: ".frame29-trigger",
       start: "top center",
       onEnter: () => {
+        gsap.to([".frame27", ".frame28", ".buttons"], {
+          opacity: 0,
+          duration: 0.5,
+        });
         gsap.to(".frame29", { opacity: 1, duration: 0.5 });
       },
       onLeaveBack: () => {
         gsap.to(".frame29", { opacity: 0, duration: 0.5 });
+        gsap.to([".frame27", ".frame28", ".buttons"], {
+          opacity: 1,
+          duration: 0.5,
+        });
       },
     });
 
@@ -409,6 +493,18 @@ const ScrollytellingSection = () => {
       onLeaveBack: () => {
         gsap.to(".frame30", { opacity: 0, duration: 0.5 });
         gsap.to([".frame29"], { opacity: 1, duration: 0.5 });
+      },
+    });
+    ScrollTrigger.create({
+      trigger: ".frame30b-trigger",
+      start: "top center",
+      onEnter: () => {
+        gsap.to([".frame30"], { opacity: 0, duration: 0.5 });
+        gsap.to(".frame30b", { opacity: 1, duration: 0.5 });
+      },
+      onLeaveBack: () => {
+        gsap.to(".frame30b", { opacity: 0, duration: 0.5 });
+        gsap.to([".frame30"], { opacity: 1, duration: 0.5 });
       },
     });
 
@@ -426,27 +522,47 @@ const ScrollytellingSection = () => {
       trigger: ".frame32-trigger",
       start: "top center",
       onEnter: () => {
-        gsap.to(".frame32", { opacity: 1, duration: 0.5 });
+        gsap.to([".frame32", ".buttons"], { opacity: 1, duration: 0.5 });
+        setButtonsPosition(
+          "sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-28 flex gap-4"
+        );
         setStartAnimation("frame32");
+        setAudioSource(
+          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/ele_era_ciumento.mp3"
+        );
+        setIsDisabled(false);
       },
       onLeaveBack: () => {
-        gsap.to(".frame32", { opacity: 0, duration: 0.5 });
+        gsap.to([".frame32", ".buttons"], { opacity: 0, duration: 0.5 });
+        setIsDisabled(true);
       },
-      onLeave: () => setStartAnimation(""),
-      onEnterBack: () => setStartAnimation("frame32"),
+      onLeave: () => {
+        setStartAnimation("");
+        setIsDisabled(true);
+      },
+      onEnterBack: () => {
+        setStartAnimation("frame32");
+        setButtonsPosition(
+          "sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-28 flex gap-4"
+        );
+        setAudioSource(
+          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/ele_era_ciumento.mp3"
+        );
+        setIsDisabled(false);
+      },
     });
 
     ScrollTrigger.create({
       trigger: ".frame33-trigger",
       start: "top center",
       onEnter: () => {
-        gsap.to([".frame31", ".frame32", ".frame33"], {
+        gsap.to([".frame31", ".frame32", ".frame33", ".buttons"], {
           opacity: 0,
           duration: 0.5,
         });
       },
       onLeaveBack: () => {
-        gsap.to([".frame31", ".frame32", ".frame33"], {
+        gsap.to([".frame31", ".frame32", ".frame33", ".buttons"], {
           opacity: 1,
           duration: 0.5,
         });
@@ -467,27 +583,47 @@ const ScrollytellingSection = () => {
       trigger: ".frame35-trigger",
       start: "top center",
       onEnter: () => {
-        gsap.to(".frame35", { opacity: 1, duration: 0.5 });
+        gsap.to([".frame35", ".buttons"], { opacity: 1, duration: 0.5 });
+        setButtonsPosition(
+          "sm:bottom-28 left-4 md:left-20 lg:left-32 bottom-28 flex gap-4"
+        );
         setStartAnimation("frame35");
+        setAudioSource(
+          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/ele_controlava_onde_eu_ia.mp3"
+        );
+        setIsDisabled(false);
       },
       onLeaveBack: () => {
-        gsap.to(".frame35", { opacity: 0, duration: 0.5 });
+        gsap.to([".frame35", ".buttons"], { opacity: 0, duration: 0.5 });
+        setIsDisabled(true);
       },
-      onLeave: () => setStartAnimation(""),
-      onEnterBack: () => setStartAnimation("frame35"),
+      onLeave: () => {
+        setStartAnimation("");
+        setIsDisabled(true);
+      },
+      onEnterBack: () => {
+        setStartAnimation("frame35");
+        setButtonsPosition(
+          "sm:bottom-28 left-4 md:left-20 lg:left-32 bottom-28 flex gap-4"
+        );
+        setAudioSource(
+          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/ele_controlava_onde_eu_ia.mp3"
+        );
+        setIsDisabled(false);
+      },
     });
 
     ScrollTrigger.create({
       trigger: ".frame36-trigger",
       start: "top center",
       onEnter: () => {
-        gsap.to([".frame34", ".frame35", ".frame36"], {
+        gsap.to([".frame34", ".frame35", ".frame36", ".buttons"], {
           opacity: 0,
           duration: 0.5,
         });
       },
       onLeaveBack: () => {
-        gsap.to([".frame34", ".frame35", ".frame36"], {
+        gsap.to([".frame34", ".frame35", ".frame36", ".buttons"], {
           opacity: 1,
           duration: 0.5,
         });
@@ -508,26 +644,46 @@ const ScrollytellingSection = () => {
       trigger: ".frame38-trigger",
       start: "top center",
       onEnter: () => {
-        gsap.to(".frame38", { opacity: 1, duration: 0.5 });
+        gsap.to([".frame38", ".buttons"], { opacity: 1, duration: 0.5 });
+        setButtonsPosition(
+          "sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-28 flex gap-4"
+        );
         setStartAnimation("frame38");
+        setAudioSource(
+          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/teve_uma_vez.mp3"
+        );
+        setIsDisabled(false);
       },
       onLeaveBack: () => {
-        gsap.to(".frame38", { opacity: 0, duration: 0.5 });
+        gsap.to([".frame38", ".buttons"], { opacity: 0, duration: 0.5 });
+        setIsDisabled(true);
       },
-      onLeave: () => setStartAnimation(""),
-      onEnterBack: () => setStartAnimation("frame38"),
+      onLeave: () => {
+        setStartAnimation("");
+        setIsDisabled(true);
+      },
+      onEnterBack: () => {
+        setStartAnimation("frame38");
+        setButtonsPosition(
+          "sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-28 flex gap-4"
+        );
+        setAudioSource(
+          "https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/audios/teve_uma_vez.mp3"
+        );
+        setIsDisabled(false);
+      },
     });
     ScrollTrigger.create({
       trigger: ".frame39-trigger",
       start: "top center",
       onEnter: () => {
-        gsap.to([".frame37", ".frame38", ".frame39"], {
+        gsap.to([".frame37", ".frame38", ".frame39", ".buttons"], {
           opacity: 0,
           duration: 0.5,
         });
       },
       onLeaveBack: () => {
-        gsap.to([".frame37", ".frame38", ".frame39"], {
+        gsap.to([".frame37", ".frame38", ".frame39", ".buttons"], {
           opacity: 1,
           duration: 0.5,
         });
@@ -667,6 +823,15 @@ const ScrollytellingSection = () => {
     });
   }, []);
 
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.src = audioSource;
+      if (!isDisabled) {
+        audioRef.current.play();
+      }
+    }
+  }, [audioSource, isDisabled]);
+
   return (
     <div className="bg-black min-h-screen relative">
       {/* Section1 */}
@@ -707,7 +872,8 @@ const ScrollytellingSection = () => {
       <div className="h-screen frame27-trigger"></div>
       <div className="h-screen frame28-trigger"></div>
       <div className="h-screen frame29-trigger"></div>
-      <div className="h-screen frame30-trigger"></div> {/* clean */}
+      <div className="h-screen frame30-trigger"></div>
+      <div className="h-screen frame30b-trigger"></div> {/* clean */}
       <div className="h-screen frame31-trigger"></div>
       <div className="h-screen frame32-trigger"></div>
       <div className="h-screen frame33-trigger"></div> {/* clean */}
@@ -732,22 +898,16 @@ const ScrollytellingSection = () => {
           Continue descendo
         </div>
       )}
-      <audio
-        ref={audioRef2}
-        src="https://cdn.freesound.org/previews/368/368384_3298571-lq.mp3"
-      />
-      <audio
-        ref={audioRef5}
-        src="https://cdn.freesound.org/previews/368/368386_3298571-lq.mp3"
+      <audio ref={audioRef} />
+      <AudioControl
+        audioRef={audioRef}
+        isDisabled={isDisabled}
+        buttonsPosition={buttonsPosition}
       />
       {/* StoryLayout */}
       {/* <StoryLayout /> */}
       {/* BeforeIntro */}
-      <BeforeIntro
-        startAnimation={startAnimation}
-        audioRef2={audioRef2}
-        audioRef5={audioRef5}
-      />
+      <BeforeIntro startAnimation={startAnimation} />
       {/* Cover */}
       <Cover />
       {/* Intro */}

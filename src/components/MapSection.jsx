@@ -1,11 +1,3 @@
-import map1 from "../assets/map1.png";
-import map2 from "../assets/map2.png";
-import map3 from "../assets/map3.png";
-import map4 from "../assets/map4.png";
-import map5 from "../assets/map5.png";
-import map6 from "../assets/map6.png";
-import map7 from "../assets/map7.png";
-import map8 from "../assets/map8.png";
 import CMC from "../assets/CMC.svg";
 import CEAM from "../assets/CEAM.svg";
 import NEAM from "../assets/NEAM.svg";
@@ -28,7 +20,7 @@ const MapSection = () => {
       </div>
       <div className="frame41 fixed inset-0 flex items-center justify-center z-10">
         <img
-          src={map1}
+          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/map1.png"
           alt="Relógio representando a passagem do tempo"
           className="fixed w-auto h-auto  object-contain"
         />
@@ -49,7 +41,7 @@ const MapSection = () => {
       </div>
       <div className="frame42 fixed inset-0 translate-y-28 sm:translate-y-0 flex items-center justify-center z-10">
         <img
-          src={map2}
+          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/map2.png"
           alt="Relógio representando a passagem do tempo"
           className="fixed w-auto h-auto  object-contain"
         />
@@ -71,7 +63,7 @@ const MapSection = () => {
       </div>
       <div className="frame43 fixed inset-0 translate-y-24 sm:translate-y-0 flex items-center justify-center z-10">
         <img
-          src={map3}
+          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/map3.png"
           alt="Relógio representando a passagem do tempo"
           className="fixed w-auto h-auto  object-contain"
         />
@@ -93,7 +85,7 @@ const MapSection = () => {
       </div>
       <div className="frame44 fixed inset-0 translate-y-24 sm:translate-y-0 flex items-center justify-center z-10">
         <img
-          src={map4}
+          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/map4.png"
           alt="Relógio representando a passagem do tempo"
           className="fixed w-auto h-auto  object-contain"
         />
@@ -113,7 +105,7 @@ const MapSection = () => {
       </div>
       <div className="frame45 fixed inset-0 flex items-center justify-center z-10">
         <img
-          src={map5}
+          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/map5.png"
           alt="Relógio representando a passagem do tempo"
           className="fixed w-auto h-auto  object-contain"
         />
@@ -131,7 +123,7 @@ const MapSection = () => {
       </div>
       <div className="frame46 fixed inset-0 flex items-center justify-center z-10">
         <img
-          src={map6}
+          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/map6.png"
           alt="Relógio representando a passagem do tempo"
           className="fixed w-auto h-auto  object-contain"
         />
@@ -149,7 +141,7 @@ const MapSection = () => {
       </div>
       <div className="frame47 fixed inset-0 flex items-center justify-center z-10">
         <img
-          src={map7}
+          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/map7.png"
           alt="Relógio representando a passagem do tempo"
           className="fixed w-auto h-auto  object-contain"
         />
@@ -184,7 +176,7 @@ const MapSection = () => {
       </div>
       <div className="frame48 fixed inset-0 flex items-center justify-center z-10">
         <img
-          src={map8}
+          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/map8.png"
           alt="Relógio representando a passagem do tempo"
           className="fixed w-auto h-auto  object-contain"
         />

@@ -1,8 +1,3 @@
-import sadWomam from "../assets/sad-womam.png";
-import womamMan from "../assets/woman-man.png";
-import womanOnHand from "../assets/woman-on-hand.png";
-import girlsShadow from "../assets/girls-shadow.png";
-import marionette from "../assets/marionette.png";
 import mute from "../assets/mute.svg";
 import replay from "../assets/replay.svg";
 import rightIcon from "../assets/right-icon.svg";
@@ -30,20 +25,20 @@ const CasesTwo = ({ startAnimation }) => {
           </span>
         </h1>
       </div>
-      <div className="fixed md:right-32 frame27 top-[52%] sm:top-[40%] max-w-[500px]  mx-0">
+      <div className="fixed md:right-32 frame28 top-[52%] sm:top-[40%] max-w-[500px]  mx-0">
         <h1 className="sm:hidden text-2xl xl:text-3xl mx-4 sm:mx-0 text-right">
           <TypingEffect
             text={`“Na primeira vez que ele... Me deu um tapa nas costas, eu já tinha ido lá falar com elas.`}
             speed={80}
             showBlink={false}
-            startAnimation={startAnimation === "frame27"}
+            startAnimation={startAnimation === "frame28"}
           />
           <div className="ml-24 text-right">
             <TypingEffect
               text={`Elas já tinham me dado todo apoio e tal. E aí me pediram pra fazer a denúncia. Só que eu... Não tive forças”.`}
               speed={80}
               showBlink={false}
-              startAnimation={startAnimation === "frame27"}
+              startAnimation={startAnimation === "frame28"}
               delay={7300}
             />
           </div>
@@ -53,16 +48,16 @@ const CasesTwo = ({ startAnimation }) => {
             text={`“Na primeira vez que ele... Me deu um tapa nas costas, eu já tinha ido lá falar com elas. Elas já tinham me dado todo apoio e tal. E aí me pediram pra fazer a denúncia. Só que eu... Não tive forças”.`}
             speed={80}
             showBlink={false}
-            startAnimation={startAnimation === "frame27"}
+            startAnimation={startAnimation === "frame28"}
           />
         </h1>
       </div>
       <img
-        src={sadWomam}
+        src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/sad_woman.png"
         alt="Relógio representando a passagem do tempo"
-        className="frame27 fixed bottom-0 -left-10 sm:left-0 w-[300px] sm:w-[70vw] max-w-[800px]"
+        className="frame28 fixed bottom-0 -left-10 sm:left-0 w-[300px] sm:w-[70vw] max-w-[800px]"
       />
-      <div className="frame27 fixed sm:bottom-8 md:right-32 bottom-10 right-4 flex gap-4">
+      {/* <div className="frame27 fixed sm:bottom-8 md:right-32 bottom-10 right-4 flex gap-4">
         <button
           className="w-9 h-9 bg-transparent border-none cursor-pointer"
           onClick={() => alert("Button na1a clicked")}
@@ -77,9 +72,9 @@ const CasesTwo = ({ startAnimation }) => {
         >
           <img src={mute} alt="Button 4b" className="w-full h-full" />
         </button>
-      </div>
+      </div> */}
       {/* <div className="flex items-center justify-center sm:justify-end fixed top-28 md:top-1/2 md:-mt-48 w-full pr-4 md:pr-20 lg:pr-32"> */}
-      <div className="flex items-start 3xl:justify-center px-4 lg:px-20 2xl:ml-0 justify-start text-left w-full fixed frame29 top-20 sm:top-20">
+      <div className="flex items-start 3xl:justify-center px-4 lg:px-20 2xl:ml-0 justify-start text-left w-full fixed frame30 top-20 sm:top-20">
         <h1 className="text-xl mb-4 max-w-[500px]">
           A violência de gênero geralmente é associada à agressões físicas ou
           sexuais, mas se apresenta em várias formas, desde comportamentos sutis
@@ -91,9 +86,9 @@ const CasesTwo = ({ startAnimation }) => {
           , cada uma deixando profundas marcas nas vítimas.
         </h1>
         <img
-          src={womamMan}
+          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/woman_man.png"
           alt="Relógio representando a passagem do tempo"
-          className="frame29 fixed bottom-0 -right-20 w-[600px] sm:w-[900px] md:w-[1100px] max-w-[1000px]"
+          className="frame30 fixed bottom-0 -right-20 w-[600px] sm:w-[900px] md:w-[1100px] max-w-[1000px]"
         />
       </div>
       {/* <div className="flex items-center justify-center sm:justify-end fixed top-28 md:top-1/2 md:-mt-48 w-full pr-4 md:pr-20 lg:pr-32"> */}
@@ -148,11 +143,11 @@ const CasesTwo = ({ startAnimation }) => {
         </p>
       </div>
       <img
-        src={womanOnHand}
+        src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/woman_on_hand.png"
         alt="Relógio representando a passagem do tempo"
         className="frame31 fixed bottom-0 left-0 w-[80vw] sm:w-[60vw] max-w-[800px]"
       />
-      <div className="frame32 fixed z-50 sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-28 flex gap-4">
+      {/* <div className="frame32 fixed z-50 sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-28 flex gap-4">
         <button
           className="w-9 h-9 bg-transparent border-none cursor-pointer ml-10"
           onClick={() => alert("Button 5a clicked")}
@@ -167,7 +162,7 @@ const CasesTwo = ({ startAnimation }) => {
         >
           <img src={mute} alt="Button 2" className="w-full h-full" />
         </button>
-      </div>
+      </div> */}
 
       <div className="flex flex-col items-start lg:items-start fixed top-10 md:top-80 md:-mt-48 w-full pl-4 md:pl-20 lg:pl-32">
         <div className="flex flex-col items-start space-y-4">
@@ -220,11 +215,11 @@ const CasesTwo = ({ startAnimation }) => {
         </p>
       </div>
       <img
-        src={marionette}
+        src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/marionette.png"
         alt="Relógio representando a passagem do tempo"
         className="frame34 fixed -bottom-5 -right-5 w-[400px] sm:w-[70vw] max-w-[800px]"
       />
-      <div className="frame35 fixed z-50 sm:bottom-28 left-4 md:left-20 lg:left-32 bottom-28 flex gap-4">
+      {/* <div className="frame35 fixed z-50 sm:bottom-28 left-4 md:left-20 lg:left-32 bottom-28 flex gap-4">
         <button
           className="w-9 h-9 bg-transparent border-none cursor-pointer "
           onClick={() => alert("Button 5a clicked")}
@@ -239,7 +234,7 @@ const CasesTwo = ({ startAnimation }) => {
         >
           <img src={mute} alt="Button 2" className="w-full h-full" />
         </button>
-      </div>
+      </div> */}
 
       <div className="flex flex-col items-center lg:items-end fixed top-10 md:top-80 md:-mt-48 w-full pr-4 lg:pr-32">
         <div className="mx-4 flex flex-col items-start space-y-4">
@@ -292,11 +287,11 @@ const CasesTwo = ({ startAnimation }) => {
         </p>
       </div>
       <img
-        src={girlsShadow}
+        src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/girls_shadow.png"
         alt="Relógio representando a passagem do tempo"
         className="frame37 fixed bottom-0 left-0 w-[80vw] sm:w-[60vw] max-w-[800px]"
       />
-      <div className="frame38 fixed z-50 sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-28 flex gap-4">
+      {/* <div className="frame38 fixed z-50 sm:bottom-28 right-4 md:right-20 lg:right-32 bottom-28 flex gap-4">
         <button
           className="w-9 h-9 bg-transparent border-none cursor-pointer ml-10"
           onClick={() => alert("Button 5a clicked")}
@@ -311,7 +306,7 @@ const CasesTwo = ({ startAnimation }) => {
         >
           <img src={mute} alt="Button 2" className="w-full h-full" />
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };
