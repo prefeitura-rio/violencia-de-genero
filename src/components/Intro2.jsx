@@ -8,21 +8,30 @@ const Intro2 = () => {
             A violência de gênero é uma ferida aberta que se perpetua ao longo
             das gerações brasileiras, inclusive no Rio de Janeiro. Aqui, as
             estatísticas refletem uma realidade alarmante, com{" "}
-            <b>1.467 feminicídios registrados em 2024</b>, e uma média de três
-            mortes por mês na cidade. Esses números revelam uma dor profunda,
-            onde lares e ruas se tornam cenários de crimes evitáveis.
+            <span className="text-[#EECBAD]">
+              <b>1.467 feminicídios registrados em 2024</b>
+            </span>
+            , e uma média de três mortes por mês na cidade. Esses números
+            revelam uma dor profunda, onde lares e ruas se tornam cenários de
+            crimes evitáveis.
             <br></br>
             <br></br>
             Esta visualização de dados busca mapear a violência de gênero,
             revelando as diversas formas de agressão e as ações da{" "}
-            <b>Secretaria da Mulher (SPM-Rio) e da Prefeitura</b> para combater
-            os crimes e auxiliar as vítimas. O objetivo não é apenas apresentar
-            esses dados, mas contar histórias que clamam por justiça e construir
-            um futuro livre da violência de gênero.
+            <span className="text-[#EECBAD]">
+              <b>Secretaria da Mulher (SPM-Rio) e da Prefeitura</b>{" "}
+            </span>{" "}
+            para combater os crimes e auxiliar as vítimas. O objetivo não é
+            apenas apresentar esses dados, mas contar histórias que clamam por
+            justiça e construir um futuro livre da violência de gênero.
             <br></br>
             <br></br>
-            <b>No site mulher.rio</b>, cariocas podem entender se suas
-            realidades requerem atendimento especializado, e onde consegui-lo.
+            <span className="text-[#EECBAD]">
+              {" "}
+              <b>No site mulher.rio</b>
+            </span>
+            , cariocas podem entender se suas realidades requerem atendimento
+            especializado, e onde consegui-lo.
           </span>
         </h1>
       </div>

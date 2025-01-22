@@ -25,13 +25,16 @@ const Intro = () => {
             ou de agressão contra mulheres.
             <br></br>
             <br></br>
-            <span className="hidden sm:block">
+            <span className="hidden 3xl:block">
               A violência de gênero é uma ferida aberta que se perpetua ao longo
               das gerações brasileiras, inclusive no Rio de Janeiro. Aqui, as
               estatísticas refletem uma realidade alarmante, com{" "}
-              <b>1.467 feminicídios registrados em 2024</b>, e uma média de três
-              mortes por mês na cidade. Esses números revelam uma dor profunda,
-              onde lares e ruas se tornam cenários de crimes evitáveis.
+              <span className="text-[#EECBAD]">
+                <b>1.467 feminicídios registrados em 2024</b>{" "}
+              </span>
+              , e uma média de três mortes por mês na cidade. Esses números
+              revelam uma dor profunda, onde lares e ruas se tornam cenários de
+              crimes evitáveis.
               <br></br>
               <br></br>
               Esta visualização de dados busca mapear a violência de gênero,
