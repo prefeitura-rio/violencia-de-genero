@@ -6,6 +6,7 @@ const TypingEffect = ({
   showBlink,
   startAnimation,
   delay = 0,
+  maxWidth,
 }) => {
   const [displayedText, setDisplayedText] = useState("");
   const [index, setIndex] = useState(0);
@@ -33,7 +34,9 @@ const TypingEffect = ({
   const lines = displayedText.split("\n");
 
   return (
-    <div className="typing-container">
+    <div
+      className={`typing-container ${maxWidth ? `max-w-[${maxWidth}]` : ""}`}
+    >
       {lines.map((line, i) => (
         <span key={i}>
           {line}

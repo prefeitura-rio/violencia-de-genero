@@ -16,12 +16,15 @@ const CasesTwo = ({ startAnimation }) => {
         <h1 className="text-xl mb-4">
           Embora o feminicídio muitas vezes ocupe as manchetes, a maioria dos
           casos de violência de gênero permanece oculta, longe dos olhos do
-          público. São <span className="text-[#EECBAD]">agressões diárias</span>{" "}
+          público. São{" "}
+          <span className="text-[#EECBAD]">
+            <b>agressões diárias</b>{" "}
+          </span>{" "}
           que se escondem nas paredes de casas, nas relações silenciosamente
           abusivas e nas ameaças veladas, formando um ciclo invisível que
           raramente vira notícia. Por trás de cada dado registrado,{" "}
           <span className="text-[#EECBAD]">
-            existem inúmeros casos nunca denunciados.
+            <b>inúmeros casos nunca denunciados</b>.
           </span>
         </h1>
       </div>
@@ -29,14 +32,14 @@ const CasesTwo = ({ startAnimation }) => {
         <h1 className="sm:hidden text-2xl xl:text-3xl mx-4 sm:mx-0 text-right">
           <TypingEffect
             text={`“Na primeira vez que ele... Me deu um tapa nas costas, eu já tinha ido lá falar com elas.`}
-            speed={115}
+            speed={65}
             showBlink={false}
             startAnimation={startAnimation === "frame28"}
           />
           <div className="ml-24 text-right">
             <TypingEffect
               text={`Elas já tinham me dado todo apoio e tal. E aí me pediram pra fazer a denúncia. Só que eu... Não tive forças”.`}
-              speed={115}
+              speed={65}
               showBlink={false}
               startAnimation={startAnimation === "frame28"}
               delay={7300}
@@ -46,7 +49,7 @@ const CasesTwo = ({ startAnimation }) => {
         <h1 className="hidden sm:block text-2xl xl:text-3xl mx-4 sm:mx-0 text-right">
           <TypingEffect
             text={`“Na primeira vez que ele... Me deu um tapa nas costas, eu já tinha ido lá falar com elas. Elas já tinham me dado todo apoio e tal. E aí me pediram pra fazer a denúncia. Só que eu... Não tive forças”.`}
-            speed={80}
+            speed={65}
             showBlink={false}
             startAnimation={startAnimation === "frame28"}
           />
@@ -76,12 +79,15 @@ const CasesTwo = ({ startAnimation }) => {
       {/* <div className="flex items-center justify-center sm:justify-end fixed top-28 md:top-1/2 md:-mt-48 w-full pr-4 md:pr-20 lg:pr-32"> */}
       <div className="flex items-start 3xl:justify-center px-4 lg:px-20 2xl:ml-0 justify-start text-left w-full fixed frame30 top-20 sm:top-20">
         <h1 className="text-xl mb-4 max-w-[500px]">
-          A violência de gênero geralmente é associada à agressões físicas ou
-          sexuais, mas se apresenta em várias formas, desde comportamentos sutis
-          até ameaças de morte. As violências mais comuns são classificadas como{" "}
-          {""}
+          A violência de gênero geralmente é associada à{" "}
           <span className="text-[#EECBAD]">
-            psicológicas, morais e patrimoniais
+            <b>agressões físicas ou sexuais</b>
+          </span>{" "}
+          agressões físicas ou sexuais, mas se apresenta em várias formas, desde
+          comportamentos sutis até ameaças de morte. As violências mais comuns
+          são classificadas como {""}
+          <span className="text-[#EECBAD]">
+            <b>psicológicas, morais e patrimoniais</b>
           </span>
           , cada uma deixando profundas marcas nas vítimas.
         </h1>

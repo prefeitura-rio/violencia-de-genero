@@ -12,7 +12,9 @@ const MapSection = () => {
         <h1 className="frame40 text-xl mb-4">
           Desde 2021, a{" "}
           <span className="text-[#EECBAD]">
-            Secretaria Especial de Políticas e Promoção da Mulher (SPM-Rio)
+            <b>
+              Secretaria Especial de Políticas e Promoção da Mulher (SPM-Rio)
+            </b>
           </span>{" "}
           expandiu de 3 para 25 os equipamentos de atendimento, promoção e
           enfrentamento à violência contra a mulher. Conheça alguns deles:
@@ -29,7 +31,10 @@ const MapSection = () => {
         {/* map2 */}
 
         <h1 className="frame42 text-xl mb-4 z-20">
-          <span className="text-[#EECBAD]"> Casas da Mulher Carioca</span>
+          <span className="text-[#EECBAD]">
+            {" "}
+            <b>Casas da Mulher Carioca</b>
+          </span>
           <br></br> As Casas da Mulher Carioca são espaços de acolhimento e
           capacitação nos quais são oferecidos serviços de atendimento
           psicossocial, orientação jurídica, orientação pedagógica, cursos
@@ -52,7 +57,7 @@ const MapSection = () => {
 
         <h1 className="frame43 text-xl mb-4 z-20">
           <span className="text-[#EECBAD]">
-            Centros Especializados de Atendimento à Mulher
+            <b>Centros Especializados de Atendimento à Mulher</b>
           </span>{" "}
           <br></br>Os CEAMs oferecem suporte social, psicológico e jurídico para
           mulheres de 18 a 60 anos em situação de violência de gênero,
@@ -74,7 +79,7 @@ const MapSection = () => {
 
         <h1 className="frame44 text-xl mb-4 z-20">
           <span className="text-[#EECBAD]">
-            Núcleos Especializados de Atendimento à Mulher (NEAMs)
+            <b>Núcleos Especializados de Atendimento à Mulher (NEAMs)</b>
           </span>
           <br></br> Os CEAMs oferecem suporte social, psicológico e jurídico
           para mulheres de 18 a 60 anos em situação de violência de gênero,
@@ -96,7 +101,9 @@ const MapSection = () => {
 
         <h1 className="frame45 text-xl mb-4 z-20">
           <span className="text-[#EECBAD]">
-            Núcleos Especializados de Atendimento Psicoterapêutico (NEAPs)
+            <b>
+              Núcleos Especializados de Atendimento Psicoterapêutico (NEAPs)
+            </b>
           </span>
           <br></br> Onde a mulher pode receber acompanhamento clínico, que dure
           o tempo necessário para que possa ter suas condições psicológicas e
@@ -115,7 +122,9 @@ const MapSection = () => {
         {/* map6 */}
 
         <h1 className="frame46 text-xl mb-4 z-20">
-          <span className="text-[#EECBAD]">Abrigo Sigiloso</span>
+          <span className="text-[#EECBAD]">
+            <b>Abrigo Sigiloso</b>
+          </span>
           <br /> Mulheres em risco iminente de morte são encaminhadas com seus
           filhos para o abrigo, em local não divulgado. Dessa forma, agressores
           não conseguem localizá-las.
@@ -133,10 +142,13 @@ const MapSection = () => {
 
         <h1 className="frame47 text-xl mb-4 z-20">
           <span className="text-[#EECBAD]">
-            Salas Mulher Cidadã, Programa Mulheres do Rio e Parceiros
+            <b> Salas Mulher Cidadã, Programa Mulheres do Rio e Parceiros</b>
           </span>
-          <br /> Além desses espaços, a Secretaria mantém 11 Salas Mulher Cidadã
-          e 24 Espaços Apoiadores através de parcerias com outras instituições.
+          <br /> Além desses espaços, a Secretaria mantém{" "}
+          <span className="text-[#EECBAD]">
+            <b>11 Salas Mulher Cidadã e 24 Espaços Apoiadores</b>
+          </span>{" "}
+          através de parcerias com outras instituições.
         </h1>
       </div>
       <div className="frame47 fixed inset-0 flex items-center justify-center z-10">
@@ -152,21 +164,25 @@ const MapSection = () => {
         <h1 className="frame48 text-xl mb-4 z-20">
           Desde 2021, mais de{" "}
           <span className="text-[#EECBAD]">
-            850 mil mulheres foram impactadas
+            <b>850 mil mulheres foram impactadas</b>
           </span>{" "}
           pelos equipamentos de promoção da mulher e mais de{" "}
-          <span className="text-[#EECBAD]">200 mil foram capacitadas</span> para
-          o mercado de trabalho nas Casas da Mulher Carioca. Entre 2022 e 2024,
-          os Centros e Núcleos Especializados da Secretaria da Mulher realizaram
-          mais de{" "}
           <span className="text-[#EECBAD]">
-            17 mil atendimentos a mulheres em situação de violência de gênero.
+            <b>200 mil foram capacitadas</b>
+          </span>{" "}
+          para o mercado de trabalho nas Casas da Mulher Carioca. Entre 2022 e
+          2024, os Centros e Núcleos Especializados da Secretaria da Mulher
+          realizaram mais de{" "}
+          <span className="text-[#EECBAD]">
+            <b>
+              17 mil atendimentos a mulheres em situação de violência de gênero
+            </b>
           </span>{" "}
           <br />
           <br />
           Esses atendimentos ofereceram{" "}
           <span className="text-[#EECBAD]">
-            apoio psicológico, jurídico e social
+            <b> </b>
           </span>
           , buscando não apenas a proteção imediata, mas também o fortalecimento
           emocional e a autonomia das vítimas. O volume expressivo de

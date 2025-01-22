@@ -9,8 +9,11 @@ const Conclusion = () => {
         </h1>
         <br></br>
         <span className="frame1b-conclusao text-xl">
-          Cartão Mulher Carioca: auxílio financeiro de R$500 para mulheres em
-          situação de vulnerabilidade socioeconômica atendidas pela Secretaria.
+          <span className="text-[#EECBAD]">
+            <b> Cartão Mulher Carioca:</b>
+          </span>{" "}
+          auxílio financeiro de R$500 para mulheres em situação de
+          vulnerabilidade socioeconômica atendidas pela Secretaria.
         </span>
       </div>
       <div className="fixed top-10 sm:top-20 text-white left-0 sm:left-20 max-w-[600px] text-left mx-4 z-20">
@@ -20,11 +23,14 @@ const Conclusion = () => {
         </h1>
         <br></br>
         <span className="frame2-conclusao text-xl">
-          Cartão Move Mulher: O Cartão Move Mulher é um programa de auxílio
-          passagem, no valor equivalente a 6 (seis) passagens de ônibus, para
-          mulheres em situação de violência doméstica e familiar cujo objetivo é
-          garantir o deslocamento e a continuidade de atendimento nos serviços
-          da Rede Especializada de Enfrentamento à Violência contra a Mulher.
+          <span className="text-[#EECBAD]">
+            <b>Cartão Move Mulher: </b>
+          </span>{" "}
+          O Cartão Move Mulher é um programa de auxílio passagem, no valor
+          equivalente a 6 (seis) passagens de ônibus, para mulheres em situação
+          de violência doméstica e familiar cujo objetivo é garantir o
+          deslocamento e a continuidade de atendimento nos serviços da Rede
+          Especializada de Enfrentamento à Violência contra a Mulher.
         </span>
       </div>
       <div className="fixed top-10 sm:top-20 text-white left-0 sm:left-20 max-w-[600px] text-left mx-4 z-20">
@@ -34,11 +40,14 @@ const Conclusion = () => {
         </h1>
         <br></br>
         <span className="frame3-conclusao text-xl">
-          Cartão Órfãos do Feminicídio: O Cartão Mulher Carioca – Órfãos do
-          Feminicídio será disponibilizado de forma emergencial para famílias de
-          vítimas desse tipo de crime, ocorridos no município a partir de
-          janeiro de 2022. O valor mensal é de R$400 para cada um dos filhos,
-          durante seis meses, podendo ser prorrogado por até mais seis meses.
+          <span className="text-[#EECBAD]">
+            <b> Cartão Órfãos do Feminicídio:</b>
+          </span>{" "}
+          O Cartão Mulher Carioca – Órfãos do Feminicídio será disponibilizado
+          de forma emergencial para famílias de vítimas desse tipo de crime,
+          ocorridos no município a partir de janeiro de 2022. O valor mensal é
+          de R$400 para cada um dos filhos, durante seis meses, podendo ser
+          prorrogado por até mais seis meses.
         </span>
       </div>
       <div className="frame5-conclusao fixed h-screen w-full flex flex-col items-center justify-center bg-black text-center text-white px-4">
@@ -46,21 +55,35 @@ const Conclusion = () => {
           <h1 className="text-xl mb-2">
             {/* Full text for desktop */}
             No site mulher.rio, cariocas podem entender se suas realidades
-            requerem atendimento especializado.  A violência de gênero é uma
-            questão alarmante e generalizada que afeta milhões de mulheres em
-            todo o Brasil, revelando um cenário de dores silenciadas. No Rio de
-            Janeiro, essa realidade é desafiadora, com altos índices de
-            agressões e feminicídios que clamam por uma resposta robusta das
-            autoridades. Diante desse contexto, as ações e políticas públicas da
-            Secretaria da Mulher da Prefeitura do Rio de Janeiro se destacam
+            requerem atendimento especializado. <br></br>
+            <br></br> A violência de gênero é uma questão alarmante e
+            generalizada que afeta milhões de mulheres em todo o Brasil,
+            revelando um cenário de dores silenciadas. No Rio de Janeiro, essa{" "}
+            <span className="text-[#EECBAD]">
+              <b>realidade é desafiadora </b>
+            </span>
+            realidade é desafiadora, com altos índices de agressões e
+            feminicídios que clamam por uma resposta robusta das autoridades.  
+            <br></br>
+            <br></br>
+            Diante desse contexto, as{" "}
+            <span className="text-[#EECBAD]">
+              <b>ações e políticas públicas</b>
+            </span>{" "}
+            da Secretaria da Mulher da Prefeitura do Rio de Janeiro se destacam
             como um esforço significativo para enfrentar a violência de gênero e
-            garantir que os culpados sejam responsabilizados e as vítimas tenham
-            acesso ao suporte necessário. Esse conjunto de iniciativas não
-            apenas acolhe e protege as vítimas, mas também reforça o compromisso
-            da cidade em construir um ambiente mais seguro e justo para todas as
-            mulheres. É crucial que esses esforços sejam continuamente
-            fortalecidos e ampliados, para que a luta contra a violência de
-            gênero se torne uma realidade duradoura no Rio de Janeiro.
+            garantir que os culpados sejam responsabilizados e as{" "}
+            <span className="text-[#EECBAD]">
+              <b>vítimas tenham acesso ao suporte necessário.</b>
+            </span>{" "}
+             <br></br>
+            <br></br>
+            Esse conjunto de iniciativas não apenas acolhe e protege as vítimas,
+            mas também reforça o compromisso da cidade em construir um ambiente
+            mais seguro e justo para todas as mulheres. É crucial que esses
+            esforços sejam continuamente fortalecidos e ampliados, para que a
+            luta contra a violência de gênero se torne uma realidade duradoura
+            no Rio de Janeiro.
           </h1>
         </div>
       </div>

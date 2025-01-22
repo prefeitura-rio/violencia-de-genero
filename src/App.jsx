@@ -89,12 +89,13 @@ function App() {
 
   if (loading) {
     return (
-      <div className="bg-black font-cormorant px-6 text-white text-2xl flex items-center justify-center h-screen">
+      <div className="bg-black font-cormorant px-6 text-white text-2xl flex items-center justify-center h-screen text-center">
         <TypingEffect
           text="Para ilustração desta reportagem, foram utilizadas imagens geradas com auxílio de inteligência artificial."
           speed={55}
           showBlink={true}
           startAnimation={true}
+          maxWidth="600px"
         />
       </div>
     );
