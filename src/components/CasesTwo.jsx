@@ -29,14 +29,14 @@ const CasesTwo = ({ startAnimation }) => {
         <h1 className="sm:hidden text-2xl xl:text-3xl mx-4 sm:mx-0 text-right">
           <TypingEffect
             text={`“Na primeira vez que ele... Me deu um tapa nas costas, eu já tinha ido lá falar com elas.`}
-            speed={80}
+            speed={115}
             showBlink={false}
             startAnimation={startAnimation === "frame28"}
           />
           <div className="ml-24 text-right">
             <TypingEffect
               text={`Elas já tinham me dado todo apoio e tal. E aí me pediram pra fazer a denúncia. Só que eu... Não tive forças”.`}
-              speed={80}
+              speed={115}
               showBlink={false}
               startAnimation={startAnimation === "frame28"}
               delay={7300}

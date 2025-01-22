@@ -52,10 +52,13 @@ function App() {
   if (showDialog) {
     return (
       <div className="bg-black font-cormorant px-1 text-white text-2xl flex items-center justify-center h-screen">
-        <div className="text-center">
+        <div className="text-center max-w-[600px]">
           <p className="mb-10">
-            Este conteúdo contém informações sensíveis sobre violência de
-            gênero. Deseja continuar?
+            Atenção: essa reportagem aborda temática sensível a algumas pessoas,
+            como violência de gênero e doméstica. Caso você ou alguém conhecido
+            esteja passando por uma situação similar às retratadas aqui, entre
+            em contato com a Secretaria da Mulher pelo site mulher.rio ou ligue
+            para o número 180.
           </p>
           <div className="flex flex-col items-center">
             {/* Botão centralizado */}
@@ -88,8 +91,8 @@ function App() {
     return (
       <div className="bg-black font-cormorant px-6 text-white text-2xl flex items-center justify-center h-screen">
         <TypingEffect
-          text="Por trás dos números, estão vidas que não podemos ignorar."
-          speed={110}
+          text="Para ilustração desta reportagem, foram utilizadas imagens geradas com auxílio de inteligência artificial."
+          speed={55}
           showBlink={true}
           startAnimation={true}
         />
