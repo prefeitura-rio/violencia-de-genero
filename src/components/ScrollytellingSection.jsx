@@ -57,14 +57,14 @@ const ScrollytellingSection = () => {
 
     ScrollTrigger.create({
       trigger: ".frame1-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => gsap.to(".frame1", { opacity: 1, duration: 0.5 }),
       onLeaveBack: () => gsap.to(".frame1", { opacity: 0, duration: 0.5 }),
     });
 
     ScrollTrigger.create({
       trigger: ".frame2-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to([".frame2", ".buttons"], { opacity: 1, duration: 0.5 });
         setButtonsPosition(
@@ -98,7 +98,7 @@ const ScrollytellingSection = () => {
 
     ScrollTrigger.create({
       trigger: ".frame3-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to([".frame1", ".frame2", ".buttons"], {
           opacity: 0,
@@ -117,14 +117,14 @@ const ScrollytellingSection = () => {
 
     ScrollTrigger.create({
       trigger: ".frame4-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => gsap.to(".frame4", { opacity: 1, duration: 0.5 }),
       onLeaveBack: () => gsap.to(".frame4", { opacity: 0, duration: 0.5 }),
     });
 
     ScrollTrigger.create({
       trigger: ".frame5-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to([".frame5", ".buttons"], { opacity: 1, duration: 0.5 });
         setButtonsPosition(
@@ -158,7 +158,7 @@ const ScrollytellingSection = () => {
 
     ScrollTrigger.create({
       trigger: ".frame6-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to([".frame4", ".frame5", ".buttons"], {
           opacity: 0,
@@ -174,14 +174,14 @@ const ScrollytellingSection = () => {
 
     ScrollTrigger.create({
       trigger: ".frame7-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => gsap.to(".frame7", { opacity: 1, duration: 0.5 }),
       onLeaveBack: () => gsap.to(".frame7", { opacity: 0, duration: 0.5 }),
     });
 
     ScrollTrigger.create({
       trigger: ".frame8-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to([".frame8", ".buttons"], { opacity: 1, duration: 0.5 });
         setButtonsPosition(
@@ -215,7 +215,7 @@ const ScrollytellingSection = () => {
 
     ScrollTrigger.create({
       trigger: ".frame9-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to([".frame7", ".frame8", ".buttons"], {
           opacity: 0,
@@ -234,14 +234,14 @@ const ScrollytellingSection = () => {
 
     ScrollTrigger.create({
       trigger: ".frame10-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => gsap.to(".frame10", { opacity: 1, duration: 0.5 }),
       onLeaveBack: () => gsap.to(".frame10", { opacity: 0, duration: 0.5 }),
     });
 
     ScrollTrigger.create({
       trigger: ".frame11-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to([".frame10"], { opacity: 0, duration: 0.5 });
       },
@@ -252,13 +252,13 @@ const ScrollytellingSection = () => {
 
     ScrollTrigger.create({
       trigger: ".frame12-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => gsap.to(".frame12", { opacity: 1, duration: 0.5 }),
       onLeaveBack: () => gsap.to(".frame12", { opacity: 0, duration: 0.5 }),
     });
     ScrollTrigger.create({
       trigger: ".frame12-2-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to(".frame12-2", { opacity: 1, duration: 0.5 });
         gsap.to(".frame12", { opacity: 0, duration: 0.5 });
@@ -271,7 +271,7 @@ const ScrollytellingSection = () => {
 
     ScrollTrigger.create({
       trigger: ".frame13-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to(".frame13", { opacity: 1, duration: 0.5 });
         gsap.to(".frame12-2", { opacity: 0, duration: 0.5 });
@@ -283,44 +283,44 @@ const ScrollytellingSection = () => {
     });
     ScrollTrigger.create({
       trigger: ".frame14-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => gsap.to(".frame14", { opacity: 1, duration: 0.5 }),
       onLeaveBack: () => gsap.to(".frame14", { opacity: 0, duration: 0.5 }),
     });
     ScrollTrigger.create({
       trigger: ".frame15-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => gsap.to(".frame15", { opacity: 1, duration: 0.5 }),
       onLeaveBack: () => gsap.to(".frame15", { opacity: 0, duration: 0.5 }),
     });
     ScrollTrigger.create({
       trigger: ".frame16-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => gsap.to(".frame16", { opacity: 1, duration: 0.5 }),
       onLeaveBack: () => gsap.to(".frame16", { opacity: 0, duration: 0.5 }),
     });
     ScrollTrigger.create({
       trigger: ".frame17-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => gsap.to(".frame17", { opacity: 1, duration: 0.5 }),
       onLeaveBack: () => gsap.to(".frame17", { opacity: 0, duration: 0.5 }),
     });
     ScrollTrigger.create({
       trigger: ".frame18-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => gsap.to(".frame18", { opacity: 1, duration: 0.5 }),
       onLeaveBack: () => gsap.to(".frame18", { opacity: 0, duration: 0.5 }),
     });
     ScrollTrigger.create({
       trigger: ".frame19-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => gsap.to(".frame19", { opacity: 1, duration: 0.5 }),
       onLeaveBack: () => gsap.to(".frame19", { opacity: 0, duration: 0.5 }),
     });
 
     ScrollTrigger.create({
       trigger: ".frame19-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to(
           [
@@ -349,14 +349,14 @@ const ScrollytellingSection = () => {
     // A Violência contra mulheres aumentou...
     ScrollTrigger.create({
       trigger: ".frame20-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => gsap.to(".frame20", { opacity: 1, duration: 0.5 }),
       onLeaveBack: () => gsap.to(".frame20", { opacity: 0, duration: 0.5 }),
     });
 
     ScrollTrigger.create({
       trigger: ".frame21-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to(".frame21", { opacity: 1, duration: 0.5 });
         setButtonsPosition(
@@ -370,7 +370,7 @@ const ScrollytellingSection = () => {
 
     ScrollTrigger.create({
       trigger: ".frame22-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to(".frame22", { opacity: 1, duration: 0.5 });
         gsap.to(".frame21", { opacity: 0, duration: 0.5 });
@@ -391,7 +391,7 @@ const ScrollytellingSection = () => {
     });
     ScrollTrigger.create({
       trigger: ".frame23-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to(".frame23", { opacity: 1, duration: 0.5 });
         gsap.to(".frame22", { opacity: 0, duration: 0.5 });
@@ -412,7 +412,7 @@ const ScrollytellingSection = () => {
     });
     ScrollTrigger.create({
       trigger: ".frame24-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to(".frame24", { opacity: 1, duration: 0.5 });
         gsap.to(".frame23", { opacity: 0, duration: 0.5 });
@@ -433,7 +433,7 @@ const ScrollytellingSection = () => {
     });
     ScrollTrigger.create({
       trigger: ".frame25-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to(".frame25", { opacity: 1, duration: 0.5 });
         gsap.to(".frame24", { opacity: 0, duration: 0.5 });
@@ -455,7 +455,7 @@ const ScrollytellingSection = () => {
 
     ScrollTrigger.create({
       trigger: ".frame26-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to([".frame25, .frame20"], { opacity: 0, duration: 0.5 });
         gsap.to(".frame26", { opacity: 1, duration: 0.5 });
@@ -468,14 +468,14 @@ const ScrollytellingSection = () => {
 
     ScrollTrigger.create({
       trigger: ".frame27-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => gsap.to(".frame27", { opacity: 1, duration: 0.5 }),
       onLeaveBack: () => gsap.to(".frame27", { opacity: 0, duration: 0.5 }),
     });
 
     ScrollTrigger.create({
       trigger: ".frame28-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to([".frame28", ".buttons"], { opacity: 1, duration: 0.5 });
         setButtonsPosition(
@@ -509,7 +509,7 @@ const ScrollytellingSection = () => {
 
     ScrollTrigger.create({
       trigger: ".frame29-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to([".frame27", ".frame28", ".buttons"], {
           opacity: 0,
@@ -528,7 +528,7 @@ const ScrollytellingSection = () => {
 
     ScrollTrigger.create({
       trigger: ".frame30-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to([".frame29"], { opacity: 0, duration: 0.5 });
         gsap.to(".frame30", { opacity: 1, duration: 0.5 });
@@ -540,7 +540,7 @@ const ScrollytellingSection = () => {
     });
     ScrollTrigger.create({
       trigger: ".frame30b-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to([".frame30"], { opacity: 0, duration: 0.5 });
         gsap.to(".frame30b", { opacity: 1, duration: 0.5 });
@@ -553,7 +553,7 @@ const ScrollytellingSection = () => {
 
     ScrollTrigger.create({
       trigger: ".frame31-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to(".frame31", { opacity: 1, duration: 0.5 });
       },
@@ -563,7 +563,7 @@ const ScrollytellingSection = () => {
     });
     ScrollTrigger.create({
       trigger: ".frame32-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to([".frame32", ".buttons"], { opacity: 1, duration: 0.5 });
         setButtonsPosition(
@@ -597,7 +597,7 @@ const ScrollytellingSection = () => {
 
     ScrollTrigger.create({
       trigger: ".frame33-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to([".frame31", ".frame32", ".frame33", ".buttons"], {
           opacity: 0,
@@ -614,7 +614,7 @@ const ScrollytellingSection = () => {
 
     ScrollTrigger.create({
       trigger: ".frame34-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to(".frame34", { opacity: 1, duration: 0.5 });
       },
@@ -624,7 +624,7 @@ const ScrollytellingSection = () => {
     });
     ScrollTrigger.create({
       trigger: ".frame35-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to([".frame35", ".buttons"], { opacity: 1, duration: 0.5 });
         setButtonsPosition(
@@ -658,7 +658,7 @@ const ScrollytellingSection = () => {
 
     ScrollTrigger.create({
       trigger: ".frame36-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to([".frame34", ".frame35", ".frame36", ".buttons"], {
           opacity: 0,
@@ -675,7 +675,7 @@ const ScrollytellingSection = () => {
 
     ScrollTrigger.create({
       trigger: ".frame37-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to(".frame37", { opacity: 1, duration: 0.5 });
       },
@@ -685,7 +685,7 @@ const ScrollytellingSection = () => {
     });
     ScrollTrigger.create({
       trigger: ".frame38-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to([".frame38", ".buttons"], { opacity: 1, duration: 0.5 });
         setButtonsPosition(
@@ -718,7 +718,7 @@ const ScrollytellingSection = () => {
     });
     ScrollTrigger.create({
       trigger: ".frame39-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to([".frame37", ".frame38", ".frame39", ".buttons"], {
           opacity: 0,
@@ -734,7 +734,7 @@ const ScrollytellingSection = () => {
     });
     ScrollTrigger.create({
       trigger: ".frame40-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to(".frame40", { opacity: 1, duration: 0.5 });
       },
@@ -744,7 +744,7 @@ const ScrollytellingSection = () => {
     });
     ScrollTrigger.create({
       trigger: ".frame41-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to(".frame41", { opacity: 1, duration: 0.5 });
       },
@@ -754,7 +754,7 @@ const ScrollytellingSection = () => {
     });
     ScrollTrigger.create({
       trigger: ".frame42-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to(".frame42", { opacity: 1, duration: 0.5 });
         gsap.to(".frameCMC", { opacity: 1, duration: 0.5 });
@@ -770,7 +770,7 @@ const ScrollytellingSection = () => {
     });
     ScrollTrigger.create({
       trigger: ".frame43-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to(".frame43", { opacity: 1, duration: 0.5 });
         gsap.to(".frameCEAM", { opacity: 1, duration: 0.5 });
@@ -784,7 +784,7 @@ const ScrollytellingSection = () => {
     });
     ScrollTrigger.create({
       trigger: ".frame44-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to(".frame44", { opacity: 1, duration: 0.5 });
         gsap.to(".frameNEAM", { opacity: 1, duration: 0.5 });
@@ -798,7 +798,7 @@ const ScrollytellingSection = () => {
     });
     ScrollTrigger.create({
       trigger: ".frame45-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to(".frame45", { opacity: 1, duration: 0.5 });
         gsap.to(".frameNEAP", { opacity: 1, duration: 0.5 });
@@ -812,7 +812,7 @@ const ScrollytellingSection = () => {
     });
     ScrollTrigger.create({
       trigger: ".frame46-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to(".frame46", { opacity: 1, duration: 0.5 });
         gsap.to(".frameAS", { opacity: 1, duration: 0.5 });
@@ -826,7 +826,7 @@ const ScrollytellingSection = () => {
     });
     ScrollTrigger.create({
       trigger: ".frame47-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to(".frame47", { opacity: 1, duration: 0.5 });
         gsap.to(".frameSMC", { opacity: 1, duration: 0.5 });
@@ -842,7 +842,7 @@ const ScrollytellingSection = () => {
     });
     ScrollTrigger.create({
       trigger: ".frame48-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to(".frame48", { opacity: 1, duration: 0.5 });
         gsap.to(
@@ -866,7 +866,7 @@ const ScrollytellingSection = () => {
     });
     ScrollTrigger.create({
       trigger: ".frame1-conclusao-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to(".frame1-conclusao", { opacity: 1, duration: 0.5 });
         gsap.to(".frame48", { opacity: 0, duration: 0.5 });
@@ -878,7 +878,7 @@ const ScrollytellingSection = () => {
     });
     ScrollTrigger.create({
       trigger: ".frame1b-conclusao-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to(".frame1b-conclusao", { opacity: 1, duration: 0.5 });
       },
@@ -888,7 +888,7 @@ const ScrollytellingSection = () => {
     });
     ScrollTrigger.create({
       trigger: ".frame2-conclusao-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to(".frame2-conclusao", { opacity: 1, duration: 0.5 });
         gsap.to(".frame1-conclusao", { opacity: 0, duration: 0.5 });
@@ -902,7 +902,7 @@ const ScrollytellingSection = () => {
     });
     ScrollTrigger.create({
       trigger: ".frame3-conclusao-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to(".frame3-conclusao", { opacity: 1, duration: 0.5 });
         gsap.to(".frame2-conclusao", { opacity: 0, duration: 0.5 });
@@ -914,7 +914,7 @@ const ScrollytellingSection = () => {
     });
     ScrollTrigger.create({
       trigger: ".frame4-conclusao-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to(".frame3-conclusao", { opacity: 0, duration: 0.5 });
       },
@@ -924,7 +924,7 @@ const ScrollytellingSection = () => {
     });
     ScrollTrigger.create({
       trigger: ".frame5-conclusao-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to(".frame5-conclusao", { opacity: 1, duration: 0.5 });
       },
@@ -934,7 +934,7 @@ const ScrollytellingSection = () => {
     });
     ScrollTrigger.create({
       trigger: ".frame6-conclusao-trigger",
-      start: "top center",
+      start: "top top",
       onEnter: () => {
         gsap.to(".frame6-conclusao", { opacity: 1, duration: 0.5 });
         gsap.to(".frame5-conclusao", { opacity: 0, duration: 0.5 });
@@ -962,72 +962,76 @@ const ScrollytellingSection = () => {
   return (
     <div className="bg-black min-h-screen relative">
       {/* Section1 */}
-      <div className="h-screen frame1-trigger"></div>
-      <div className="h-screen frame2-trigger"></div>
-      <div className="h-screen frame3-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame1-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame2-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame3-trigger"></div>
       {/* Section2 */}
-      <div className="h-screen frame4-trigger"></div>
-      <div className="h-screen frame5-trigger"></div>
-      <div className="h-screen frame6-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame4-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame5-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame6-trigger"></div>
       {/* Section3 */}
-      <div className="h-screen frame7-trigger"></div>
-      <div className="h-screen frame8-trigger"></div>
-      <div className="h-screen frame9-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame7-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame8-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame9-trigger"></div>
       {/* Cover */}
-      <div className="h-screen frame10-trigger"></div>
-      <div className="h-screen frame11-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame10-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame11-trigger"></div>
       {/* Intro */}
-      <div className="h-screen frame12-trigger"></div>
-      <div className="h-screen block sm:hidden frame12-2-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame12-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] block sm:hidden frame12-2-trigger"></div>
       {/* Cases */}
-      <div className="h-screen frame13-trigger"></div>
-      <div className="h-screen frame14-trigger"></div>
-      <div className="h-screen frame15-trigger"></div>
-      <div className="h-screen frame16-trigger"></div>
-      <div className="h-screen frame17-trigger"></div>
-      <div className="h-screen frame18-trigger"></div>
-      <div className="h-screen frame19-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame13-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame14-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame15-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame16-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame17-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame18-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame19-trigger"></div>
       {/* ClockSection */}
-      <div className="h-screen frame20-trigger"></div>
-      <div className="h-screen frame21-trigger"></div>
-      <div className="h-screen frame22-trigger"></div>
-      <div className="h-screen frame23-trigger"></div>
-      <div className="h-screen frame24-trigger"></div>
-      <div className="h-screen frame25-trigger"></div>
-      <div className="h-screen frame26-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame20-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame21-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame22-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame23-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame24-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame25-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame26-trigger"></div>
       {/* CasesTwo */}
-      <div className="h-screen frame27-trigger"></div>
-      <div className="h-screen frame28-trigger"></div>
-      <div className="h-screen frame29-trigger"></div>
-      <div className="h-screen frame30-trigger"></div>
-      <div className="h-screen frame30b-trigger"></div> {/* clean */}
-      <div className="h-screen frame31-trigger"></div>
-      <div className="h-screen frame32-trigger"></div>
-      <div className="h-screen frame33-trigger"></div> {/* clean */}
-      <div className="h-screen frame34-trigger"></div>
-      <div className="h-screen frame35-trigger"></div>
-      <div className="h-screen frame36-trigger"></div>
-      <div className="h-screen frame37-trigger"></div>
-      <div className="h-screen frame38-trigger"></div>
-      <div className="h-screen frame39-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame27-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame28-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame29-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame30-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame30b-trigger"></div>{" "}
+      {/* clean */}
+      <div className="h-[300px] lg:h-[600px] frame31-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame32-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame33-trigger"></div>{" "}
+      {/* clean */}
+      <div className="h-[300px] lg:h-[600px] frame34-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame35-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame36-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame37-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame38-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame39-trigger"></div>
       {/* MapSection */}
-      <div className="h-screen frame40-trigger"></div>
-      <div className="h-screen frame41-trigger"></div>
-      <div className="h-screen frame42-trigger"></div>
-      <div className="h-screen frame43-trigger"></div>
-      <div className="h-screen frame44-trigger"></div>
-      <div className="h-screen frame45-trigger"></div>
-      <div className="h-screen frame46-trigger"></div>
-      <div className="h-screen frame47-trigger"></div>
-      <div className="h-screen frame48-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame40-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame41-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame42-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame43-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame44-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame45-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame46-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame47-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame48-trigger"></div>
       {/* Conclusion */}
-      <div className="h-screen frame1-conclusao-trigger"></div>
-      <div className="h-screen frame1b-conclusao-trigger"></div>
-      <div className="h-screen frame2-conclusao-trigger"></div>
-      <div className="h-screen frame3-conclusao-trigger"></div>
-      <div className="h-screen frame4-conclusao-trigger"></div>
-      <div className="h-screen frame5-conclusao-trigger"></div>
-      <div className="h-screen frame6-conclusao-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame1-conclusao-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame1b-conclusao-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame2-conclusao-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame3-conclusao-trigger"></div>
+      <div className="h-[300px] lg:h-[600px]  frame4-conclusao-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame5-conclusao-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame6-conclusao-trigger"></div>
+      <div className="h-[300px] lg:h-[600px]"></div>
+      <div className="h-[300px] lg:h-[600px]"></div>
       {showMessage && (
         <div className="text-sm bg-transparent z-50 fixed bottom-0 left-1/2 transform -translate-x-1/2 p-1 text-white bg-black bg-opacity-50 blink">
           Continue descendo
