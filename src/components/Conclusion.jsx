@@ -66,6 +66,33 @@ const Conclusion = () => {
             feminicídios que clamam por uma resposta robusta das autoridades.  
             <br></br>
             <br></br>
+            <span className="hidden 3xl:block">
+              Diante desse contexto, as{" "}
+              <span className="text-[#EECBAD]">
+                <b>ações e políticas públicas</b>
+              </span>{" "}
+              da Secretaria da Mulher da Prefeitura do Rio de Janeiro se
+              destacam como um esforço significativo para enfrentar a violência
+              de gênero e garantir que os culpados sejam responsabilizados e as{" "}
+              <span className="text-[#EECBAD]">
+                <b>vítimas tenham acesso ao suporte necessário.</b>
+              </span>{" "}
+               <br></br>
+              <br></br>
+              Esse conjunto de iniciativas não apenas acolhe e protege as
+              vítimas, mas também reforça o compromisso da cidade em construir
+              um ambiente mais seguro e justo para todas as mulheres. É crucial
+              que esses esforços sejam continuamente fortalecidos e ampliados,
+              para que a luta contra a violência de gênero se torne uma
+              realidade duradoura no Rio de Janeiro.
+            </span>
+          </h1>
+        </div>
+      </div>
+      <div className="frame5-2-conclusao fixed h-screen w-full flex flex-col items-center justify-center bg-black text-center text-white px-4">
+        <div className="mb-6 fixed top-1/2 -translate-y-1/2 items-center flex flex-col max-w-[600px] text-left mx-4">
+          <h1 className="text-xl mb-2">
+            {/* Full text for desktop */}
             Diante desse contexto, as{" "}
             <span className="text-[#EECBAD]">
               <b>ações e políticas públicas</b>

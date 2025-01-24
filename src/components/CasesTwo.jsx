@@ -114,11 +114,7 @@ const CasesTwo = ({ startAnimation }) => {
           </div>
           <div className="flex items-center justify-start">
             <div className="frame31 border-2 border-white w-6 h-6 flex items-center justify-center mr-4 flex-shrink-0">
-              <img
-                src={rightIcon}
-                alt="Right Icon"
-                className="scale-150 frame32"
-              />
+              {/* <img src={rightIcon} alt="Right Icon" className="scale-150" /> */}
             </div>
             <p className="frame31 text-white text-2xl xl:text-3xl text-left">
               Você sente medo de que ele se aborreça;
@@ -126,11 +122,11 @@ const CasesTwo = ({ startAnimation }) => {
           </div>
           <div className="flex items-center justify-start">
             <div className="frame31 border-2 border-white w-6 h-6 flex items-center justify-center mr-4 flex-shrink-0">
-              <img
+              {/* <img
                 src={rightIcon}
                 alt="Right Icon"
                 className="scale-150 frame32"
-              />
+              /> */}
             </div>
             <p className="frame31 text-white text-2xl xl:text-3xl text-left">
               Não consegue falar sobre a relação com outras pessoas.
@@ -174,11 +170,11 @@ const CasesTwo = ({ startAnimation }) => {
         <div className="flex flex-col items-start space-y-4">
           <div className="flex items-center justify-start">
             <div className="frame34 border-2 border-white w-6 h-6 flex items-center justify-center mr-4 flex-shrink-0">
-              <img
+              {/* <img
                 src={rightIcon}
                 alt="Right Icon"
                 className="scale-150 frame35"
-              />
+              /> */}
             </div>
             <p className="frame34 text-white text-2xl xl:text-3xl text-left">
               Ele te ridiculariza;
@@ -198,11 +194,11 @@ const CasesTwo = ({ startAnimation }) => {
           </div>
           <div className="flex items-center justify-start">
             <div className="frame34 border-2 border-white w-6 h-6 flex items-center justify-center mr-4 flex-shrink-0">
-              <img
+              {/* <img
                 src={rightIcon}
                 alt="Right Icon"
                 className="scale-150 frame35"
-              />
+              /> */}
             </div>
             <p className="frame34 text-white text-2xl xl:text-3xl text-left">
               Te intimida, amedronta ou chantageia.
@@ -246,11 +242,11 @@ const CasesTwo = ({ startAnimation }) => {
         <div className="mx-4 flex flex-col items-start space-y-4">
           <div className="flex items-center justify-start">
             <div className="frame37 border-2 border-white w-6 h-6 flex items-center justify-center mr-4 flex-shrink-0">
-              <img
+              {/* <img
                 src={rightIcon}
                 alt="Right Icon"
                 className="scale-150 frame38"
-              />
+              /> */}
             </div>
             <p className="frame37 text-white text-2xl xl:text-3xl text-left">
               Destrói ou esconde seus documentos;
@@ -258,11 +254,11 @@ const CasesTwo = ({ startAnimation }) => {
           </div>
           <div className="flex items-center justify-start">
             <div className="frame37 border-2 border-white w-6 h-6 flex items-center justify-center mr-4 flex-shrink-0">
-              <img
+              {/* <img
                 src={rightIcon}
                 alt="Right Icon"
                 className="scale-150 frame38"
-              />
+              /> */}
             </div>
             <p className="frame37 text-white text-2xl xl:text-3xl text-left">
               Impede de sair ou ver outras pessoas;
