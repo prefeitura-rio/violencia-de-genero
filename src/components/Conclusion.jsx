@@ -1,4 +1,4 @@
-import logo from "../assets/logo.png";
+import icons from "../assets/icons.svg";
 const Conclusion = () => {
   return (
     <>
@@ -90,7 +90,7 @@ const Conclusion = () => {
       <div className="frame6-conclusao fixed inset-0 flex flex-col items-center justify-center bg-black text-center text-white px-4">
         <div className="flex flex-col items-center max-w-[600px]">
           {/* Title */}
-          <h1 className="text-xl font-bold text-[#EECBAD] mb-8">Autores:</h1>
+          <h1 className="text-2xl font-bold text-[#EECBAD] mb-6">Créditos</h1>
 
           {/* Content */}
           <div className="text-center space-y-6">
@@ -113,6 +113,13 @@ const Conclusion = () => {
               <h2 className="text-lg font-semibold">Presidente da IplanRio</h2>
               <p>João Carabetta</p>
             </div>
+            {/* Vozes */}
+            <div>
+              <h2 className="text-lg font-semibold">Vozes</h2>
+              <p>Carol Castro</p>
+              <p>Beatriz Gentil</p>
+              <p>Gloria Oliveira</p>
+            </div>
 
             {/* Secretaria da Mulher */}
             <div>
@@ -126,7 +133,11 @@ const Conclusion = () => {
           </div>
           {/* Logos */}
           <div className="mt-10">
-            <img src={logo} alt="Prefeitura do Rio Logo" className="h-10" />
+            <img
+              src={icons}
+              alt="Prefeitura do Rio Logo"
+              className="h-10 w-auto filter invert"
+            />
           </div>
         </div>
       </div>
