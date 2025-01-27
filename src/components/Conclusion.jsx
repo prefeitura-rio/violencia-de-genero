@@ -62,9 +62,8 @@ const Conclusion = () => {
             <span className="text-[#EECBAD]">
               <b>realidade é desafiadora </b>
             </span>
-            realidade é desafiadora, com altos índices de agressões e
-            feminicídios que clamam por uma resposta robusta das autoridades.  
-            <br></br>
+            , com altos índices de agressões e feminicídios que clamam por uma
+            resposta robusta das autoridades.  <br></br>
             <br></br>
             <span className="hidden 3xl:block">
               Diante desse contexto, as{" "}

@@ -182,7 +182,7 @@ const MapSection = () => {
           <br />
           Esses atendimentos ofereceram{" "}
           <span className="text-[#EECBAD]">
-            <b> </b>
+            <b>apoio psicológico, jurídico e social</b>
           </span>
           , buscando não apenas a proteção imediata, mas também o fortalecimento
           emocional e a autonomia das vítimas. O volume expressivo de

@@ -83,9 +83,9 @@ const CasesTwo = ({ startAnimation }) => {
           <span className="text-[#EECBAD]">
             <b>agressões físicas ou sexuais</b>
           </span>{" "}
-          agressões físicas ou sexuais, mas se apresenta em várias formas, desde
-          comportamentos sutis até ameaças de morte. As violências mais comuns
-          são classificadas como {""}
+          , mas se apresenta em várias formas, desde comportamentos sutis até
+          ameaças de morte. As violências mais comuns são classificadas como{" "}
+          {""}
           <span className="text-[#EECBAD]">
             <b>psicológicas, morais e patrimoniais</b>
           </span>
