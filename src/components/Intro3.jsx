@@ -5,16 +5,18 @@ const Intro3 = () => {
         <h1 className="text-xl mb-2">
           {/* Full text for desktop */}
           <span className="">
-            Esta visualização de dados busca mapear a violência de gênero,
-            revelando as diversas formas de agressão e as ações da{" "}
+            Esta visualização de dados busca revelar as diversas formas de
+            agressão e as ações da{" "}
             <span className="text-[#EECBAD]">
               <b>Secretaria da Mulher (SPM-Rio) e da Prefeitura</b>{" "}
+            </span>
+            para coibir os crimes, acolher e auxiliar as vítimas da capital
+            fluminense. O objetivo é apresentar esses dados, contar{" "}
+            <span className="text-[#EECBAD]">
+              <b>histórias</b>{" "}
             </span>{" "}
-            para combater os crimes e auxiliar as vítimas. O objetivo não é
-            apenas apresentar esses dados, mas contar histórias que clamam por
-            justiça e construir um futuro livre da violência de gênero.
-            <br></br>
-            <br></br>
+            de vítimas sobreviventes e, assim, construir um futuro livre da
+            violência de gênero.
             {/* <span className="text-[#EECBAD]">
               {" "}
               <b>No site mulher.rio</b>

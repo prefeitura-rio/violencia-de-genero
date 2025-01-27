@@ -5,15 +5,13 @@ const Intro2 = () => {
         <h1 className="text-xl mb-2">
           {/* Full text for desktop */}
           <span className="">
-            A violência de gênero é uma ferida aberta que se perpetua ao longo
-            das gerações brasileiras, inclusive no Rio de Janeiro. Aqui, as
-            estatísticas refletem uma realidade alarmante, com{" "}
+            Mas a violência de gênero é uma ferida que segue aberta no país:
+            somente em 2023, foram{" "}
             <span className="text-[#EECBAD]">
               <b>1.467 feminicídios registrados em 2024</b>
             </span>
-            , e uma média de três mortes por mês na cidade. Esses números
-            revelam uma dor profunda, onde lares e ruas se tornam cenários de
-            crimes evitáveis.
+            . {""}O estado do Rio de Janeiro concentrou quase um terço desse
+            total.
           </span>
         </h1>
       </div>

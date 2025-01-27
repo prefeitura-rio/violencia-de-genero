@@ -26,25 +26,27 @@ const Intro = () => {
             <br></br>
             <br></br>
             <span className="hidden 3xl:block">
-              A violência de gênero é uma ferida aberta que se perpetua ao longo
-              das gerações brasileiras, inclusive no Rio de Janeiro. Aqui, as
-              estatísticas refletem uma realidade alarmante, com{" "}
+              Mas a violência de gênero é uma ferida que segue aberta no país:
+              somente em 2023, foram{" "}
               <span className="text-[#EECBAD]">
-                <b>1.467 feminicídios registrados em 2024</b>{" "}
+                <b>1.467 feminicídios registrados em 2024</b>
               </span>
-              , e uma média de três mortes por mês na cidade. Esses números
-              revelam uma dor profunda, onde lares e ruas se tornam cenários de
-              crimes evitáveis.
+              . {""}O estado do Rio de Janeiro concentrou quase um terço desse
+              total.
               <br></br>
               <br></br>
-              Esta visualização de dados busca mapear a violência de gênero,
-              revelando as diversas formas de agressão e as ações da{" "}
+              Esta visualização de dados busca revelar as diversas formas de
+              agressão e as ações da{" "}
               <span className="text-[#EECBAD]">
                 <b>Secretaria da Mulher (SPM-Rio) e da Prefeitura</b>{" "}
               </span>
-              para combater os crimes e auxiliar as vítimas. O objetivo não é
-              apenas apresentar esses dados, mas contar histórias que clamam por
-              justiça e construir um futuro livre da violência de gênero.
+              para coibir os crimes, acolher e auxiliar as vítimas da capital
+              fluminense. O objetivo é apresentar esses dados, contar{" "}
+              <span className="text-[#EECBAD]">
+                <b>histórias</b>{" "}
+              </span>{" "}
+              de vítimas sobreviventes e, assim, construir um futuro livre da
+              violência de gênero.
               {/* <br></br>
               <br></br>
               <span className="text-[#EECBAD]">
