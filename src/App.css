@@ -44,3 +44,12 @@
 .blink {
   animation: blink 1.5s infinite;
 }
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.flicker {
+  animation: flicker 2s infinite;
+}

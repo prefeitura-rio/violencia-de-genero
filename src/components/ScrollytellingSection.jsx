@@ -51,7 +51,7 @@ const ScrollytellingSection = () => {
 
   useEffect(() => {
     gsap.set(
-      "buttons, .frame2, .frame3, .frame4, .frame5, .frame6,.frame7,.frame8,.frame9, .frame10, .frame11, .frame12, .frame12-2,.frame12-3, .frame13, .frame14,.frame15, .frame16,.frame17,.frame18,.frame19,.frame20, .frame21, .frame22, .frame23, .frame24, .frame25, .frame26, .frame27, .frame28, .frame29, .frame30, .frame31, .frame32, .frame33, .frame34, .frame35, .frame36, .frame37, .frame38, .frame39, .frame40, .frame41, .frame42, .frame43, .frame44, .frame45, .frame46, .frame47, .frame48, .frameCMC, .frameCEAM, .frameNEAM, .frameNEAP, .frameAS, .frameSMC,.frame1-conclusao,.frame1b-conclusao, .frame2-conclusao, .frame3-conclusao, .frame5-conclusao,.frame5-2-conclusao, .frame6-conclusao",
+      "buttons, .frame2, .frame3, .frame4, .frame5, .frame6,.frame7,.frame8,.frame9, .frame10, .frame11, .frame12, .frame12-2,.frame12-3, .frame13, .frame14,.frame15, .frame16,.frame17,.frame18,.frame19,.frame20, .frame21, .frame22, .frame23, .frame24, .frame25, .frame26, .frame27, .frame28, .frame29, .frame30, .frame31, .frame32, .frame33, .frame34, .frame35, .frame36, .frame37, .frame38, .frame39, .frame40, .frame41, .frame42, .frame43, .frame44, .frame45, .frame46, .frame47, .frame48, .frameCMC, .frameCEAM, .frameNEAM, .frameNEAP, .frameAS, .frameSMC,.frame1-conclusao,.frame1b-conclusao, .frame2-conclusao, .frame3-conclusao, .frame5-conclusao,.frame5-2-conclusao, .frame6-conclusao, .frame6-2-conclusao",
       { opacity: 0 }
     );
     gsap.set(".casesTwo", { display: "none" });
@@ -973,6 +973,22 @@ const ScrollytellingSection = () => {
         setTriggerActivated(false);
       },
     });
+    ScrollTrigger.create({
+      trigger: ".frame6-2-conclusao-trigger",
+      start: "top top",
+      onEnter: () => {
+        gsap.to(".frame6-2-conclusao", { opacity: 1, duration: 0.5 });
+        gsap.to(".frame6-conclusao", { opacity: 0, duration: 0.5 });
+        setShowMessage(false);
+        setTriggerActivated(true);
+      },
+      onLeaveBack: () => {
+        gsap.to(".frame6-2-conclusao", { opacity: 0, duration: 0.5 });
+        gsap.to(".frame6-conclusao", { opacity: 1, duration: 0.5 });
+        setShowMessage(true);
+        setTriggerActivated(false);
+      },
+    });
   }, []);
 
   useEffect(() => {
@@ -1057,6 +1073,7 @@ const ScrollytellingSection = () => {
       <div className="h-[300px] lg:h-[600px] frame5-conclusao-trigger"></div>
       <div className="h-[300px] lg:h-[600px] block 3xl:hidden frame5-2-conclusao-trigger"></div>
       <div className="h-[300px] lg:h-[600px] frame6-conclusao-trigger"></div>
+      <div className="h-[300px] lg:h-[600px] frame6-2-conclusao-trigger"></div>
       <div className="h-[300px] lg:h-[600px]"></div>
       <div className="h-[300px] lg:h-[600px]"></div>
       {showMessage && (

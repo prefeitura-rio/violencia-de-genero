@@ -14,15 +14,15 @@ const CasesTwo = ({ startAnimation }) => {
       {/* Text Section */}
       <div className="fixed frame27 top-10 sm:top-20 max-w-[900px] text-left mx-4">
         <h1 className="text-xl mb-4">
-          Embora o feminicídio muitas vezes ocupe as manchetes, a maioria dos
-          casos de violência de gênero permanece oculta, longe dos olhos do
+          Embora o feminicídio ganhe o destaque das manchetes, a maioria dos
+          outros de violência de gênero permanece oculta, longe dos olhos do
           público. São{" "}
           <span className="text-[#EECBAD]">
             <b>agressões diárias</b>{" "}
           </span>{" "}
           que se escondem nas paredes de casas, nas relações silenciosamente
           abusivas e nas ameaças veladas, formando um ciclo invisível que
-          raramente vira notícia. Por trás de cada dado registrado,{" "}
+          raramente vira notícia. Por trás de cada dado registrado, existem{" "}
           <span className="text-[#EECBAD]">
             <b>inúmeros casos nunca denunciados</b>.
           </span>
@@ -82,14 +82,14 @@ const CasesTwo = ({ startAnimation }) => {
           A violência de gênero geralmente é associada à{" "}
           <span className="text-[#EECBAD]">
             <b>agressões físicas ou sexuais</b>
-          </span>{" "}
-          , mas se apresenta em várias formas, desde comportamentos sutis até
-          ameaças de morte. As violências mais comuns são classificadas como{" "}
-          {""}
+          </span>
+          , mas ela se apresenta em várias formas, desde comportamentos sutis
+          até ameaças de morte. As violências mais comuns são classificadas
+          como: {""}
           <span className="text-[#EECBAD]">
             <b>psicológicas, morais e patrimoniais</b>
           </span>
-          , cada uma deixando profundas marcas nas vítimas.
+          , e todas deixam marcas profundas nas vítimas.
         </h1>
         <img
           src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/woman_man.png"

@@ -10,7 +10,8 @@ const Cover = () => {
           Violência de Gênero no Rio de Janeiro
         </h1>
         <p className="text-xl xl:text-2xl mb-20 text-[#EECBAD] mx-4 text-center">
-          A dura realidade das mulheres cariocas exposta em dados e histórias
+          A dura realidade das mulheres cariocas vítimas de violência, exposta
+          em dados e histórias
         </p>
       </div>
       <div className="frame10 flex flex-col items-center justify-center pt-96 fixed inset-0 m-auto w-full">

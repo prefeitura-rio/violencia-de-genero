@@ -8,11 +8,15 @@ const Cases = () => {
             Feminicídio é o{" "}
             <span className="text-[#EECBAD]">
               {" "}
-              <b>assassinato de mulheres motivado por questões de gênero</b>
+              <b>
+                assassinato de mulheres motivado pelo simples fato de serem
+                mulheres
+              </b>
             </span>
-            , geralmente ligado ao ódio ou desprezo pela condição feminina. É
-            uma presença comum nas manchetes dos jornais cariocas, expondo casos
-            de uma violência que atinge as mulheres em sua forma mais extrema
+            , geralmente ligado ao que se espera do genêro na sociedade. Costuma
+            ser motivado pelo ódio ou desprezo pelas mulheres. É presença comum
+            nas manchetes dos jornais , que expõem casos de uma violência que
+            atinge as mulheres em sua forma mais extrema: a morte.
           </span>
         </h1>
       </div>

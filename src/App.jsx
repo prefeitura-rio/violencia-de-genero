@@ -3,7 +3,10 @@ import "./App.css";
 import ScrollytellingSection from "./components/ScrollytellingSection";
 import TypingEffect from "./components/TypingEffect";
 import rightIcon from "./assets/right-icon.svg";
-
+import soundUp from "./assets/sound_up.gif";
+import soundIcon from "./assets/sound_icon.png";
+import soundIconOn from "./assets/sound_icon_on.svg";
+import ScrollProgressBar from "./ScrollProgressBar";
 function App() {
   const [loading, setLoading] = useState(true);
   const [showContent, setShowContent] = useState(false);
@@ -54,11 +57,11 @@ function App() {
       <div className="bg-black font-cormorant px-1 text-white text-2xl flex items-center justify-center h-screen">
         <div className="text-center max-w-[600px]">
           <p className="mb-10">
-            Atenção: essa reportagem aborda temática sensível a algumas pessoas,
-            como violência de gênero e doméstica. Caso você ou alguém conhecido
-            esteja passando por uma situação similar às retratadas aqui, entre
-            em contato com a Secretaria da Mulher pelo site mulher.rio ou ligue
-            para o número 180.
+            Atenção: essa reportagem aborda temáticas sensíveis para algumas
+            pessoas, como violência de gênero e doméstica. Caso você ou alguém
+            conhecido esteja passando por uma situação similar às retratadas
+            aqui, entre em contato com a Secretaria da Mulher ou ligue para o
+            número 180.
           </p>
           <div className="flex flex-col items-center">
             {/* Botão centralizado */}
@@ -91,11 +94,16 @@ function App() {
     return (
       <div className="bg-black font-cormorant px-6 text-white text-2xl flex items-center justify-center h-screen text-center">
         <TypingEffect
-          text="Para ilustração desta reportagem, foram utilizadas imagens geradas com auxílio de inteligência artificial."
+          text="Ligue o áudio. Role o mouse para ler a matéria; não é necessário clicar nas caixas de seleção."
           speed={55}
           showBlink={true}
           startAnimation={true}
           maxWidth="600px"
+        />
+        <img
+          src={soundUp}
+          alt="Volume Up"
+          className="w-20 fixed bottom-0 pb-10 filter invert"
         />
       </div>
     );
@@ -103,6 +111,7 @@ function App() {
 
   return (
     <div className="bg-black font-cormorant">
+      <ScrollProgressBar />
       <div
         className={`fade-in ${showContent ? "show" : ""}`}
         style={{ minHeight: "100vh" }} // Ensure it takes full screen

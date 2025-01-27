@@ -35,13 +35,12 @@ const MapSection = () => {
             {" "}
             <b>Casas da Mulher Carioca</b>
           </span>
-          <br></br> As Casas da Mulher Carioca são espaços de acolhimento e
-          capacitação nos quais são oferecidos serviços de atendimento
-          psicossocial, orientação jurídica, orientação pedagógica, cursos
-          livres e oficinas em diversas áreas. Também são incentivadas trocas de
-          vivências em rodas de conversas e outras atividades coletivas, com
-          objetivo de ampliar a inclusão da mulher na vida social e em
-          atividades culturais.
+          <br></br> São espaços de acolhimento e capacitação onde são oferecidos
+          serviços de atendimento psicossocial, orientação jurídica, orientação
+          pedagógica, cursos livres e oficinas em diversas áreas. Também são
+          incentivadas trocas de vivências em rodas de conversas e outras
+          atividades coletivas, com objetivo de ampliar a inclusão da mulher na
+          vida social e em atividades culturais.
         </h1>
       </div>
       <div className="frame42 fixed inset-0 translate-y-28 sm:translate-y-0 flex items-center justify-center z-10">
@@ -105,8 +104,8 @@ const MapSection = () => {
               Núcleos Especializados de Atendimento Psicoterapêutico (NEAPs)
             </b>
           </span>
-          <br></br> Onde a mulher pode receber acompanhamento clínico, que dure
-          o tempo necessário para que possa ter suas condições psicológicas e
+          <br></br> Onde a mulher recebe acompanhamento clínico, que dure o
+          tempo necessário para que possa ter suas condições psicológicas e
           emocionais restabelecidas.
         </h1>
       </div>
@@ -166,7 +165,7 @@ const MapSection = () => {
           <span className="text-[#EECBAD]">
             <b>850 mil mulheres foram impactadas</b>
           </span>{" "}
-          pelos equipamentos de promoção da mulher e mais de{" "}
+          pelos programas de promoção da mulher e mais de{" "}
           <span className="text-[#EECBAD]">
             <b>200 mil foram capacitadas</b>
           </span>{" "}

@@ -1,8 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import muteIcon from "../assets/mute.svg";
+import soundIconOn from "../assets/sound_icon_on.svg";
 import replayIcon from "../assets/replay.svg";
 
 const AudioControl = ({ audioRef, isDisabled, buttonsPosition }) => {
+  const [isMuted, setIsMuted] = useState(false);
+
+  useEffect(() => {
+    if (audioRef.current) {
+      setIsMuted(audioRef.current.muted);
+    }
+  }, [audioRef]);
+
+  const handleMuteToggle = () => {
+    if (audioRef.current) {
+      audioRef.current.muted = !audioRef.current.muted;
+      setIsMuted(audioRef.current.muted);
+    }
+  };
+
   return (
     <div className={`buttons z-50 fixed ${buttonsPosition}`}>
       <button
@@ -19,14 +35,14 @@ const AudioControl = ({ audioRef, isDisabled, buttonsPosition }) => {
       </button>
       <button
         className="w-10 h-10 bg-transparent border-none cursor-pointer"
-        onClick={() => {
-          if (audioRef.current) {
-            audioRef.current.muted = !audioRef.current.muted;
-          }
-        }}
+        onClick={handleMuteToggle}
         disabled={isDisabled}
       >
-        <img src={muteIcon} alt="Mute Audio" className="w-full h-full" />
+        <img
+          src={isMuted ? muteIcon : soundIconOn}
+          alt="Mute Audio"
+          className="w-full h-full"
+        />
       </button>
     </div>
   );

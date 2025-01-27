@@ -45,13 +45,13 @@ const Intro = () => {
               para combater os crimes e auxiliar as vítimas. O objetivo não é
               apenas apresentar esses dados, mas contar histórias que clamam por
               justiça e construir um futuro livre da violência de gênero.
-              <br></br>
+              {/* <br></br>
               <br></br>
               <span className="text-[#EECBAD]">
                 <b>No site mulher.rio</b>
               </span>
               , cariocas podem entender se suas realidades requerem atendimento
-              especializado, e onde consegui-lo.
+              especializado, e onde consegui-lo. */}
             </span>
           </span>
         </h1>

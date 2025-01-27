@@ -15,12 +15,12 @@ const Intro3 = () => {
             justiça e construir um futuro livre da violência de gênero.
             <br></br>
             <br></br>
-            <span className="text-[#EECBAD]">
+            {/* <span className="text-[#EECBAD]">
               {" "}
               <b>No site mulher.rio</b>
             </span>
             , cariocas podem entender se suas realidades requerem atendimento
-            especializado, e onde consegui-lo.
+            especializado, e onde consegui-lo. */}
           </span>
         </h1>
       </div>
