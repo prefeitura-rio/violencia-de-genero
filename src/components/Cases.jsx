@@ -13,9 +13,9 @@ const Cases = () => {
                 mulheres
               </b>
             </span>
-            , geralmente ligado ao que se espera do genêro na sociedade. Costuma
+            , geralmente ligado ao que se espera do gênero na sociedade. Costuma
             ser motivado pelo ódio ou desprezo pelas mulheres. É presença comum
-            nas manchetes dos jornais , que expõem casos de uma violência que
+            nas manchetes dos jornais, que expõem casos de uma violência que
             atinge as mulheres em sua forma mais extrema: a morte.
           </span>
         </h1>

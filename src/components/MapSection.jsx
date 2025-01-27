@@ -176,8 +176,8 @@ const MapSection = () => {
             <b>
               17 mil atendimentos a mulheres em situação de violência de gênero
             </b>
-          </span>{" "}
-          <br />
+          </span>
+          . <br />
           <br />
           Esses atendimentos ofereceram{" "}
           <span className="text-[#EECBAD]">

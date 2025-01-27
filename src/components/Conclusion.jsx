@@ -60,13 +60,11 @@ const Conclusion = () => {
           <h1 className="text-xl mb-2">
             {/* Full text for desktop */}A violência de gênero é uma questão
             alarmante e generalizada que afeta milhões de mulheres em todo o
-            Brasil, revelando um cenário de dores silenciadas. No Rio de
-            Janeiro, essa{" "}
+            Brasil. No Rio de Janeiro, essa{" "}
             <span className="text-[#EECBAD]">
               <b>realidade é desafiadora</b>
             </span>
-            , com altos índices de agressões e feminicídios que clamam por uma
-            resposta robusta das autoridades. <br></br>
+            , com altos índices de agressões e feminicídios.<br></br>
             <br></br>
             <span className="hidden 3xl:block">
               Diante disso, as{" "}
@@ -104,11 +102,11 @@ const Conclusion = () => {
             </span>{" "}
             da Secretaria da Mulher da Prefeitura do Rio de Janeiro se destacam
             como um esforço significativo para enfrentar a violência de gênero e
-            garantir que os culpados sejam responsabilizados e as{" "}
+            garantir que as{" "}
             <span className="text-[#EECBAD]">
               <b>vítimas tenham o suporte necessário</b>
-            </span>{" "}
-             <br></br>
+            </span>
+            .  <br></br>
             <br></br>
             Esse conjunto de iniciativas não apenas acolhe e protege as vítimas,
             mas também reforça o compromisso da cidade em construir um ambiente

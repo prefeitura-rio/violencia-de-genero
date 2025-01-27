@@ -19,7 +19,7 @@ const ClockSection = () => {
               {" "}
               <strong>4 mulheres foram assassinadas por dia</strong>
             </span>{" "}
-            em média, apenas pelo fato de serem mulheres.
+            , em média, apenas pelo fato de serem mulheres.
           </h1>
         </div>
       </div>

@@ -15,14 +15,14 @@ const CasesTwo = ({ startAnimation }) => {
       <div className="fixed frame27 top-10 sm:top-20 max-w-[900px] text-left mx-4">
         <h1 className="text-xl mb-4">
           Embora o feminicídio ganhe o destaque das manchetes, a maioria dos
-          outros de violência de gênero permanece oculta, longe dos olhos do
+          casos de violência de gênero permanece oculta, longe dos olhos do
           público. São{" "}
           <span className="text-[#EECBAD]">
             <b>agressões diárias</b>{" "}
           </span>{" "}
-          que se escondem nas paredes de casas, nas relações silenciosamente
-          abusivas e nas ameaças veladas, formando um ciclo invisível que
-          raramente vira notícia. Por trás de cada dado registrado, existem{" "}
+          que permeiam muitas vezes as relações conjugais ou familiares,
+          formando um ciclo invisível que raramente vira notícia. Por trás de
+          cada dado registrado, existem{" "}
           <span className="text-[#EECBAD]">
             <b>inúmeros casos nunca denunciados</b>.
           </span>
