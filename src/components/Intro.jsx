@@ -29,7 +29,7 @@ const Intro = () => {
               Mas a violência de gênero é uma ferida que segue aberta no país:
               somente em 2023, foram{" "}
               <span className="text-[#EECBAD]">
-                <b>1.467 feminicídios registrados em 2024</b>
+                <b>1.467 feminicídios registrados</b>
               </span>
               . {""}O estado do Rio de Janeiro concentrou quase um terço desse
               total.

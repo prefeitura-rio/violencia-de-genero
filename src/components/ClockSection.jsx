@@ -18,7 +18,7 @@ const ClockSection = () => {
             <span className="text-[#EECBAD]">
               {" "}
               <strong>4 mulheres foram assassinadas por dia</strong>
-            </span>{" "}
+            </span>
             , em média, apenas pelo fato de serem mulheres.
           </h1>
         </div>

@@ -20,7 +20,7 @@ const CasesTwo = ({ startAnimation }) => {
           <span className="text-[#EECBAD]">
             <b>agressões diárias</b>{" "}
           </span>{" "}
-          que permeiam muitas vezes as relações conjugais ou familiares,
+          que muitas vezes permeiam as relações conjugais ou familiares,
           formando um ciclo invisível que raramente vira notícia. Por trás de
           cada dado registrado, existem{" "}
           <span className="text-[#EECBAD]">

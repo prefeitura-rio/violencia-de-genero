@@ -14,9 +14,9 @@ const Cases = () => {
               </b>
             </span>
             , geralmente ligado ao que se espera do gênero na sociedade. Costuma
-            ser motivado pelo ódio ou desprezo pelas mulheres. É presença comum
-            nas manchetes dos jornais, que expõem casos de uma violência que
-            atinge as mulheres em sua forma mais extrema: a morte.
+            ser motivado pelo ódio ou desprezo pea condição feminina. É presença
+            comum nas manchetes dos jornais, que costumam noticiar a violência
+            de gênero em sua forma mais extrema: a morte.
           </span>
         </h1>
       </div>
