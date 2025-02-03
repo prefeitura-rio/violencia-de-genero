@@ -22,7 +22,7 @@ const MapSection = () => {
       </div>
       <div className="frame41 fixed inset-0 flex items-center justify-center z-10">
         <img
-          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/map1.png"
+          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/compressed-images/map1.png"
           alt="Relógio representando a passagem do tempo"
           className="fixed w-auto h-auto  object-contain"
         />
@@ -45,7 +45,7 @@ const MapSection = () => {
       </div>
       <div className="frame42 fixed inset-0 translate-y-28 sm:translate-y-0 flex items-center justify-center z-10">
         <img
-          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/map2.png"
+          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/compressed-images/map2.png"
           alt="Relógio representando a passagem do tempo"
           className="fixed w-auto h-auto  object-contain"
         />
@@ -67,7 +67,7 @@ const MapSection = () => {
       </div>
       <div className="frame43 fixed inset-0 translate-y-24 sm:translate-y-0 flex items-center justify-center z-10">
         <img
-          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/map3.png"
+          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/compressed-images/map3.png"
           alt="Relógio representando a passagem do tempo"
           className="fixed w-auto h-auto  object-contain"
         />
@@ -89,7 +89,7 @@ const MapSection = () => {
       </div>
       <div className="frame44 fixed inset-0 translate-y-24 sm:translate-y-0 flex items-center justify-center z-10">
         <img
-          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/map4.png"
+          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/compressed-images/map4.png"
           alt="Relógio representando a passagem do tempo"
           className="fixed w-auto h-auto  object-contain"
         />
@@ -111,7 +111,7 @@ const MapSection = () => {
       </div>
       <div className="frame45 fixed inset-0 flex items-center justify-center z-10">
         <img
-          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/map5.png"
+          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/compressed-images/map5.png"
           alt="Relógio representando a passagem do tempo"
           className="fixed w-auto h-auto  object-contain"
         />
@@ -131,7 +131,7 @@ const MapSection = () => {
       </div>
       <div className="frame46 fixed inset-0 flex items-center justify-center z-10">
         <img
-          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/map6.png"
+          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/compressed-images/map6.png"
           alt="Relógio representando a passagem do tempo"
           className="fixed w-auto h-auto  object-contain"
         />
@@ -152,7 +152,7 @@ const MapSection = () => {
       </div>
       <div className="frame47 fixed inset-0 flex items-center justify-center z-10">
         <img
-          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/map7.png"
+          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/compressed-images/map7.png"
           alt="Relógio representando a passagem do tempo"
           className="fixed w-auto h-auto  object-contain"
         />
@@ -191,7 +191,7 @@ const MapSection = () => {
       </div>
       <div className="frame48 fixed inset-0 flex items-center justify-center z-10">
         <img
-          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/map8.png"
+          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/compressed-images/map8.png"
           alt="Relógio representando a passagem do tempo"
           className="fixed w-auto h-auto  object-contain"
         />

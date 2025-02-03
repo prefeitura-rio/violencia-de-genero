@@ -30,7 +30,7 @@ const BeforeIntro = ({ startAnimation }) => {
         </div>
       </div>
       <img
-        src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/img1.png"
+        src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/compressed-images/img1.png"
         alt="Fixed Bottom Left"
         className="frame2 fixed bottom-0 left-0 w-[100vw] max-w-[500px] sm:max-w-[600px] sm:w-[70vw] md:max-w-[800px]"
       />
@@ -54,7 +54,7 @@ const BeforeIntro = ({ startAnimation }) => {
         </p>
       </div>
       <img
-        src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/img2.png"
+        src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/compressed-images/img2.png"
         alt="Fixed Bottom Left"
         className="frame5 fixed bottom-0 right-0  w-[100vw] max-w-[400px] lg:w-[70vw] lg:max-w-[800px]"
       />
@@ -78,7 +78,7 @@ const BeforeIntro = ({ startAnimation }) => {
         </p>
       </div>
       <img
-        src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/img3.png"
+        src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/compressed-images/img3.png"
         alt="Fixed Bottom Left"
         className="frame8 fixed -bottom-10 -left-10 w-[100vw] max-w-[500px] md:max-w-[600px] md:w-[70vw] xl:max-w-[800px]"
       />

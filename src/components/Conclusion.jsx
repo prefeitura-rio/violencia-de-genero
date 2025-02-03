@@ -208,21 +208,21 @@ const Conclusion = () => {
 
       <div className="frame1b-conclusao fixed bottom-0 right-0">
         <img
-          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/woman_card1.png"
+          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/compressed-images/woman_card1.png"
           alt="Relógio representando a passagem do tempo"
           className="fixed bottom-0 right-0  w-[100vw] max-w-[700px] sm:max-w-[700px] lg:w-[70vw] lg:max-w-[900px]"
         />
       </div>
       <div className="frame2-conclusao fixed bottom-0 right-0">
         <img
-          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/woman_card2.png"
+          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/compressed-images/woman_card2.png"
           alt="Relógio representando a passagem do tempo"
           className="fixed bottom-0 right-0  w-[100vw] max-w-[700px] sm:max-w-[700px] lg:w-[70vw] lg:max-w-[900px]"
         />
       </div>
       <div className="frame3-conclusao fixed bottom-0 right-0">
         <img
-          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/woman_card3.png"
+          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/compressed-images/woman_card3.png"
           alt="Relógio representando a passagem do tempo"
           className="fixed bottom-0 right-0  w-[100vw] max-w-[700px] sm:max-w-[700px] lg:w-[70vw] lg:max-w-[900px]"
         />

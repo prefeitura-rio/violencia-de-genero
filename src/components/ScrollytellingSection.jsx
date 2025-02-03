@@ -1078,7 +1078,8 @@ const ScrollytellingSection = () => {
       <div className="h-[300px] lg:h-[600px]"></div>
       {showMessage && (
         <div className="text-sm bg-transparent z-50 fixed bottom-0 left-1/2 transform -translate-x-1/2 p-1 text-white bg-black bg-opacity-50 blink">
-          Continue descendo
+          <span className="block lg:hidden">Deslize para cima suavemente</span>
+          <span className="hidden lg:block">Desça suavemente para avançar</span>
         </div>
       )}
       <audio ref={audioRef} />

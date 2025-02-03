@@ -56,7 +56,7 @@ const CasesTwo = ({ startAnimation }) => {
         </h1>
       </div>
       <img
-        src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/sad_woman.png"
+        src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/compressed-images/sad_woman.png"
         alt="Relógio representando a passagem do tempo"
         className="frame28 fixed bottom-0 -left-10 sm:left-0 w-[300px] sm:w-[70vw] max-w-[800px]"
       />
@@ -92,7 +92,7 @@ const CasesTwo = ({ startAnimation }) => {
           , e todas deixam marcas profundas nas vítimas.
         </h1>
         <img
-          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/woman_man.png"
+          src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/compressed-images/woman_man.png"
           alt="Relógio representando a passagem do tempo"
           className="frame30 fixed bottom-0 -right-20 w-[600px] sm:w-[900px] md:w-[1100px] max-w-[1000px]"
         />
@@ -145,7 +145,7 @@ const CasesTwo = ({ startAnimation }) => {
         </p>
       </div>
       <img
-        src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/woman_on_hand.png"
+        src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/compressed-images/woman_on_hand.png"
         alt="Relógio representando a passagem do tempo"
         className="frame31 fixed bottom-0 left-0 w-[80vw] sm:w-[60vw] max-w-[800px]"
       />
@@ -217,7 +217,7 @@ const CasesTwo = ({ startAnimation }) => {
         </p>
       </div>
       <img
-        src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/marionette.png"
+        src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/compressed-images/marionette.png"
         alt="Relógio representando a passagem do tempo"
         className="frame34 fixed -bottom-5 -right-5 w-[400px] sm:w-[70vw] max-w-[800px]"
       />
@@ -289,7 +289,7 @@ const CasesTwo = ({ startAnimation }) => {
         </p>
       </div>
       <img
-        src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/images/girls_shadow.png"
+        src="https://storage.googleapis.com/rj-escritorio-dev-public/dataviz/violencia-de-genero/compressed-images/girls_shadow.png"
         alt="Relógio representando a passagem do tempo"
         className="frame37 fixed bottom-0 left-0 w-[80vw] sm:w-[60vw] max-w-[800px]"
       />

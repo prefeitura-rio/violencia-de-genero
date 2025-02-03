@@ -4,9 +4,9 @@ import ScrollytellingSection from "./components/ScrollytellingSection";
 import TypingEffect from "./components/TypingEffect";
 import rightIcon from "./assets/right-icon.svg";
 import soundUp from "./assets/sound_up.gif";
-import soundIcon from "./assets/sound_icon.png";
-import soundIconOn from "./assets/sound_icon_on.svg";
+
 import ScrollProgressBar from "./ScrollProgressBar";
+
 function App() {
   const [loading, setLoading] = useState(true);
   const [showContent, setShowContent] = useState(false);
@@ -37,11 +37,6 @@ function App() {
     setShowDialog(false);
     startAnimation();
   };
-
-  // const handleDeny = () => {
-  //   window.location.href =
-  //     "https://www.instagram.com/secretariadamulher.rio/?hl=en";
-  // };
 
   const [isChecked, setIsChecked] = useState(false);
 
@@ -86,6 +81,10 @@ function App() {
             </div>
           </div>
         </div>
+        {/* Render ScrollytellingSection but keep it hidden */}
+        <div className="hidden">
+          <ScrollytellingSection />
+        </div>
       </div>
     );
   }
@@ -105,6 +104,10 @@ function App() {
           alt="Volume Up"
           className="w-20 fixed bottom-0 pb-10 filter invert"
         />
+        {/* Render ScrollytellingSection but keep it hidden */}
+        <div className="hidden">
+          <ScrollytellingSection />
+        </div>
       </div>
     );
   }
