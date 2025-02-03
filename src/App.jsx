@@ -4,9 +4,7 @@ import ScrollytellingSection from "./components/ScrollytellingSection";
 import TypingEffect from "./components/TypingEffect";
 import rightIcon from "./assets/right-icon.svg";
 import soundUp from "./assets/sound_up.gif";
-
 import ScrollProgressBar from "./ScrollProgressBar";
-
 function App() {
   const [loading, setLoading] = useState(true);
   const [showContent, setShowContent] = useState(false);
@@ -81,10 +79,6 @@ function App() {
             </div>
           </div>
         </div>
-        {/* Render ScrollytellingSection but keep it hidden */}
-        <div className="hidden">
-          <ScrollytellingSection />
-        </div>
       </div>
     );
   }
@@ -104,10 +98,6 @@ function App() {
           alt="Volume Up"
           className="w-20 fixed bottom-0 pb-10 filter invert"
         />
-        {/* Render ScrollytellingSection but keep it hidden */}
-        <div className="hidden">
-          <ScrollytellingSection />
-        </div>
       </div>
     );
   }
