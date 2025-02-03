@@ -53,3 +53,12 @@
 .flicker {
   animation: flicker 2s infinite;
 }
+
+.fade-in-out {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in-out.show {
+  opacity: 1;
+}
